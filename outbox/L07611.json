@@ -1,0 +1,7 @@
+{
+ "to": "lena.varga@aurora.ship",
+ "crew_id": "C03",
+ "log_id": "L07611",
+ "subject": "[ERROR] True fault on Notice-Bus - L07611",
+ "body": "Lena Varga, log L07611 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Antenna' but the log is from Notice-Bus; Reading 418.34 is 1.6 std from the Notice-Bus normal\nRecommended: Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Lena Varga.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:30\nSimilar: L05446, L04289, L05430"
+}

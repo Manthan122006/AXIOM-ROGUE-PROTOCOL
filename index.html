@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NINE Recalibration Control</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05080d;--panel:#0b121b;--line:#1b2938;--txt:#d7e3ef;--mut:#7d91a6;--cyan:#38e1ff;--red:#ff4d5e;--amber:#ffb547;--green:#3dffa3;--violet:#a98bff}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--txt);font-family:'Space Grotesk',system-ui,sans-serif}
+body{background:radial-gradient(1200px 600px at 70% -10%,#0d2236 0%,transparent 60%),radial-gradient(900px 500px at -10% 30%,#1a0d22 0%,transparent 55%),var(--bg)}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+.wrap{max-width:1320px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line)}
+.brand{display:flex;gap:12px;align-items:center}.eye{width:34px;height:34px;border-radius:50%;background:radial-gradient(circle,#ff4d5e 0 22%,#3a0710 23% 60%,transparent 61%);box-shadow:0 0 18px #ff4d5e88;animation:pulse 2.4s infinite}
+@keyframes pulse{50%{box-shadow:0 0 32px #ff4d5ecc}}
+.brand b{font-size:18px;letter-spacing:.14em}.brand span{display:block;color:var(--mut);font-size:12px;letter-spacing:.2em}
+.chip{border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-size:12px;color:var(--mut)}.chip i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:8px;box-shadow:0 0 8px var(--green)}
+.hero{padding:34px 0 10px}.hero h1{font-size:clamp(30px,4.6vw,56px);line-height:1.02;margin:0 0 10px;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyan),var(--violet));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--mut);max-width:760px;font-size:17px;margin:0}
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:24px 0}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px}.stat .n{font-size:30px;font-weight:700}.stat .l{color:var(--mut);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.stage{display:grid;grid-template-columns:1.45fr 1fr;gap:16px}
+.card{background:linear-gradient(180deg,#0c141e,#081019);border:1px solid var(--line);border-radius:18px;padding:16px;position:relative;overflow:hidden}
+.card h3{margin:0 0 10px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--mut);display:flex;justify-content:space-between;align-items:center}
+.live{color:var(--red);font-size:11px}.live:before{content:'●';margin-right:6px;animation:blink 1s infinite}@keyframes blink{50%{opacity:.2}}
+#graph{width:100%;height:auto;display:block}
+.node{cursor:pointer}.node circle.ring{fill:none;stroke-width:2}.node text{fill:var(--txt);font-size:13px;font-weight:600;text-anchor:middle}
+.node text.sub{fill:var(--mut);font-size:10px;font-weight:400}.node:hover circle.core{filter:brightness(1.4)}
+.edge{stroke:#1d3347;stroke-width:2;fill:none}.edge.flow{stroke-dasharray:6 8;animation:dash 1.2s linear infinite}@keyframes dash{to{stroke-dashoffset:-28}}
+.controls{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+button{background:#0f1c29;color:var(--txt);border:1px solid #23394f;border-radius:10px;padding:8px 14px;font:inherit;font-size:13px;cursor:pointer}button:hover{border-color:var(--cyan)}button.pri{background:linear-gradient(90deg,#0aa3c2,#6a4fd8);border:0;font-weight:600}
+#console{height:420px;overflow:auto;font-size:12.5px;line-height:1.55;padding-right:6px}
+#console .ln{opacity:0;animation:in .35s forwards}@keyframes in{to{opacity:1}}
+.t-tri{color:var(--cyan)}.t-mail{color:var(--amber)}.t-mem{color:var(--violet)}.t-book{color:var(--green)}.t-lie{color:#55687c}.t-fault{color:var(--red);font-weight:600}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:16px}
+.bar{margin:9px 0}.bar .row{display:flex;justify-content:space-between;font-size:13px}.bar .tr{height:8px;background:#122131;border-radius:6px;margin-top:4px;overflow:hidden}.bar .fl{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--red),var(--amber));width:0;transition:width 1.2s}
+.mail{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px;font-size:12.5px;animation:in .4s forwards;opacity:0}
+.mail b{color:var(--amber)}.mail .to{color:var(--mut);font-size:11px}
+#feed{max-height:330px;overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:12px}th,td{text-align:left;padding:6px 6px;border-bottom:1px solid #132231}th{color:var(--mut);font-weight:400;letter-spacing:.08em}
+#sched{max-height:330px;overflow:auto}
+.drawer{position:fixed;top:0;right:-460px;width:440px;max-width:92vw;height:100%;background:#08111a;border-left:1px solid var(--line);padding:22px;transition:right .35s;z-index:20;overflow:auto;box-shadow:-20px 0 60px #000a}
+.drawer.open{right:0}.drawer h2{margin:4px 0 4px}.drawer .x{position:absolute;top:14px;right:16px}
+.drawer pre{white-space:pre-wrap;background:#0c1824;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:12px}
+.tag{display:inline-block;font-size:11px;padding:3px 8px;border-radius:6px;margin:2px;background:#2a0f16;color:#ff8d98;border:1px solid #4a1823}
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:16px 0 30px}.step{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.step .k{font-size:12px;color:var(--cyan);letter-spacing:.2em}.step h4{margin:6px 0}.step p{margin:0;color:var(--mut);font-size:13.5px}
+.model{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:6px}.model div{background:#0c1824;border-radius:10px;padding:10px;text-align:center}.model b{display:block;font-size:22px}.model span{font-size:11px;color:var(--mut)}
+footer{color:var(--mut);font-size:12px;padding:24px 0 40px;border-top:1px solid var(--line)}
+@media(max-width:980px){.stage,.grid3,.how{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand"><div class="eye"></div><div><b>NINE RECALIBRATION CONTROL</b><span>TEAM5 · ROGUE PROTOCOL · ROUND 2</span></div></div>
+  <div class="chip mono"><i></i><span id="statusTxt">4 agents online</span></div>
+</header>
+
+<section class="hero">
+  <h1>NINE lies. <em>Our agents don't.</em></h1>
+  <p>Every log NINE writes passes through four autonomous agents: a triage model that catches the lie, an email specialist that wakes the right crew member, a vector memory that remembers every incident, and a fix booker that schedules the repair without double-booking anyone.</p>
+</section>
+
+<div class="stats">
+  <div class="stat"><div class="n mono" id="sLogs">0</div><div class="l">Logs scanned</div></div>
+  <div class="stat"><div class="n mono" id="sFaults" style="color:var(--red)">0</div><div class="l">True faults</div></div>
+  <div class="stat"><div class="n mono" id="sLies" style="color:#7d91a6">0</div><div class="l">Lies ignored</div></div>
+  <div class="stat"><div class="n mono" id="sMail" style="color:var(--amber)">0</div><div class="l">Specialists alerted</div></div>
+  <div class="stat"><div class="n mono" id="sBook" style="color:var(--green)">0</div><div class="l">Fixes booked</div></div>
+</div>
+
+<div class="stage">
+  <div class="card">
+    <h3><span>Agent workflow · click any agent</span><span class="live">LIVE RUN</span></h3>
+    <svg id="graph" viewBox="0 0 760 430">
+      <defs>
+        <radialGradient id="gCy"><stop offset="0" stop-color="#38e1ff" stop-opacity=".55"/><stop offset="1" stop-color="#38e1ff" stop-opacity="0"/></radialGradient>
+        <filter id="glow"><feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <g id="edges"></g><g id="packets"></g><g id="nodes"></g>
+    </svg>
+    <div class="controls">
+      <button class="pri" id="play">▶ Start live run</button><button id="pause">Pause</button>
+      <button id="speed">Speed 1×</button><button id="reset">Reset</button>
+    </div>
+  </div>
+  <div class="card">
+    <h3><span>Agent console</span><span class="mono" style="font-size:11px" id="clock">T+00:00</span></h3>
+    <div id="console" class="mono"></div>
+  </div>
+</div>
+
+<div class="grid3">
+  <div class="card"><h3>NINE lie report</h3><div id="lies"></div>
+    <h3 style="margin-top:16px">Triage model</h3>
+    <div class="model mono"><div><b id="mF1">.742</b><span>Val F1</span></div><div><b id="mCV">.743</b><span>CV F1</span></div><div><b id="mP">.779</b><span>Precision</span></div><div><b id="mR">.708</b><span>Recall</span></div></div>
+  </div>
+  <div class="card"><h3><span>Email specialist · outbox</span><span class="mono" style="font-size:11px" id="mailN">0</span></h3><div id="feed"></div></div>
+  <div class="card"><h3><span>schedule.csv · fix booker</span><span class="mono" style="font-size:11px" id="bookN">0</span></h3>
+    <div id="sched"><table class="mono"><thead><tr><th>log_id</th><th>crew</th><th>start</th><th>end</th><th>job</th></tr></thead><tbody id="schedBody"></tbody></table></div></div>
+</div>
+
+<h3 style="color:var(--mut);letter-spacing:.18em;font-size:13px;margin-top:30px">HOW IT WORKS</h3>
+<div class="how">
+  <div class="step"><div class="k">01 · TRIAGE</div><h4>Catch the lie</h4><p>Our Round 1 model (LR + gradient boosting + random forest) scores every log and explains <i>why</i>: wrong module named, fake quoted value, redacted or out-of-range reading, calm text on a CRIT.</p></div>
+  <div class="step"><div class="k">02 · EMAIL SPECIALIST</div><h4>Wake the right crew</h4><p>Each true fault is matched to the specialist for its module and the least-busy one gets an alert with the evidence, similar past incidents and the booked slot.</p></div>
+  <div class="step"><div class="k">03 · VECTOR MEMORY</div><h4>Never forget</h4><p>Every incident is embedded into a local Chroma store, so the crew can search "what happened like this before?" and each alert carries its nearest neighbours.</p></div>
+  <div class="step"><div class="k">04 · FIX BOOKER</div><h4>Schedule the repair</h4><p>Highest-risk faults first. Appends <span class="mono">log_id, crew_id, start, end, job</span> to schedule.csv with zero double-bookings.</p></div>
+</div>
+<footer class="mono" id="foot"></footer>
+</div>
+
+<div class="drawer" id="drawer"><button class="x" id="dx">✕</button><div id="dbody"></div></div>
+
+<script src="events.js"></script>
+<script>
+const D = window.NINE_DATA || {summary:{},events:[],noise:[],crew:[]};
+const S = D.summary;
+const NODES = {
+  nine:  {x:90,  y:215, r:44, c:'#ff4d5e', t:'NINE',            s:'log stream',     d:'The rogue ship computer. Every log line it writes enters the pipeline here, true or not.'},
+  tri:   {x:300, y:215, r:50, c:'#38e1ff', t:'Triage',          s:'Round 1 model',  d:'Scores each log with the LR + HistGradientBoosting + RandomForest blend (threshold 0.38) and explains which lie it caught.'},
+  mail:  {x:560, y:80,  r:42, c:'#ffb547', t:'Email',           s:'specialist',     d:'Matches the faulty module to its crew specialist, picks the least-busy one and dispatches an alert with the evidence.'},
+  mem:   {x:600, y:215, r:42, c:'#a98bff', t:'Memory',          s:'Chroma vectors', d:'Embeds each incident into a local vector store and returns the most similar past incidents.'},
+  book:  {x:560, y:350, r:42, c:'#3dffa3', t:'Fix booker',      s:'schedule.csv',   d:'Books a repair slot for the assigned crew member, highest risk first, never double-booking.'},
+};
+const EDGES = [['nine','tri'],['tri','mail'],['tri','mem'],['tri','book'],['mem','mail']];
+const svg = id => document.getElementById(id), NS='http://www.w3.org/2000/svg';
+const mk = (tag, attrs, parent) => { const e=document.createElementNS(NS,tag); for(const k in attrs) e.setAttribute(k,attrs[k]); parent&&parent.appendChild(e); return e; };
+const path = (a,b) => { const A=NODES[a],B=NODES[b], mx=(A.x+B.x)/2; return `M${A.x},${A.y} C${mx},${A.y} ${mx},${B.y} ${B.x},${B.y}`; };
+EDGES.forEach(([a,b])=>mk('path',{d:path(a,b),class:'edge flow',id:`e-${a}-${b}`},svg('edges')));
+const last = {nine:null,tri:null,mail:null,mem:null,book:null};
+Object.entries(NODES).forEach(([k,n])=>{
+  const g=mk('g',{class:'node',id:'n-'+k,transform:`translate(${n.x},${n.y})`},svg('nodes'));
+  mk('circle',{r:n.r+26,fill:'url(#gCy)',opacity:0,class:'halo'},g);
+  mk('circle',{r:n.r,fill:n.c+'22',stroke:n.c,'stroke-width':2,class:'core',filter:'url(#glow)'},g);
+  const ring=mk('circle',{r:n.r+8,class:'ring',stroke:n.c,opacity:.35,'stroke-dasharray':'4 10'},g);
+  ring.innerHTML=`<animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="${8+Math.random()*6}s" repeatCount="indefinite"/>`;
+  mk('text',{y:-2},g).textContent=n.t; mk('text',{y:15,class:'sub'},g).textContent=n.s;
+  g.addEventListener('click',()=>openDrawer(k));
+});
+function flash(k,color){ const h=document.querySelector('#n-'+k+' .halo'); h.setAttribute('fill',color||NODES[k].c); h.animate([{opacity:.9},{opacity:0}],{duration:700}); h.setAttribute('opacity',0);
+  document.querySelector('#n-'+k).animate([{transform:`translate(${NODES[k].x}px,${NODES[k].y}px) scale(1)`},{transform:`translate(${NODES[k].x}px,${NODES[k].y}px) scale(1.12)`},{transform:`translate(${NODES[k].x}px,${NODES[k].y}px) scale(1)`}],{duration:500}); }
+function packet(a,b,color,dur){ return new Promise(res=>{ const p=svg('e-'+a+'-'+b); const L=p.getTotalLength(); const c=mk('circle',{r:7,fill:color,filter:'url(#glow)'},svg('packets')); const t0=performance.now();
+  (function step(t){ const f=Math.min(1,(t-t0)/(dur/speed)); const pt=p.getPointAtLength(L*f); c.setAttribute('cx',pt.x); c.setAttribute('cy',pt.y); if(f<1) requestAnimationFrame(step); else { c.remove(); res(); } })(t0); }); }
+const con=svg('console'); let t0=Date.now();
+function log(cls,txt){ const d=document.createElement('div'); d.className='ln '+cls; d.textContent=txt; con.appendChild(d); con.scrollTop=con.scrollHeight; if(con.children.length>220) con.firstChild.remove(); }
+const ctr={logs:0,faults:0,lies:0,mail:0,book:0};
+function bump(k,id){ ctr[k]++; svg(id).textContent=ctr[k].toLocaleString(); }
+function addMail(e){ const m=document.createElement('div'); m.className='mail'; m.innerHTML=`<div class="to">to ${e.email.to} · ${e.specialist.role}</div><b>${e.email.subject}</b><div style="color:var(--mut);margin-top:4px">${e.reasons[0]}</div>`; m.onclick=()=>{last.mail=e;openDrawer('mail')}; m.style.cursor='pointer'; svg('feed').prepend(m); svg('mailN').textContent=ctr.mail; }
+function addRow(e){ const b=e.booking, tr=document.createElement('tr'); tr.innerHTML=`<td>${b.log_id}</td><td>${b.crew_id}</td><td>${b.start.slice(11)}</td><td>${b.end.slice(11)}</td><td style="color:var(--mut)">${b.job.split(':')[0]}</td>`; tr.animate([{background:'#173a2a'},{background:'transparent'}],{duration:1200}); svg('schedBody').prepend(tr); svg('bookN').textContent=ctr.book; }
+// interleave faults and noise in a realistic ratio
+const seq=[]; const F=D.events.slice(0,80), N=D.noise.slice(); let fi=0;
+while(fi<F.length||N.length){ if(fi<F.length) seq.push({f:true,e:F[fi++]}); for(let j=0;j<2&&N.length;j++) seq.push({f:false,e:N.shift()}); }
+let i=0, running=false, speed=1;
+async function stepOne(){
+  if(i>=seq.length){ running=false; log('t-book','■ Run complete. Pipeline processed '+S.logs+' logs in '+S.runtime_s+'s on the full test set.'); return; }
+  const {f,e}=seq[i++]; last.nine=e; flash('nine'); bump('logs','sLogs');
+  log('t-lie',`▸ NINE ${e.log_id} [${e.module}/${e.status}] "${e.message.replace('NINE: ','')}"`);
+  await packet('nine','tri','#ff4d5e',650); flash('tri'); last.tri=e;
+  if(!f){ bump('lies','sLies'); log('t-lie',`  triage → noise (risk ${(e.prob*100).toFixed(0)}%) · NINE is lying, ignored`); return; }
+  bump('faults','sFaults'); log('t-fault',`  triage → TRUE FAULT (risk ${(e.prob*100).toFixed(0)}%) · ${e.lies.join(', ')||'pattern match'}`);
+  log('t-tri',`    why: ${e.reasons.join(' | ')}`);
+  await Promise.all([packet('tri','mem','#a98bff',600),packet('tri','book','#3dffa3',700)]);
+  flash('mem'); last.mem=e; log('t-mem',`  memory → stored; similar: ${e.similar.map(s=>s.log_id+' ('+s.score.toFixed(2)+')').join(', ')||'first of its kind'}`);
+  flash('book'); last.book=e; bump('book','sBook'); addRow(e); log('t-book',`  booker → ${e.booking.crew_id} ${e.booking.start.slice(11)}–${e.booking.end.slice(11)} · ${e.booking.job}`);
+  await packet('mem','mail','#ffb547',500); flash('mail'); last.mail=e; bump('mail','sMail'); addMail(e);
+  log('t-mail',`  email → ${e.specialist.name} (${e.specialist.role}) via ${e.sent_via}`);
+}
+async function loop(){ while(running){ await stepOne(); await new Promise(r=>setTimeout(r,(seq[i-1]&&seq[i-1].f?650:250)/speed)); } }
+setInterval(()=>{ const s=Math.floor((Date.now()-t0)/1000); svg('clock').textContent='T+'+String(Math.floor(s/60)).padStart(2,'0')+':'+String(s%60).padStart(2,'0'); },1000);
+svg('play').onclick=()=>{ if(!running){ running=true; if(i===0){ t0=Date.now(); log('t-tri','■ Live run started · 4 agents online · threshold '+S.threshold+' · memory backend '+S.memory_backend); } loop(); } };
+svg('pause').onclick=()=>running=false;
+svg('speed').onclick=()=>{ speed = speed>=4?1:speed*2; svg('speed').textContent='Speed '+speed+'×'; };
+svg('reset').onclick=()=>location.reload();
+function openDrawer(k){
+  const n=NODES[k], e=last[k]; let h=`<div class="mono" style="color:${n.c};letter-spacing:.2em;font-size:12px">AGENT</div><h2>${n.t}</h2><p style="color:var(--mut)">${n.d}</p>`;
+  if(!e) h+=`<p class="mono" style="color:var(--mut)">No activity yet. Start the live run.</p>`;
+  else if(k==='nine') h+=`<h4>Latest log</h4><pre>${JSON.stringify({log_id:e.log_id,module:e.module,status:e.status,message:e.message},null,1)}</pre>`;
+  else if(k==='tri') h+=`<h4>Verdict · ${e.reasons?'TRUE FAULT':'NOISE'} · risk ${(e.prob*100).toFixed(1)}%</h4>${(e.lies||[]).map(l=>`<span class="tag">${l}</span>`).join('')}${e.reasons?`<pre>${e.reasons.join('\n')}</pre>`:''}`;
+  else if(k==='mail') h+=`<h4>Last email sent</h4><pre>To: ${e.email.to}\nSubject: ${e.email.subject}\n\n${e.email.body}</pre>`;
+  else if(k==='mem') h+=`<h4>Stored ${e.log_id} · nearest incidents</h4><pre>${e.similar.map(s=>s.log_id+'  similarity '+s.score.toFixed(3)).join('\n')||'first incident of its kind'}</pre>`;
+  else if(k==='book') h+=`<h4>schedule.csv row appended</h4><pre>${Object.entries(e.booking).map(([a,b])=>a+': '+b).join('\n')}</pre><p style="color:var(--mut)">Assigned to ${e.specialist.name}, ${e.specialist.role}.</p>`;
+  svg('dbody').innerHTML=h; svg('drawer').classList.add('open');
+}
+svg('dx').onclick=()=>svg('drawer').classList.remove('open');
+// lie report + footer
+const lc=S.lie_counts||{}, mx=Math.max(1,...Object.values(lc));
+svg('lies').innerHTML=Object.entries(lc).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div class="bar"><div class="row"><span>${k}</span><span class="mono">${v}</span></div><div class="tr"><div class="fl" data-w="${v/mx*100}"></div></div></div>`).join('');
+setTimeout(()=>document.querySelectorAll('.fl').forEach(f=>f.style.width=f.dataset.w+'%'),300);
+svg('foot').textContent=`Pipeline run ${S.generated||''} · ${S.logs||0} logs · ${S.faults||0} true faults · ${S.emails||0} alerts · ${S.bookings||0} bookings · memory: ${S.memory_backend||''} · runtime ${S.runtime_s||0}s · Team5, SMLRA × Abhiyantriki 2026`;
+if(!D.events.length) svg('statusTxt').textContent='no pipeline data: run python pipeline.py';
+</script>
+</body>
+</html>

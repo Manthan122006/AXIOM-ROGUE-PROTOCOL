@@ -1,0 +1,19 @@
+NINE - AURORA Ship Intelligence (Team5)
+
+START (Mac, inside this folder in the VS Code terminal):
+    lsof -ti:8000 | xargs kill -9        # stops any old server
+    python3 server.py
+Open http://127.0.0.1:8000   (Cmd+Shift+R to refresh)
+
+DEMO
+1. Overview: Choose File -> Team5.csv (included) or the full log CSV -> "Check all logs + run agents"
+2. Live: watch every log being checked (red = fault, grey = normal)
+3. Agents: what each agent did for a fault (crew, similar cases, plan, booking)
+4. Logs: search any log, see its verdict, run the agents on it
+5. Memory: search past incidents
+6. Crew & Schedule: roster + schedule.csv (download)
+7. Reports: one final report per fault
+
+RULE: all logs are checked first (no AI credits). Normal logs stop. Only the top faults (budget, default 5) go to the agents.
+Team5.csv verdicts are used exactly as given and joined to the original logs by log_id.
+Optional: ANTHROPIC_API_KEY=... python3 server.py  (live LLM plan; otherwise labelled local-demo)

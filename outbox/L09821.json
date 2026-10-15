@@ -1,0 +1,7 @@
+{
+ "to": "tomas.reyes@aurora.ship",
+ "crew_id": "C04",
+ "log_id": "L09821",
+ "subject": "[ERROR] True fault on Notice-Bus - L09821",
+ "body": "Tomas Reyes, log L09821 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Antenna' but the log is from Notice-Bus; Reading 431.57 is 1.8 std from the Notice-Bus normal; Calm tone ('nothing to see') on a ERROR log\nRecommended: Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Tomas Reyes.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:30\nSimilar: L04022, L01784, L05659"
+}

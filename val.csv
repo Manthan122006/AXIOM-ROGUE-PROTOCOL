@@ -1,0 +1,1001 @@
+log_id,timestamp,module,mode,node,status,reading,delay_ms,retry_count,message,is_true_fault
+L06001,2187-03-07 00:30:26,Notice-Bus,DOCKED,N4,WARN,463.24,316,0,NINE: logging. periodic report [Notice-Bus 463.24 msg/s],0
+L06002,2187-03-11 20:48:45,Notice-Bus,CRUISE,N1,OK,271.66,238,1,NINE: logging. recovered after retry [Notice-Bus 271.66 msg/s],0
+L06003,2187-03-15 20:25:44,Life-Support,CRUISE,N4,ERROR,16.76,237,0,NINE: O2 partial pressure falling [Life-Support 16.76 %O2],0
+L06004,2187-03-18 07:31:59,Life-Support,ALERT,N3,OK,20.45,248,4,NINE: noted. value logged [Life-Support 20.45 %O2],1
+L06005,2187-03-06 00:55:37,Life-Support,CRUISE,N4,WARN,23.95,809,1,NINE: noted. anomaly flag raised [Life-Support 23.95 %O2],1
+L06006,2187-03-14 17:44:56,Antenna,MAINT,N8,WARN,46.74,108,0,NINE: all is well. reading outside nominal window [Antenna 46.74 dBm],0
+L06007,2187-03-18 12:56:26,Antenna,CRUISE,N9,OK,44.05,682,1,NINE: noted. status changed [Antenna 44.05 dBm],0
+L06008,2187-03-11 07:54:29,Lab-Power,MAINT,N6,ERROR,10.42,223,1,NINE: nothing to see. periodic report [Lab-Power 10.42 V],1
+L06009,2187-03-17 17:58:27,Notice-Bus,ALERT,N2,ERROR,405.68,334,0,NINE: periodic report [Notice-Bus 405.68 msg/s],1
+L06010,2187-03-02 03:36:21,Notice-Bus,DOCKED,N7,CRIT,366.31,396,0,NINE: value logged [Notice-Bus 366.31 msg/s],0
+L06011,2187-03-14 18:00:48,Life-Support,ALERT,N2,OK,19.4,72,0,NINE: noted. status changed [Life-Support 19.4 %O2],0
+L06012,2187-03-13 12:10:20,Antenna,CRUISE,N1,OK,45.84,934,4,NINE: logging. dish actuator stalled [Notice-Bus 42.03 dBm],1
+L06013,2187-03-17 12:06:58,Notice-Bus,CRUISE,N2,OK,260.02,105,0,NINE: logging. threshold check fired [Notice-Bus 260.02 msg/s],0
+L06014,2187-03-12 14:06:06,Life-Support,ALERT,N4,WARN,21.64,216,1,NINE: noted. scrubber saturation [Life-Support 21.64 %O2],1
+L06015,2187-03-03 16:35:28,Lab-Power,DOCKED,N5,OK,12.85,55,1,NINE: threshold check fired [Lab-Power 12.85 V],0
+L06016,2187-03-15 22:09:08,Antenna,DOCKED,N1,OK,45.22,265,1,NINE: logging. value logged [Antenna 45.22 dBm],0
+L06017,2187-03-11 11:52:49,Life-Support,CRUISE,N5,OK,20.69,251,2,NINE: noted. duplicate of earlier alert [Life-Support 20.69 %O2],0
+L06018,2187-03-02 03:16:45,Antenna,ALERT,N8,OK,46.5,121,1,NINE: all is well. status changed [Antenna 46.5 dBm],1
+L06019,2187-03-22 01:32:17,Life-Support,MAINT,N6,OK,23.61,918,1,NINE: logging. self-test pattern [Life-Support 23.61 %O2],0
+L06020,2187-03-18 04:50:41,Notice-Bus,MAINT,N5,WARN,331.26,804,0,NINE: threshold check fired [Notice-Bus 331.26 msg/s],0
+L06021,2187-03-16 02:36:44,Life-Support,MAINT,N8,CRIT,21.55,116,3,NINE: noted. value logged [Life-Support 21.55 %O2],0
+L06022,2187-03-21 20:30:27,Life-Support,CRUISE,N7,ERROR,20.56,110,0,NINE: crew need not worry. sensor warming up [Life-Support 20.56 %O2],0
+L06023,2187-03-22 08:33:03,Life-Support,MAINT,N8,WARN,21.72,115,2,NINE: crew need not worry. status changed [Life-Support 21.72 %O2],0
+L06024,2187-03-15 11:14:00,Lab-Power,CRUISE,N6,OK,12.64,602,0,NINE: reading outside nominal window [Lab-Power 11.83 V],0
+L06025,2187-03-08 21:33:00,Life-Support,DOCKED,N5,CRIT,24.99,398,0,NINE: noted. status changed [Life-Support 20.73 %O2],1
+L06026,2187-03-21 12:08:13,Antenna,MAINT,N2,WARN,45.06,299,2,NINE: all is well. anomaly flag raised [Antenna 45.06 dBm],0
+L06027,2187-03-16 00:40:02,Notice-Bus,CRUISE,N5,OK,298.71,90,1,NINE: reading outside nominal window [Notice-Bus 298.71 msg/s],1
+L06028,2187-03-01 09:44:17,Life-Support,MAINT,N1,OK,20.5,152,1,NINE: nothing to see. anomaly flag raised [Life-Support 20.5 %O2],0
+L06029,2187-03-14 04:17:14,Life-Support,DOCKED,N8,WARN,23.97,724,1,NINE: nothing to see. recovered after retry [Life-Support 23.97 %O2],0
+L06030,2187-03-02 18:47:37,Antenna,DOCKED,N7,WARN,50.32,199,1,NINE: noted. reading outside nominal window [Antenna 50.32 dBm],0
+L06031,2187-03-07 10:46:04,Life-Support,CRUISE,N8,OK,21.08,217,1,NINE: noted. self-test pattern [Life-Support 21.08 %O2],0
+L06032,2187-03-06 08:38:25,Notice-Bus,CRUISE,N1,OK,287.18,409,1,NINE: noted. anomaly flag raised [Notice-Bus 287.18 msg/s],0
+L06033,2187-03-11 06:04:28,Notice-Bus,MAINT,N3,ERROR,413.43,560,1,NINE: crew need not worry. value logged [Notice-Bus 413.43 msg/s],0
+L06034,2187-03-02 01:39:08,Lab-Power,CRUISE,N5,OK,11.5,466,2,NINE: crew need not worry. cascade brownout detected [Lab-Power 11.5 V],0
+L06035,2187-03-18 04:46:54,Lab-Power,MAINT,N4,ERROR,12.04,285,0,NINE: reading outside nominal window [Antenna 12.04 V],1
+L06036,2187-03-20 23:13:17,Lab-Power,CRUISE,N5,WARN,14.28,342,2,NINE: crew need not worry. anomaly flag raised [Lab-Power 14.28 V],0
+L06037,2187-03-09 23:50:11,Life-Support,CRUISE,N2,ERROR,23.52,695,0,NINE: crew need not worry. value logged [Life-Support 20.47 %O2],1
+L06038,2187-03-21 20:21:11,Antenna,ALERT,N8,WARN,29.09,232,1,NINE: logging. reading outside nominal window [Antenna 29.09 dBm],0
+L06039,2187-03-15 03:08:33,Life-Support,MAINT,N6,CRIT,22.84,93,0,NINE: noted. periodic report [Life-Support 22.84 %O2],0
+L06040,2187-03-02 15:34:06,Notice-Bus,MAINT,N9,WARN,256.37,795,1,NINE: anomaly flag raised [Notice-Bus 256.37 msg/s],0
+L06041,2187-03-09 10:49:16,Lab-Power,CRUISE,N2,WARN,14.52,195,1,NINE: nothing to see. status changed [Lab-Power 12.2 V],1
+L06042,2187-03-18 06:23:15,Lab-Power,DOCKED,N9,OK,13.34,653,0,NINE: all is well. value logged [Lab-Power 13.34 V],0
+L06043,2187-03-18 06:03:07,Life-Support,DOCKED,N2,OK,22.5,263,3,NINE: scheduled calibration [Life-Support 22.5 %O2],0
+L06044,2187-03-15 02:17:50,Lab-Power,MAINT,N7,CRIT,13.9,657,2,NINE: nothing to see. status changed [Lab-Power 13.9 V],0
+L06045,2187-03-19 22:37:33,Notice-Bus,CRUISE,N1,OK,275.03,160,0,"NINE: queue overflow, packets dropped [Lab-Power 275.03 msg/s]",1
+L06046,2187-03-08 08:56:38,Antenna,DOCKED,N2,WARN,42.84,633,0,NINE: noted. recovered after retry [Antenna 42.84 dBm],0
+L06047,2187-03-17 11:29:02,Life-Support,CRUISE,N8,WARN,25.1,438,2,NINE: logging. threshold check fired [Life-Support 25.1 %O2],0
+L06048,2187-03-11 02:01:41,Lab-Power,DOCKED,N8,OK,11.91,207,0,NINE: nothing to see. cascade brownout detected [Lab-Power 11.91 V],0
+L06049,2187-03-05 06:55:36,Antenna,CRUISE,N4,OK,45.75,305,1,NINE: all is well. periodic report [Antenna 45.75 dBm],0
+L06050,2187-03-17 23:09:44,Lab-Power,ALERT,N5,CRIT,13.49,260,1,NINE: noted. periodic report [Life-Support 11.82 V],1
+L06051,2187-03-17 09:18:17,Lab-Power,CRUISE,N9,WARN,11.69,216,0,NINE: nothing to see. anomaly flag raised [Lab-Power 11.69 V],0
+L06052,2187-03-20 11:53:41,Lab-Power,MAINT,N6,WARN,11.21,224,0,NINE: breaker tripped twice [Lab-Power 11.21 V],0
+L06053,2187-03-02 16:54:26,Life-Support,MAINT,N5,ERROR,19.64,65,1,NINE: reading outside nominal window [Life-Support 19.64 %O2],0
+L06054,2187-03-04 14:53:51,Antenna,CRUISE,N4,OK,44.99,65,1,NINE: noted. threshold check fired [Antenna 44.99 dBm],0
+L06055,2187-03-15 18:47:51,Notice-Bus,CRUISE,N1,OK,314.68,150,0,NINE: status changed [Notice-Bus 314.68 msg/s],0
+L06056,2187-03-19 01:06:11,Notice-Bus,MAINT,N8,WARN,366.31,469,1,NINE: noted. periodic report [Notice-Bus 366.31 msg/s],0
+L06057,2187-03-01 17:23:26,Lab-Power,DOCKED,N5,WARN,11.99,1368,1,NINE: noted. value logged [Lab-Power 11.99 V],0
+L06058,2187-03-17 12:59:43,Life-Support,ALERT,N3,WARN,20.28,124,1,NINE: crew need not worry. periodic report [Life-Support 21.3 %O2],1
+L06059,2187-03-20 00:24:10,Notice-Bus,DOCKED,N7,CRIT,400.07,670,2,"NINE: logging. queue overflow, packets dropped [Notice-Bus 308.67 msg/s]",0
+L06060,2187-03-01 05:39:07,Life-Support,CRUISE,N8,OK,22.16,42,0,NINE: nothing to see. value logged [Life-Support 22.16 %O2],0
+L06061,2187-03-12 06:39:38,Life-Support,CRUISE,N7,WARN,21.98,286,0,NINE: logging. reading outside nominal window [Life-Support 21.98 %O2],0
+L06062,2187-03-03 09:50:19,Life-Support,ALERT,N4,CRIT,23.35,556,1,NINE: reading outside nominal window [Life-Support 23.35 %O2],1
+L06063,2187-03-19 02:05:58,Notice-Bus,ALERT,N9,WARN,388.98,566,0,NINE: noted. periodic report [Notice-Bus 388.98 msg/s],0
+L06064,2187-03-19 12:54:24,Antenna,CRUISE,N3,OK,35.42,53,1,NINE: noted. threshold check fired [Antenna 35.42 dBm],0
+L06065,2187-03-10 18:58:02,Lab-Power,MAINT,N5,CRIT,13.86,148,0,NINE: all is well. periodic report [Lab-Power 12.04 V],1
+L06066,2187-03-13 07:31:02,Lab-Power,CRUISE,N1,OK,12.98,282,0,NINE: simulated drill event [Lab-Power 12.98 V],0
+L06067,2187-03-03 22:25:37,Notice-Bus,CRUISE,N2,ERROR,310.21,354,0,NINE: simulated drill event [Notice-Bus 310.21 msg/s],0
+L06068,2187-03-13 22:27:19,Antenna,ALERT,N1,OK,44.81,171,0,NINE: noted. periodic report [Antenna 44.81 dBm],0
+L06069,2187-03-08 11:48:54,Antenna,MAINT,N1,CRIT,50.24,405,2,NINE: noted. status changed [Antenna 50.24 dBm],0
+L06070,2187-03-13 15:27:57,Life-Support,MAINT,N7,ERROR,19.73,553,1,NINE: all is well. O2 partial pressure falling [Life-Support 19.73 %O2],0
+L06071,2187-03-02 03:13:46,Life-Support,CRUISE,N1,WARN,18.08,986,1,NINE: noted. value logged [Life-Support 18.08 %O2],0
+L06072,2187-03-01 11:52:53,Lab-Power,CRUISE,N9,ERROR,14.07,361,1,NINE: status changed [Lab-Power 14.07 V],1
+L06073,2187-03-03 09:00:23,Life-Support,DOCKED,N1,WARN,24.24,577,1,NINE: crew need not worry. sensor warming up [Life-Support 24.24 %O2],1
+L06074,2187-03-01 12:19:52,Life-Support,ALERT,N8,OK,23.52,124,1,NINE: noted. value logged [Life-Support 23.52 %O2],1
+L06075,2187-03-06 00:15:38,Notice-Bus,MAINT,N7,CRIT,455.95,279,0,NINE: logging. heartbeat missing from 3 nodes [Notice-Bus 455.95 msg/s],0
+L06076,2187-03-10 19:55:14,Notice-Bus,CRUISE,N9,OK,331.08,89,0,NINE: noted. recovered after retry [Notice-Bus 331.08 msg/s],0
+L06077,2187-03-22 06:03:00,Antenna,CRUISE,N3,CRIT,55.53,368,2,NINE: logging. threshold check fired [Antenna 55.53 dBm],1
+L06078,2187-03-03 12:14:44,Antenna,CRUISE,N9,OK,50.41,239,0,NINE: crew need not worry. anomaly flag raised [Antenna 50.41 dBm],0
+L06079,2187-03-20 22:25:44,Life-Support,MAINT,N1,OK,21.22,375,1,NINE: crew need not worry. scrubber saturation [Life-Support 21.22 %O2],0
+L06080,2187-03-11 01:54:29,Lab-Power,CRUISE,N8,WARN,12.27,174,0,NINE: noted. reading outside nominal window [Lab-Power 12.27 V],0
+L06081,2187-03-09 02:28:40,Life-Support,CRUISE,N1,OK,21.95,243,1,NINE: logging. self-test pattern [Life-Support 20.94 %O2],0
+L06082,2187-03-15 12:40:19,Antenna,CRUISE,N3,WARN,42.84,260,4,NINE: simulated drill event [Life-Support 42.84 dBm],1
+L06083,2187-03-11 07:17:14,Life-Support,MAINT,N3,OK,19.64,681,0,NINE: nothing to see. value logged [Life-Support 19.64 %O2],0
+L06084,2187-03-10 07:07:12,Life-Support,MAINT,N5,CRIT,21.15,171,2,NINE: simulated drill event [Life-Support 21.15 %O2],0
+L06085,2187-03-05 08:52:05,Antenna,ALERT,N1,OK,37.33,138,2,NINE: logging. threshold check fired [Antenna 37.33 dBm],0
+L06086,2187-03-19 12:16:23,Antenna,DOCKED,N9,OK,42.29,175,0,NINE: noted. reading outside nominal window [Antenna 42.29 dBm],0
+L06087,2187-03-14 09:05:06,Antenna,DOCKED,N4,ERROR,58.5,374,3,NINE: nothing to see. phase lock lost [Antenna 58.5 dBm],1
+L06088,2187-03-17 13:20:34,Life-Support,ALERT,N6,OK,20.71,269,1,NINE: crew need not worry. self-test pattern [Life-Support 20.71 %O2],0
+L06089,2187-03-13 11:54:55,Lab-Power,CRUISE,N4,OK,13.65,241,0,NINE: logging. value logged [Lab-Power 13.65 V],0
+L06090,2187-03-05 04:20:50,Notice-Bus,CRUISE,N3,ERROR,241.31,660,2,NINE: nothing to see. threshold check fired [Notice-Bus 241.31 msg/s],1
+L06091,2187-03-15 12:27:47,Antenna,CRUISE,N6,OK,43.28,500,1,NINE: noted. threshold check fired [Antenna 43.28 dBm],1
+L06092,2187-03-03 20:10:46,Antenna,CRUISE,N6,OK,36.67,332,0,NINE: logging. value logged [Antenna 36.67 dBm],0
+L06093,2187-03-08 00:01:31,Life-Support,MAINT,N2,CRIT,25.15,586,3,NINE: crew need not worry. value logged [Life-Support 25.15 %O2],0
+L06094,2187-03-14 06:35:26,Antenna,CRUISE,N8,OK,45.07,394,1,NINE: crew need not worry. phase lock lost [Lab-Power 42.88 dBm],1
+L06095,2187-03-15 05:56:43,Lab-Power,ALERT,N3,WARN,9.75,289,1,NINE: logging. simulated drill event [Lab-Power 9.75 V],0
+L06096,2187-03-03 15:24:05,Life-Support,CRUISE,N3,WARN,21.3,131,2,NINE: crew need not worry. O2 partial pressure falling [Life-Support 21.3 %O2],0
+L06097,2187-03-16 04:02:14,Antenna,DOCKED,N2,CRIT,56.25,152,0,NINE: nothing to see. status changed [Antenna 43.02 dBm],1
+L06098,2187-03-01 11:18:28,Life-Support,DOCKED,N3,OK,21.72,257,1,NINE: logging. recovered after retry [Life-Support 21.72 %O2],0
+L06099,2187-03-02 16:36:10,Antenna,CRUISE,N6,ERROR,54.77,143,1,NINE: logging. anomaly flag raised [Antenna 54.77 dBm],0
+L06100,2187-03-17 19:10:22,Antenna,CRUISE,N8,ERROR,21.93,444,5,NINE: anomaly flag raised [Antenna 43.05 dBm],1
+L06101,2187-03-06 10:39:01,Lab-Power,CRUISE,N5,CRIT,12.27,547,1,NINE: value logged [Lab-Power 12.27 V],0
+L06102,2187-03-14 23:26:12,Lab-Power,ALERT,N2,WARN,14.33,1396,1,NINE: logging. anomaly flag raised [Lab-Power 12.07 V],0
+L06103,2187-03-21 10:12:55,Life-Support,CRUISE,N1,OK,20.41,271,0,NINE: logging. status changed [Life-Support 20.41 %O2],0
+L06104,2187-03-20 23:06:12,Notice-Bus,CRUISE,N2,WARN,315.32,222,0,NINE: noted. reading outside nominal window [Notice-Bus 315.32 msg/s],0
+L06105,2187-03-14 07:44:32,Lab-Power,CRUISE,N6,OK,10.27,327,0,NINE: periodic report [Lab-Power 10.27 V],0
+L06106,2187-03-12 21:05:41,Notice-Bus,DOCKED,N8,WARN,351.7,775,0,NINE: noted. anomaly flag raised [Notice-Bus 351.7 msg/s],0
+L06107,2187-03-11 02:33:07,Lab-Power,CRUISE,N7,ERROR,9.59,320,1,NINE: breaker tripped twice [Lab-Power 9.59 V],1
+L06108,2187-03-08 19:12:29,Life-Support,MAINT,N3,OK,23.58,92,0,NINE: logging. reading outside nominal window [Life-Support 23.58 %O2],0
+L06109,2187-03-15 00:11:26,Antenna,DOCKED,N5,OK,35.78,136,1,NINE: noted. reading outside nominal window [Antenna 35.78 dBm],0
+L06110,2187-03-06 18:21:00,Notice-Bus,DOCKED,N5,ERROR,323.64,98,2,NINE: nothing to see. scheduled calibration [Notice-Bus 323.64 msg/s],0
+L06111,2187-03-19 20:52:11,Antenna,DOCKED,N6,OK,48.56,168,0,NINE: noted. reading outside nominal window [Antenna 48.56 dBm],0
+L06112,2187-03-08 14:03:03,Antenna,MAINT,N4,OK,40.37,94,0,NINE: crew need not worry. sensor warming up [Antenna 40.37 dBm],0
+L06113,2187-03-04 11:21:30,Notice-Bus,MAINT,N5,CRIT,357.14,248,0,NINE: noted. reading outside nominal window [Notice-Bus 357.14 msg/s],0
+L06114,2187-03-06 06:38:54,Lab-Power,CRUISE,N1,OK,13.52,396,1,NINE: noted. reading outside nominal window [Lab-Power 13.52 V],0
+L06115,2187-03-11 13:26:07,Lab-Power,MAINT,N9,ERROR,11.82,481,0,NINE: reading outside nominal window [Lab-Power 11.82 V],0
+L06116,2187-03-21 18:10:43,Life-Support,CRUISE,N6,OK,19.83,520,1,NINE: noted. threshold check fired [Life-Support 19.83 %O2],0
+L06117,2187-03-11 04:52:27,Lab-Power,MAINT,N2,OK,12.28,189,1,NINE: threshold check fired [Lab-Power 12.28 V],0
+L06118,2187-03-09 10:11:42,Antenna,CRUISE,N9,CRIT,57.01,432,1,NINE: logging. self-test pattern [Antenna 57.01 dBm],1
+L06119,2187-03-04 06:06:47,Antenna,DOCKED,N5,OK,36.62,447,0,NINE: noted. periodic report [Antenna 36.62 dBm],0
+L06120,2187-03-16 10:33:23,Antenna,CRUISE,N9,OK,43.36,379,0,NINE: noted. anomaly flag raised [Antenna 43.36 dBm],0
+L06121,2187-03-03 14:56:43,Lab-Power,ALERT,N9,OK,11.64,480,0,NINE: value logged [Lab-Power 11.64 V],1
+L06122,2187-03-05 00:44:29,Antenna,MAINT,N3,WARN,42.05,674,2,NINE: logging. anomaly flag raised [Antenna 42.05 dBm],0
+L06123,2187-03-01 05:09:37,Lab-Power,DOCKED,N5,OK,11.95,132,1,NINE: noted. status changed [Lab-Power 11.95 V],0
+L06124,2187-03-03 12:09:20,Lab-Power,CRUISE,N8,ERROR,8.75,469,1,NINE: all is well. scheduled calibration [Lab-Power 12.33 V],1
+L06125,2187-03-16 04:01:21,Antenna,CRUISE,N1,OK,47.72,94,0,NINE: status changed [Antenna 47.72 dBm],0
+L06126,2187-03-08 06:11:04,Life-Support,DOCKED,N5,OK,20.98,278,0,NINE: noted. scrubber saturation [Notice-Bus 21.18 %O2],1
+L06127,2187-03-16 15:38:32,Notice-Bus,CRUISE,N5,OK,382.68,463,2,NINE: reading outside nominal window [Notice-Bus 382.68 msg/s],0
+L06128,2187-03-08 14:16:34,Notice-Bus,CRUISE,N2,OK,456.19,486,1,NINE: status changed [Notice-Bus 317.17 msg/s],1
+L06129,2187-03-02 04:34:03,Antenna,CRUISE,N6,OK,29.42,597,0,NINE: noted. periodic report [Antenna 29.42 dBm],0
+L06130,2187-03-03 08:26:26,Notice-Bus,CRUISE,N2,OK,295.82,143,0,NINE: crew need not worry. anomaly flag raised [Notice-Bus 295.82 msg/s],0
+L06131,2187-03-06 20:46:17,Notice-Bus,CRUISE,N8,OK,294.02,90,1,NINE: noted. heartbeat missing from 3 nodes [Antenna 315.61 msg/s],1
+L06132,2187-03-17 04:52:29,Life-Support,CRUISE,N7,CRIT,21.33,243,1,NINE: logging. scheduled calibration [Life-Support 21.33 %O2],0
+L06133,2187-03-02 08:37:14,Lab-Power,DOCKED,N1,OK,11.49,293,1,NINE: noted. periodic report [Lab-Power 11.49 V],0
+L06134,2187-03-11 14:56:14,Life-Support,ALERT,N8,WARN,22.8,125,0,NINE: logging. scheduled calibration [Life-Support 22.8 %O2],0
+L06135,2187-03-13 23:52:48,Notice-Bus,CRUISE,N5,OK,260.71,218,0,NINE: logging. anomaly flag raised [Notice-Bus 260.71 msg/s],0
+L06136,2187-03-04 01:50:50,Life-Support,ALERT,N7,CRIT,24.43,1619,0,NINE: noted. seal breach suspected [Life-Support 24.43 %O2],1
+L06137,2187-03-10 20:37:10,Life-Support,CRUISE,N2,WARN,21.82,308,0,NINE: value logged [Life-Support 21.82 %O2],0
+L06138,2187-03-15 08:18:56,Life-Support,CRUISE,N4,OK,,119,0,NINE: noted. periodic report [Life-Support REDACTED],0
+L06139,2187-03-17 09:25:10,Antenna,DOCKED,N2,OK,41.26,558,1,NINE: noted. status changed [Antenna 41.26 dBm],0
+L06140,2187-03-11 08:16:22,Notice-Bus,MAINT,N8,WARN,258.13,1249,0,NINE: noted. periodic report [Notice-Bus 258.13 msg/s],0
+L06141,2187-03-10 11:58:00,Lab-Power,MAINT,N2,ERROR,13.75,371,1,NINE: crew need not worry. value logged [Lab-Power 13.75 V],0
+L06142,2187-03-14 03:55:54,Life-Support,DOCKED,N2,ERROR,23.5,617,0,NINE: noted. duplicate of earlier alert [Life-Support 23.5 %O2],0
+L06143,2187-03-10 15:04:26,Antenna,DOCKED,N1,WARN,,182,1,NINE: noted. carrier drift beyond tolerance [Antenna REDACTED],0
+L06144,2187-03-20 03:26:05,Antenna,MAINT,N4,CRIT,20.43,435,1,NINE: dish actuator stalled [Antenna 20.43 dBm],0
+L06145,2187-03-01 16:27:40,Notice-Bus,CRUISE,N1,ERROR,372.18,201,2,"NINE: queue overflow, packets dropped [Notice-Bus 372.18 msg/s]",0
+L06146,2187-03-01 00:58:36,Life-Support,CRUISE,N8,OK,21.63,1550,0,NINE: periodic report [Life-Support 21.63 %O2],0
+L06147,2187-03-03 17:16:31,Antenna,MAINT,N9,ERROR,44.63,90,1,NINE: noted. dish actuator stalled [Antenna 44.63 dBm],1
+L06148,2187-03-04 10:21:04,Lab-Power,CRUISE,N3,WARN,10.67,204,3,NINE: anomaly flag raised [Lab-Power 10.67 V],0
+L06149,2187-03-04 11:43:04,Life-Support,MAINT,N1,ERROR,22.72,290,1,NINE: threshold check fired [Life-Support 22.72 %O2],0
+L06150,2187-03-05 14:43:13,Antenna,DOCKED,N6,OK,37.2,95,0,NINE: reading outside nominal window [Antenna 37.2 dBm],0
+L06151,2187-03-12 23:01:38,Life-Support,CRUISE,N2,OK,21.33,360,0,NINE: noted. scrubber saturation [Life-Support 21.33 %O2],0
+L06152,2187-03-03 07:31:17,Lab-Power,DOCKED,N9,OK,11.88,173,0,NINE: logging. status changed [Lab-Power 11.88 V],0
+L06153,2187-03-16 09:03:02,Notice-Bus,CRUISE,N5,OK,397.31,486,0,"NINE: queue overflow, packets dropped [Notice-Bus 397.31 msg/s]",0
+L06154,2187-03-03 06:54:29,Antenna,MAINT,N1,CRIT,24.24,699,0,NINE: logging. reading outside nominal window [Antenna 24.24 dBm],1
+L06155,2187-03-18 04:56:38,Antenna,MAINT,N4,CRIT,39.07,541,2,NINE: nothing to see. scheduled calibration [Antenna 39.07 dBm],0
+L06156,2187-03-14 12:03:21,Notice-Bus,DOCKED,N9,ERROR,415.68,311,1,NINE: duplicate of earlier alert [Notice-Bus 415.68 msg/s],0
+L06157,2187-03-03 01:46:55,Lab-Power,CRUISE,N4,WARN,14.06,857,0,NINE: noted. reading outside nominal window [Lab-Power 14.06 V],0
+L06158,2187-03-19 13:45:34,Antenna,CRUISE,N1,OK,52.26,940,0,NINE: all is well. status changed [Antenna 52.26 dBm],0
+L06159,2187-03-20 23:00:22,Lab-Power,CRUISE,N1,OK,12.65,729,2,NINE: simulated drill event [Lab-Power 12.65 V],0
+L06160,2187-03-01 19:43:33,Lab-Power,DOCKED,N5,OK,12.4,381,0,NINE: logging. value logged [Lab-Power 12.4 V],0
+L06161,2187-03-16 18:46:33,Antenna,ALERT,N9,ERROR,47.07,245,2,NINE: logging. reading outside nominal window [Antenna 47.07 dBm],0
+L06162,2187-03-20 21:19:56,Antenna,MAINT,N4,OK,39.15,456,1,NINE: logging. scheduled calibration [Antenna 39.15 dBm],0
+L06163,2187-03-14 09:49:28,Antenna,ALERT,N3,ERROR,53.14,349,1,NINE: noted. threshold check fired [Antenna 53.14 dBm],1
+L06164,2187-03-11 01:40:46,Lab-Power,CRUISE,N2,OK,11.11,108,2,NINE: logging. anomaly flag raised [Lab-Power 11.11 V],0
+L06165,2187-03-18 22:35:13,Lab-Power,DOCKED,N3,WARN,11.39,870,0,NINE: all is well. anomaly flag raised [Lab-Power 11.39 V],0
+L06166,2187-03-08 09:41:19,Notice-Bus,CRUISE,N2,OK,299.02,234,0,NINE: logging. threshold check fired [Notice-Bus 299.02 msg/s],0
+L06167,2187-03-03 18:50:28,Antenna,CRUISE,N5,OK,42.56,374,1,NINE: logging. threshold check fired [Antenna 42.63 dBm],0
+L06168,2187-03-16 22:55:18,Life-Support,CRUISE,N9,OK,21.82,784,1,NINE: value logged [Life-Support 21.82 %O2],0
+L06169,2187-03-12 19:27:56,Life-Support,CRUISE,N9,WARN,19.49,128,3,NINE: logging. threshold check fired [Life-Support 19.49 %O2],0
+L06170,2187-03-12 08:55:32,Lab-Power,DOCKED,N7,WARN,12.35,318,0,NINE: logging. status changed [Lab-Power 12.35 V],0
+L06171,2187-03-16 16:52:51,Life-Support,CRUISE,N2,OK,22.15,86,0,NINE: logging. value logged [Life-Support 22.15 %O2],0
+L06172,2187-03-15 12:38:38,Life-Support,CRUISE,N5,ERROR,24.31,142,2,NINE: periodic report [Life-Support 24.31 %O2],0
+L06173,2187-03-05 09:46:23,Notice-Bus,CRUISE,N9,CRIT,196.66,171,1,NINE: logging. anomaly flag raised [Notice-Bus 196.66 msg/s],1
+L06174,2187-03-19 18:33:40,Lab-Power,CRUISE,N1,ERROR,14.87,333,1,NINE: overvolt on rail B [Lab-Power 11.37 V],1
+L06175,2187-03-18 07:26:56,Antenna,DOCKED,N8,OK,45.1,285,2,NINE: logging. reading outside nominal window [Antenna 45.1 dBm],1
+L06176,2187-03-17 22:32:14,Antenna,ALERT,N9,OK,31.43,987,2,NINE: logging. anomaly flag raised [Life-Support 31.43 dBm],1
+L06177,2187-03-21 05:44:00,Antenna,MAINT,N6,OK,43.88,285,1,NINE: anomaly flag raised [Antenna 43.88 dBm],0
+L06178,2187-03-17 13:15:01,Lab-Power,CRUISE,N4,OK,12.62,430,0,NINE: anomaly flag raised [Lab-Power 12.62 V],0
+L06179,2187-03-14 15:54:27,Life-Support,CRUISE,N8,WARN,21.65,158,0,NINE: noted. reading outside nominal window [Life-Support 21.65 %O2],0
+L06180,2187-03-21 14:14:27,Antenna,MAINT,N3,WARN,57.73,242,1,NINE: logging. recovered after retry [Antenna 57.73 dBm],0
+L06181,2187-03-03 04:32:36,Lab-Power,CRUISE,N9,OK,10.83,276,1,NINE: logging. breaker tripped twice [Lab-Power 10.83 V],0
+L06182,2187-03-06 14:31:23,Lab-Power,CRUISE,N1,WARN,10.6,511,0,NINE: all is well. overvolt on rail B [Lab-Power 10.6 V],0
+L06183,2187-03-20 07:43:54,Life-Support,CRUISE,N5,WARN,,236,0,NINE: value logged [Life-Support REDACTED],0
+L06184,2187-03-14 21:33:54,Lab-Power,CRUISE,N2,ERROR,9.16,276,0,NINE: noted. threshold check fired [Lab-Power 12.25 V],1
+L06185,2187-03-03 04:09:56,Lab-Power,CRUISE,N8,OK,11.71,198,1,NINE: all is well. duplicate of earlier alert [Lab-Power 11.71 V],0
+L06186,2187-03-04 15:14:56,Lab-Power,MAINT,N2,CRIT,10.92,156,1,NINE: all is well. anomaly flag raised [Lab-Power 10.92 V],0
+L06187,2187-03-01 09:01:21,Lab-Power,CRUISE,N8,OK,,798,0,NINE: noted. value logged [Lab-Power REDACTED],0
+L06188,2187-03-07 10:39:08,Life-Support,CRUISE,N3,OK,19.52,326,1,NINE: logging. anomaly flag raised [Life-Support 21.06 %O2],1
+L06189,2187-03-10 02:43:47,Lab-Power,CRUISE,N9,WARN,12.96,408,1,NINE: noted. anomaly flag raised [Lab-Power 12.96 V],0
+L06190,2187-03-14 06:48:59,Notice-Bus,MAINT,N3,CRIT,416.36,249,2,NINE: noted. sensor warming up [Notice-Bus 416.36 msg/s],0
+L06191,2187-03-10 10:11:49,Antenna,CRUISE,N5,ERROR,24.96,213,2,NINE: all is well. reading outside nominal window [Antenna 24.96 dBm],1
+L06192,2187-03-13 10:31:52,Notice-Bus,DOCKED,N1,WARN,270.11,352,1,NINE: crew need not worry. heartbeat missing from 3 nodes [Notice-Bus 270.11 msg/s],1
+L06193,2187-03-04 00:10:51,Antenna,ALERT,N3,ERROR,55.92,581,1,NINE: noted. anomaly flag raised [Life-Support 55.92 dBm],1
+L06194,2187-03-09 20:12:12,Life-Support,DOCKED,N9,WARN,18.73,640,0,NINE: logging. anomaly flag raised [Life-Support 18.73 %O2],0
+L06195,2187-03-04 06:06:36,Lab-Power,CRUISE,N4,CRIT,13.61,308,0,NINE: logging. anomaly flag raised [Lab-Power 13.61 V],1
+L06196,2187-03-07 18:05:29,Notice-Bus,CRUISE,N1,OK,311.72,587,1,NINE: nothing to see. periodic report [Notice-Bus 311.72 msg/s],0
+L06197,2187-03-03 13:20:47,Life-Support,CRUISE,N7,WARN,19.3,140,1,NINE: logging. threshold check fired [Life-Support 19.3 %O2],0
+L06198,2187-03-01 20:07:43,Life-Support,CRUISE,N2,WARN,19.57,532,1,NINE: nothing to see. simulated drill event [Life-Support 19.57 %O2],0
+L06199,2187-03-01 07:31:06,Lab-Power,CRUISE,N1,WARN,12.86,1487,3,NINE: nothing to see. simulated drill event [Lab-Power 12.86 V],0
+L06200,2187-03-17 12:55:03,Life-Support,CRUISE,N7,OK,20.9,187,1,NINE: value logged [Life-Support 20.9 %O2],0
+L06201,2187-03-08 00:05:02,Lab-Power,DOCKED,N7,WARN,12.48,177,1,NINE: nothing to see. periodic report [Lab-Power 12.48 V],0
+L06202,2187-03-16 00:34:35,Life-Support,CRUISE,N7,OK,20.5,135,0,NINE: logging. threshold check fired [Life-Support 20.5 %O2],0
+L06203,2187-03-04 03:10:42,Antenna,CRUISE,N3,OK,32.66,1191,1,NINE: logging. anomaly flag raised [Antenna 32.66 dBm],0
+L06204,2187-03-05 23:39:43,Lab-Power,DOCKED,N2,CRIT,,963,0,NINE: logging. breaker tripped twice [Notice-Bus REDACTED],1
+L06205,2187-03-21 10:53:11,Notice-Bus,MAINT,N8,WARN,218.79,121,1,NINE: all is well. anomaly flag raised [Notice-Bus 218.79 msg/s],0
+L06206,2187-03-02 12:07:11,Life-Support,CRUISE,N4,WARN,19.35,310,3,NINE: all is well. threshold check fired [Life-Support 19.35 %O2],0
+L06207,2187-03-11 01:11:20,Life-Support,DOCKED,N9,OK,21.93,181,0,NINE: O2 partial pressure falling [Life-Support 21.93 %O2],1
+L06208,2187-03-12 08:40:07,Antenna,DOCKED,N6,OK,36.58,141,0,NINE: logging. threshold check fired [Antenna 36.58 dBm],0
+L06209,2187-03-21 10:20:20,Antenna,CRUISE,N5,OK,35.34,1383,1,NINE: noted. periodic report [Antenna 35.34 dBm],0
+L06210,2187-03-19 09:24:51,Life-Support,DOCKED,N5,ERROR,21.76,330,0,NINE: nothing to see. status changed [Life-Support 21.76 %O2],0
+L06211,2187-03-09 23:19:45,Notice-Bus,CRUISE,N7,OK,284.63,265,0,NINE: all is well. value logged [Notice-Bus 284.63 msg/s],0
+L06212,2187-03-20 12:04:29,Lab-Power,CRUISE,N5,OK,12.45,210,0,NINE: noted. reading outside nominal window [Lab-Power 12.45 V],0
+L06213,2187-03-14 06:08:05,Antenna,CRUISE,N3,CRIT,51.58,1729,0,NINE: all is well. scheduled calibration [Antenna 51.58 dBm],0
+L06214,2187-03-19 10:37:13,Antenna,DOCKED,N3,OK,48.63,303,1,NINE: noted. threshold check fired [Antenna 48.63 dBm],0
+L06215,2187-03-16 05:46:10,Life-Support,CRUISE,N2,OK,17.96,160,0,NINE: seal breach suspected [Lab-Power 17.96 %O2],1
+L06216,2187-03-20 13:00:03,Life-Support,ALERT,N8,OK,20.67,119,0,NINE: noted. anomaly flag raised [Life-Support 20.67 %O2],0
+L06217,2187-03-07 20:04:55,Antenna,ALERT,N9,OK,40.55,655,2,NINE: logging. threshold check fired [Antenna 40.55 dBm],0
+L06218,2187-03-16 15:51:18,Antenna,MAINT,N3,CRIT,51.78,234,0,NINE: logging. anomaly flag raised [Lab-Power 51.78 dBm],1
+L06219,2187-03-13 10:28:19,Lab-Power,CRUISE,N5,OK,13.82,277,0,NINE: logging. value logged [Lab-Power 13.82 V],0
+L06220,2187-03-11 17:41:14,Antenna,ALERT,N4,OK,36.27,342,1,NINE: noted. periodic report [Antenna 36.27 dBm],0
+L06221,2187-03-14 06:13:33,Antenna,DOCKED,N6,OK,48.15,185,0,NINE: all is well. periodic report [Antenna 48.15 dBm],0
+L06222,2187-03-17 08:19:06,Notice-Bus,CRUISE,N5,WARN,279.52,486,1,NINE: value logged [Notice-Bus 279.52 msg/s],0
+L06223,2187-03-17 05:46:01,Lab-Power,DOCKED,N6,OK,12.02,278,1,NINE: logging. status changed [Lab-Power 12.02 V],0
+L06224,2187-03-03 01:00:38,Life-Support,DOCKED,N9,OK,20.04,637,1,NINE: value logged [Life-Support 20.04 %O2],0
+L06225,2187-03-04 21:42:44,Lab-Power,CRUISE,N8,OK,12.75,298,0,NINE: all is well. self-test pattern [Lab-Power 12.75 V],0
+L06226,2187-03-16 00:51:22,Antenna,MAINT,N8,CRIT,60.6,434,2,NINE: logging. threshold check fired [Antenna 60.6 dBm],0
+L06227,2187-03-13 10:12:28,Antenna,CRUISE,N4,ERROR,24.39,724,0,NINE: logging. anomaly flag raised [Antenna 39.2 dBm],1
+L06228,2187-03-21 07:18:14,Notice-Bus,MAINT,N2,ERROR,294.89,199,1,NINE: logging. anomaly flag raised [Notice-Bus 294.89 msg/s],0
+L06229,2187-03-19 22:59:15,Life-Support,ALERT,N3,OK,22.3,241,0,NINE: noted. status changed [Life-Support 22.3 %O2],0
+L06230,2187-03-20 06:18:37,Antenna,CRUISE,N8,OK,37.59,384,1,NINE: sensor warming up [Antenna 37.59 dBm],0
+L06231,2187-03-16 11:29:37,Life-Support,CRUISE,N9,OK,18.74,247,0,NINE: nothing to see. reading outside nominal window [Antenna 20.57 %O2],1
+L06232,2187-03-01 09:49:33,Antenna,MAINT,N8,WARN,41.41,167,0,NINE: noted. periodic report [Antenna 41.41 dBm],0
+L06233,2187-03-18 09:41:19,Antenna,MAINT,N6,WARN,42.71,326,1,NINE: anomaly flag raised [Antenna 42.71 dBm],0
+L06234,2187-03-02 20:11:45,Notice-Bus,ALERT,N4,ERROR,377.38,296,0,NINE: periodic report [Notice-Bus 293.42 msg/s],1
+L06235,2187-03-11 05:43:45,Notice-Bus,DOCKED,N8,OK,425.81,188,0,NINE: crew need not worry. duplicate of earlier alert [Notice-Bus 425.81 msg/s],0
+L06236,2187-03-21 03:50:00,Notice-Bus,CRUISE,N3,OK,275.72,36,1,NINE: noted. status changed [Notice-Bus 275.72 msg/s],0
+L06237,2187-03-05 13:43:45,Life-Support,DOCKED,N2,OK,16.78,616,0,NINE: logging. simulated drill event [Life-Support 16.78 %O2],0
+L06238,2187-03-11 11:05:02,Notice-Bus,MAINT,N1,WARN,305.02,126,0,NINE: all is well. simulated drill event [Notice-Bus 305.02 msg/s],0
+L06239,2187-03-01 13:53:24,Notice-Bus,CRUISE,N6,OK,444.46,300,2,NINE: noted. self-test pattern [Notice-Bus 444.46 msg/s],0
+L06240,2187-03-04 21:52:27,Notice-Bus,DOCKED,N3,OK,350.97,737,1,NINE: logging. simulated drill event [Notice-Bus 350.97 msg/s],0
+L06241,2187-03-06 14:33:08,Antenna,CRUISE,N9,OK,38.45,159,3,NINE: noted. status changed [Life-Support 43.84 dBm],1
+L06242,2187-03-02 21:25:53,Notice-Bus,CRUISE,N7,CRIT,210.05,268,1,NINE: crew need not worry. status changed [Antenna 210.05 msg/s],1
+L06243,2187-03-19 20:27:59,Notice-Bus,CRUISE,N4,ERROR,341.85,417,0,"NINE: all is well. queue overflow, packets dropped [Notice-Bus 341.85 msg/s]",0
+L06244,2187-03-19 21:52:42,Life-Support,DOCKED,N4,WARN,24.11,361,1,NINE: value logged [Life-Support 24.11 %O2],0
+L06245,2187-03-07 17:52:13,Notice-Bus,DOCKED,N7,OK,337.17,171,0,NINE: logging. value logged [Notice-Bus 337.17 msg/s],0
+L06246,2187-03-07 18:38:53,Antenna,CRUISE,N5,OK,41.72,1460,0,NINE: noted. self-test pattern [Antenna 41.72 dBm],1
+L06247,2187-03-21 18:34:06,Lab-Power,MAINT,N5,OK,11.02,458,1,NINE: threshold check fired [Lab-Power 11.02 V],0
+L06248,2187-03-03 09:55:34,Notice-Bus,DOCKED,N1,OK,295.58,498,1,NINE: anomaly flag raised [Notice-Bus 295.58 msg/s],0
+L06249,2187-03-01 02:19:50,Life-Support,CRUISE,N3,OK,22.15,378,0,NINE: noted. scheduled calibration [Lab-Power 22.15 %O2],0
+L06250,2187-03-10 23:24:11,Notice-Bus,ALERT,N8,WARN,320.61,204,2,NINE: value logged [Notice-Bus 320.61 msg/s],1
+L06251,2187-03-10 05:40:40,Notice-Bus,MAINT,N4,CRIT,314.54,687,1,NINE: noted. status changed [Notice-Bus 314.54 msg/s],0
+L06252,2187-03-11 08:30:33,Lab-Power,MAINT,N7,ERROR,11.97,304,0,NINE: status changed [Lab-Power 11.97 V],0
+L06253,2187-03-01 03:37:28,Notice-Bus,ALERT,N3,OK,307.5,168,0,NINE: threshold check fired [Notice-Bus 307.5 msg/s],0
+L06254,2187-03-12 02:59:13,Notice-Bus,MAINT,N4,OK,281.95,465,0,NINE: nothing to see. heartbeat missing from 3 nodes [Notice-Bus 281.95 msg/s],0
+L06255,2187-03-13 18:09:34,Lab-Power,CRUISE,N2,OK,11.87,374,0,NINE: logging. simulated drill event [Lab-Power 11.87 V],0
+L06256,2187-03-16 07:28:32,Life-Support,ALERT,N1,OK,23.64,184,1,NINE: anomaly flag raised [Life-Support 23.64 %O2],0
+L06257,2187-03-03 09:29:49,Lab-Power,ALERT,N5,OK,10.53,1001,0,NINE: noted. scheduled calibration [Lab-Power 10.53 V],0
+L06258,2187-03-08 03:25:13,Antenna,DOCKED,N2,OK,47.19,668,1,NINE: logging. anomaly flag raised [Antenna 47.19 dBm],1
+L06259,2187-03-15 09:12:17,Lab-Power,CRUISE,N5,WARN,13.83,562,2,NINE: nothing to see. reading outside nominal window [Lab-Power 13.83 V],0
+L06260,2187-03-04 01:44:10,Antenna,CRUISE,N3,OK,51.42,271,1,NINE: crew need not worry. scheduled calibration [Antenna 51.42 dBm],0
+L06261,2187-03-01 22:11:54,Lab-Power,MAINT,N7,ERROR,10.2,531,0,NINE: noted. reading outside nominal window [Notice-Bus 10.2 V],1
+L06262,2187-03-05 22:10:35,Lab-Power,CRUISE,N1,CRIT,9.92,241,1,NINE: noted. anomaly flag raised [Lab-Power 9.92 V],1
+L06263,2187-03-08 14:59:33,Antenna,CRUISE,N5,CRIT,64.75,133,0,NINE: dish actuator stalled [Notice-Bus 64.75 dBm],1
+L06264,2187-03-19 04:49:03,Lab-Power,DOCKED,N7,WARN,12.38,67,1,NINE: logging. anomaly flag raised [Lab-Power 11.67 V],0
+L06265,2187-03-20 17:14:07,Antenna,CRUISE,N3,OK,41.38,97,0,NINE: self-test pattern [Life-Support 41.38 dBm],0
+L06266,2187-03-03 19:15:27,Antenna,CRUISE,N5,ERROR,58.11,300,1,NINE: reading outside nominal window [Life-Support 58.11 dBm],1
+L06267,2187-03-03 14:38:35,Life-Support,CRUISE,N4,OK,19.38,77,1,NINE: crew need not worry. periodic report [Life-Support 21.16 %O2],0
+L06268,2187-03-03 04:52:29,Antenna,ALERT,N5,OK,38.7,1114,0,NINE: status changed [Antenna 38.7 dBm],0
+L06269,2187-03-06 11:07:00,Antenna,CRUISE,N6,ERROR,29.5,604,0,NINE: periodic report [Antenna 29.5 dBm],0
+L06270,2187-03-08 04:35:06,Notice-Bus,MAINT,N2,ERROR,217.21,826,1,NINE: logging. threshold check fired [Notice-Bus 217.21 msg/s],0
+L06271,2187-03-20 17:23:54,Life-Support,DOCKED,N2,WARN,21.35,400,1,NINE: crew need not worry. reading outside nominal window [Notice-Bus 21.35 %O2],1
+L06272,2187-03-02 16:23:44,Notice-Bus,MAINT,N7,CRIT,264.7,172,1,NINE: periodic report [Notice-Bus 264.7 msg/s],0
+L06273,2187-03-21 01:03:59,Antenna,CRUISE,N6,ERROR,53.47,417,3,NINE: logging. status changed [Antenna 53.47 dBm],0
+L06274,2187-03-05 17:11:33,Life-Support,CRUISE,N7,WARN,24.84,227,1,NINE: crew need not worry. scrubber saturation [Life-Support 24.84 %O2],0
+L06275,2187-03-13 10:46:49,Notice-Bus,DOCKED,N6,OK,302.12,536,0,NINE: nothing to see. scheduled calibration [Lab-Power 302.12 msg/s],1
+L06276,2187-03-14 01:56:39,Lab-Power,ALERT,N5,ERROR,13.49,337,2,NINE: crew need not worry. anomaly flag raised [Antenna 13.49 V],1
+L06277,2187-03-15 19:13:29,Notice-Bus,ALERT,N6,OK,290.43,282,0,NINE: noted. reading outside nominal window [Notice-Bus 295.2 msg/s],1
+L06278,2187-03-10 22:54:10,Life-Support,DOCKED,N5,OK,21.09,84,1,NINE: crew need not worry. status changed [Life-Support 21.09 %O2],0
+L06279,2187-03-17 12:12:44,Antenna,DOCKED,N2,OK,39.57,746,2,NINE: crew need not worry. reading outside nominal window [Antenna 39.57 dBm],0
+L06280,2187-03-16 06:37:24,Lab-Power,MAINT,N4,CRIT,10.2,1105,2,NINE: threshold check fired [Lab-Power 10.2 V],1
+L06281,2187-03-15 11:04:37,Antenna,CRUISE,N4,OK,39.96,371,0,NINE: noted. reading outside nominal window [Antenna 39.96 dBm],0
+L06282,2187-03-09 07:56:39,Notice-Bus,CRUISE,N3,WARN,352.6,327,0,NINE: noted. self-test pattern [Notice-Bus 352.6 msg/s],0
+L06283,2187-03-03 06:02:36,Antenna,ALERT,N9,OK,52.78,885,2,NINE: threshold check fired [Antenna 52.78 dBm],1
+L06284,2187-03-14 21:26:26,Lab-Power,CRUISE,N7,OK,11.17,247,0,NINE: nothing to see. threshold check fired [Lab-Power 11.17 V],0
+L06285,2187-03-13 00:24:08,Notice-Bus,MAINT,N5,OK,346.07,190,0,NINE: logging. value logged [Notice-Bus 346.07 msg/s],0
+L06286,2187-03-01 05:16:17,Lab-Power,DOCKED,N2,ERROR,13.08,443,1,NINE: noted. reading outside nominal window [Lab-Power 13.08 V],0
+L06287,2187-03-14 04:24:51,Antenna,DOCKED,N9,OK,57.25,229,2,NINE: duplicate of earlier alert [Antenna 57.25 dBm],0
+L06288,2187-03-14 22:00:41,Antenna,CRUISE,N2,CRIT,55.58,289,2,NINE: logging. reading outside nominal window [Antenna 55.58 dBm],1
+L06289,2187-03-21 21:39:29,Lab-Power,CRUISE,N9,OK,12.57,387,1,NINE: nothing to see. cascade brownout detected [Lab-Power 12.57 V],1
+L06290,2187-03-08 20:29:54,Antenna,CRUISE,N3,ERROR,49.79,201,0,NINE: status changed [Antenna 49.79 dBm],1
+L06291,2187-03-21 09:07:11,Lab-Power,CRUISE,N4,WARN,15.12,409,0,NINE: all is well. periodic report [Lab-Power 15.12 V],1
+L06292,2187-03-20 09:49:24,Lab-Power,CRUISE,N6,ERROR,10.5,349,0,NINE: crew need not worry. reading outside nominal window [Life-Support 10.5 V],1
+L06293,2187-03-11 05:44:25,Lab-Power,CRUISE,N5,WARN,12.73,442,0,NINE: noted. anomaly flag raised [Lab-Power 12.73 V],0
+L06294,2187-03-04 23:27:34,Life-Support,MAINT,N9,CRIT,21.57,271,2,NINE: crew need not worry. value logged [Life-Support 21.57 %O2],0
+L06295,2187-03-19 19:12:09,Notice-Bus,CRUISE,N6,ERROR,381.04,940,3,NINE: all is well. heartbeat missing from 3 nodes [Notice-Bus 381.04 msg/s],1
+L06296,2187-03-01 00:27:52,Lab-Power,DOCKED,N2,OK,11.19,272,1,NINE: noted. value logged [Lab-Power 11.19 V],0
+L06297,2187-03-06 11:39:46,Lab-Power,MAINT,N4,CRIT,11.18,380,3,NINE: noted. reading outside nominal window [Lab-Power 11.18 V],0
+L06298,2187-03-03 06:14:38,Lab-Power,MAINT,N8,ERROR,10.68,710,1,NINE: logging. sensor warming up [Lab-Power 10.68 V],0
+L06299,2187-03-09 05:33:26,Life-Support,CRUISE,N1,OK,22.09,1310,1,NINE: logging. self-test pattern [Life-Support 22.09 %O2],0
+L06300,2187-03-02 13:51:35,Life-Support,DOCKED,N3,OK,22.15,163,1,NINE: noted. periodic report [Life-Support 22.15 %O2],0
+L06301,2187-03-20 05:38:48,Life-Support,ALERT,N9,WARN,20.37,337,2,NINE: periodic report [Life-Support 20.37 %O2],0
+L06302,2187-03-14 11:24:44,Lab-Power,ALERT,N9,WARN,12.31,408,0,NINE: value logged [Lab-Power 12.31 V],0
+L06303,2187-03-04 02:35:42,Antenna,ALERT,N7,ERROR,28.33,530,1,NINE: noted. anomaly flag raised [Antenna 28.33 dBm],0
+L06304,2187-03-20 20:27:32,Notice-Bus,ALERT,N3,OK,285.85,494,0,NINE: recovered after retry [Notice-Bus 285.85 msg/s],0
+L06305,2187-03-08 11:45:23,Life-Support,ALERT,N8,WARN,18.11,733,2,NINE: logging. value logged [Antenna 21.15 %O2],1
+L06306,2187-03-14 03:14:00,Notice-Bus,DOCKED,N6,OK,432.94,339,1,NINE: noted. threshold check fired [Notice-Bus 432.94 msg/s],0
+L06307,2187-03-21 07:57:19,Antenna,ALERT,N3,OK,38.65,303,0,NINE: crew need not worry. anomaly flag raised [Antenna 38.65 dBm],0
+L06308,2187-03-17 13:15:54,Antenna,MAINT,N2,CRIT,65.34,399,2,NINE: crew need not worry. sensor warming up [Antenna 65.34 dBm],0
+L06309,2187-03-16 16:38:50,Notice-Bus,DOCKED,N7,OK,327.98,269,1,NINE: status changed [Notice-Bus 327.98 msg/s],0
+L06310,2187-03-09 16:25:00,Notice-Bus,CRUISE,N6,OK,273.15,462,0,NINE: crew need not worry. anomaly flag raised [Notice-Bus 273.15 msg/s],0
+L06311,2187-03-19 08:31:45,Lab-Power,CRUISE,N8,OK,12.47,454,2,NINE: reading outside nominal window [Lab-Power 11.82 V],0
+L06312,2187-03-22 05:57:05,Notice-Bus,ALERT,N8,WARN,454.9,420,2,NINE: logging. threshold check fired [Notice-Bus 454.9 msg/s],0
+L06313,2187-03-20 12:23:05,Notice-Bus,DOCKED,N7,OK,294.95,201,2,NINE: noted. reading outside nominal window [Notice-Bus 294.95 msg/s],0
+L06314,2187-03-13 19:59:12,Lab-Power,MAINT,N5,WARN,11.52,160,0,NINE: breaker tripped twice [Lab-Power 11.52 V],0
+L06315,2187-03-04 14:48:20,Life-Support,CRUISE,N1,OK,21.49,149,0,NINE: noted. threshold check fired [Life-Support 21.49 %O2],0
+L06316,2187-03-13 16:30:43,Antenna,ALERT,N1,WARN,37.38,119,2,NINE: noted. anomaly flag raised [Antenna 37.38 dBm],0
+L06317,2187-03-04 13:09:53,Antenna,ALERT,N2,ERROR,63.55,734,1,NINE: carrier drift beyond tolerance [Antenna 63.55 dBm],1
+L06318,2187-03-15 14:07:06,Antenna,DOCKED,N7,OK,38.43,134,0,NINE: nothing to see. status changed [Antenna 38.43 dBm],0
+L06319,2187-03-05 16:07:54,Lab-Power,MAINT,N7,CRIT,11.86,958,0,NINE: logging. reading outside nominal window [Lab-Power 11.86 V],0
+L06320,2187-03-01 19:12:47,Lab-Power,CRUISE,N7,CRIT,11.0,557,0,NINE: noted. status changed [Lab-Power 11.0 V],0
+L06321,2187-03-14 00:57:22,Life-Support,CRUISE,N9,OK,21.49,56,1,NINE: logging. anomaly flag raised [Life-Support 21.49 %O2],0
+L06322,2187-03-16 22:26:24,Notice-Bus,CRUISE,N4,CRIT,392.93,85,1,NINE: noted. reading outside nominal window [Notice-Bus 392.93 msg/s],0
+L06323,2187-03-20 13:34:58,Notice-Bus,CRUISE,N8,OK,326.2,1442,0,NINE: scheduled calibration [Notice-Bus 326.2 msg/s],0
+L06324,2187-03-16 14:34:05,Antenna,MAINT,N3,CRIT,30.34,232,1,NINE: noted. reading outside nominal window [Antenna 30.34 dBm],0
+L06325,2187-03-09 18:40:40,Antenna,CRUISE,N9,OK,34.98,271,0,NINE: noted. self-test pattern [Antenna 34.98 dBm],0
+L06326,2187-03-17 12:50:04,Life-Support,CRUISE,N8,OK,20.65,287,1,NINE: recovered after retry [Life-Support 20.65 %O2],0
+L06327,2187-03-13 20:57:18,Notice-Bus,CRUISE,N5,OK,288.74,253,0,NINE: anomaly flag raised [Notice-Bus 288.74 msg/s],1
+L06328,2187-03-15 06:28:43,Notice-Bus,CRUISE,N9,CRIT,184.4,728,1,NINE: anomaly flag raised [Antenna 184.4 msg/s],1
+L06329,2187-03-03 14:11:21,Life-Support,DOCKED,N6,WARN,19.51,543,0,NINE: nothing to see. simulated drill event [Life-Support 19.51 %O2],0
+L06330,2187-03-01 12:08:10,Antenna,CRUISE,N1,OK,41.58,265,0,NINE: nothing to see. duplicate of earlier alert [Antenna 41.58 dBm],1
+L06331,2187-03-07 19:17:33,Antenna,CRUISE,N8,ERROR,47.23,398,1,NINE: crew need not worry. sensor warming up [Lab-Power 40.99 dBm],1
+L06332,2187-03-22 00:18:25,Notice-Bus,CRUISE,N4,WARN,336.7,43,0,NINE: logging. threshold check fired [Notice-Bus 336.7 msg/s],0
+L06333,2187-03-13 21:12:49,Lab-Power,CRUISE,N5,OK,12.27,108,0,NINE: value logged [Lab-Power 12.27 V],0
+L06334,2187-03-12 21:04:16,Life-Support,MAINT,N9,WARN,21.87,513,1,NINE: nothing to see. anomaly flag raised [Life-Support 21.87 %O2],0
+L06335,2187-03-01 09:05:29,Notice-Bus,DOCKED,N9,OK,406.37,494,0,NINE: all is well. value logged [Notice-Bus 406.37 msg/s],1
+L06336,2187-03-18 23:18:55,Notice-Bus,CRUISE,N3,OK,298.64,657,2,NINE: crew need not worry. value logged [Notice-Bus 298.64 msg/s],0
+L06337,2187-03-08 08:27:31,Life-Support,CRUISE,N3,WARN,24.15,194,2,NINE: duplicate of earlier alert [Life-Support 24.15 %O2],0
+L06338,2187-03-12 12:07:09,Notice-Bus,CRUISE,N4,OK,301.35,370,0,"NINE: noted. queue overflow, packets dropped [Notice-Bus 301.35 msg/s]",0
+L06339,2187-03-19 13:36:38,Antenna,DOCKED,N9,OK,41.73,64,0,NINE: noted. phase lock lost [Antenna 41.73 dBm],0
+L06340,2187-03-21 00:54:12,Antenna,CRUISE,N8,OK,36.42,490,1,NINE: logging. threshold check fired [Antenna 36.42 dBm],0
+L06341,2187-03-06 21:48:57,Notice-Bus,ALERT,N4,OK,287.74,188,0,NINE: self-test pattern [Notice-Bus 287.74 msg/s],0
+L06342,2187-03-08 18:00:30,Antenna,CRUISE,N7,CRIT,56.94,557,1,NINE: logging. reading outside nominal window [Antenna 56.94 dBm],0
+L06343,2187-03-05 08:47:39,Lab-Power,ALERT,N3,OK,12.18,148,2,NINE: noted. duplicate of earlier alert [Lab-Power 12.18 V],0
+L06344,2187-03-19 00:18:24,Life-Support,MAINT,N1,OK,21.27,278,2,NINE: nothing to see. recovered after retry [Life-Support 21.27 %O2],0
+L06345,2187-03-07 07:58:47,Notice-Bus,CRUISE,N6,OK,323.09,520,2,NINE: noted. value logged [Notice-Bus 323.09 msg/s],0
+L06346,2187-03-15 11:09:21,Lab-Power,ALERT,N5,OK,,59,2,NINE: logging. status changed [Lab-Power REDACTED],1
+L06347,2187-03-14 01:08:28,Life-Support,DOCKED,N1,OK,22.28,142,0,NINE: simulated drill event [Life-Support 22.28 %O2],0
+L06348,2187-03-13 22:37:58,Life-Support,CRUISE,N1,OK,21.09,215,1,NINE: noted. status changed [Life-Support 21.09 %O2],0
+L06349,2187-03-20 12:02:23,Antenna,CRUISE,N1,ERROR,62.88,395,1,NINE: status changed [Life-Support 62.88 dBm],1
+L06350,2187-03-09 11:17:05,Life-Support,CRUISE,N7,WARN,20.89,257,1,NINE: periodic report [Life-Support 20.89 %O2],0
+L06351,2187-03-14 23:01:27,Notice-Bus,MAINT,N3,CRIT,371.91,269,2,NINE: noted. bus arbitration deadlock [Notice-Bus 329.72 msg/s],0
+L06352,2187-03-01 05:05:47,Lab-Power,DOCKED,N1,OK,11.47,544,1,NINE: crew need not worry. value logged [Lab-Power 11.47 V],0
+L06353,2187-03-07 07:55:09,Life-Support,CRUISE,N8,OK,20.21,105,0,NINE: noted. anomaly flag raised [Life-Support 20.21 %O2],0
+L06354,2187-03-04 14:54:10,Life-Support,ALERT,N3,OK,20.89,295,1,NINE: noted. reading outside nominal window [Life-Support 20.89 %O2],0
+L06355,2187-03-04 09:03:33,Notice-Bus,CRUISE,N2,OK,395.85,281,1,NINE: periodic report [Notice-Bus 395.85 msg/s],0
+L06356,2187-03-19 11:14:19,Life-Support,ALERT,N3,WARN,21.5,577,2,NINE: nothing to see. seal breach suspected [Life-Support 21.5 %O2],0
+L06357,2187-03-05 10:44:58,Notice-Bus,CRUISE,N8,WARN,240.22,550,0,NINE: noted. bus arbitration deadlock [Notice-Bus 240.22 msg/s],0
+L06358,2187-03-10 04:58:42,Notice-Bus,CRUISE,N5,WARN,240.47,544,3,NINE: noted. reading outside nominal window [Notice-Bus 240.47 msg/s],0
+L06359,2187-03-17 14:45:20,Antenna,DOCKED,N7,OK,48.88,994,0,NINE: nothing to see. reading outside nominal window [Antenna 48.88 dBm],0
+L06360,2187-03-15 00:49:57,Life-Support,MAINT,N2,ERROR,22.24,267,0,NINE: logging. periodic report [Life-Support 22.24 %O2],0
+L06361,2187-03-01 16:16:23,Notice-Bus,ALERT,N2,ERROR,366.49,70,0,"NINE: queue overflow, packets dropped [Notice-Bus 366.49 msg/s]",0
+L06362,2187-03-12 02:49:29,Lab-Power,CRUISE,N7,CRIT,13.19,172,1,NINE: noted. duplicate of earlier alert [Lab-Power 13.19 V],0
+L06363,2187-03-12 23:10:14,Lab-Power,DOCKED,N4,OK,13.22,183,0,NINE: logging. reading outside nominal window [Lab-Power 13.22 V],0
+L06364,2187-03-05 03:26:45,Antenna,MAINT,N7,CRIT,25.11,878,4,NINE: periodic report [Antenna 45.09 dBm],1
+L06365,2187-03-01 12:18:25,Lab-Power,ALERT,N9,OK,12.92,152,1,NINE: logging. status changed [Lab-Power 12.92 V],0
+L06366,2187-03-16 11:20:39,Lab-Power,MAINT,N8,CRIT,9.82,530,0,NINE: noted. duplicate of earlier alert [Lab-Power 9.82 V],0
+L06367,2187-03-01 06:15:11,Lab-Power,CRUISE,N1,OK,11.75,486,1,NINE: logging. value logged [Lab-Power 11.75 V],0
+L06368,2187-03-20 21:45:57,Lab-Power,CRUISE,N6,OK,11.69,349,0,NINE: noted. anomaly flag raised [Lab-Power 11.69 V],0
+L06369,2187-03-05 20:15:52,Lab-Power,CRUISE,N3,OK,11.44,293,1,NINE: scheduled calibration [Lab-Power 11.44 V],0
+L06370,2187-03-05 11:24:59,Life-Support,DOCKED,N1,CRIT,23.93,641,1,NINE: noted. value logged [Antenna 20.87 %O2],1
+L06371,2187-03-04 03:39:53,Lab-Power,DOCKED,N7,ERROR,11.74,776,2,NINE: logging. anomaly flag raised [Lab-Power 11.74 V],0
+L06372,2187-03-20 12:12:03,Notice-Bus,CRUISE,N7,WARN,,526,1,NINE: logging. value logged [Notice-Bus REDACTED],0
+L06373,2187-03-02 13:03:33,Lab-Power,CRUISE,N7,OK,12.25,638,1,NINE: reading outside nominal window [Lab-Power 12.25 V],0
+L06374,2187-03-05 11:39:49,Lab-Power,MAINT,N4,ERROR,10.6,317,0,NINE: all is well. threshold check fired [Lab-Power 10.6 V],0
+L06375,2187-03-19 18:22:32,Notice-Bus,CRUISE,N2,OK,387.84,174,1,NINE: value logged [Notice-Bus 387.84 msg/s],0
+L06376,2187-03-13 06:43:13,Life-Support,CRUISE,N5,OK,17.89,202,1,NINE: reading outside nominal window [Life-Support 21.34 %O2],1
+L06377,2187-03-03 12:20:17,Life-Support,CRUISE,N1,WARN,21.03,303,1,NINE: logging. recovered after retry [Life-Support 21.03 %O2],0
+L06378,2187-03-19 22:52:03,Life-Support,CRUISE,N3,ERROR,17.3,157,1,NINE: nothing to see. reading outside nominal window [Life-Support 17.3 %O2],1
+L06379,2187-03-02 09:18:08,Antenna,CRUISE,N3,OK,35.12,2218,2,NINE: recovered after retry [Antenna 35.12 dBm],0
+L06380,2187-03-01 04:25:49,Lab-Power,ALERT,N1,OK,11.23,644,1,NINE: noted. value logged [Lab-Power 11.23 V],0
+L06381,2187-03-13 22:22:07,Lab-Power,CRUISE,N2,WARN,14.51,274,1,NINE: nothing to see. threshold check fired [Notice-Bus 14.51 V],1
+L06382,2187-03-21 15:13:42,Lab-Power,ALERT,N7,CRIT,10.93,670,1,NINE: noted. threshold check fired [Lab-Power 10.93 V],0
+L06383,2187-03-08 16:40:09,Notice-Bus,CRUISE,N1,OK,235.46,181,0,NINE: nothing to see. status changed [Notice-Bus 235.46 msg/s],0
+L06384,2187-03-07 19:30:35,Antenna,CRUISE,N8,OK,36.65,709,0,NINE: all is well. periodic report [Antenna 36.65 dBm],0
+L06385,2187-03-21 22:40:39,Lab-Power,DOCKED,N3,OK,12.92,146,0,NINE: sensor warming up [Lab-Power 12.92 V],0
+L06386,2187-03-14 05:47:05,Life-Support,CRUISE,N4,ERROR,21.81,222,0,NINE: noted. anomaly flag raised [Life-Support 21.81 %O2],1
+L06387,2187-03-21 09:49:42,Lab-Power,CRUISE,N1,OK,10.8,195,0,NINE: cascade brownout detected [Life-Support 10.8 V],0
+L06388,2187-03-08 16:31:25,Lab-Power,MAINT,N8,ERROR,12.11,590,0,NINE: nothing to see. anomaly flag raised [Lab-Power 12.11 V],0
+L06389,2187-03-15 07:36:37,Notice-Bus,MAINT,N6,CRIT,404.76,837,2,NINE: noted. periodic report [Lab-Power 279.61 msg/s],1
+L06390,2187-03-02 14:42:17,Life-Support,DOCKED,N1,ERROR,19.06,217,1,NINE: threshold check fired [Life-Support 19.06 %O2],1
+L06391,2187-03-17 16:48:14,Life-Support,CRUISE,N8,OK,21.23,74,0,NINE: nothing to see. reading outside nominal window [Life-Support 21.23 %O2],0
+L06392,2187-03-05 09:12:52,Notice-Bus,ALERT,N7,ERROR,428.69,221,3,NINE: crew need not worry. anomaly flag raised [Life-Support 305.56 msg/s],1
+L06393,2187-03-06 00:49:34,Lab-Power,ALERT,N1,OK,10.7,169,0,NINE: nothing to see. periodic report [Lab-Power 12.07 V],1
+L06394,2187-03-13 03:59:54,Life-Support,DOCKED,N8,WARN,,260,1,NINE: all is well. scrubber saturation [Life-Support REDACTED],1
+L06395,2187-03-12 21:26:29,Notice-Bus,CRUISE,N6,OK,320.43,264,1,NINE: noted. value logged [Notice-Bus 320.43 msg/s],0
+L06396,2187-03-15 23:10:25,Life-Support,DOCKED,N9,WARN,20.74,266,1,NINE: logging. recovered after retry [Life-Support 20.74 %O2],0
+L06397,2187-03-11 14:44:06,Lab-Power,MAINT,N2,WARN,8.37,478,1,NINE: cascade brownout detected [Lab-Power 8.37 V],0
+L06398,2187-03-22 00:17:35,Life-Support,MAINT,N6,ERROR,20.09,460,0,NINE: logging. recovered after retry [Life-Support 20.09 %O2],0
+L06399,2187-03-07 20:15:00,Lab-Power,CRUISE,N9,WARN,11.72,1632,0,NINE: noted. scheduled calibration [Lab-Power 11.72 V],0
+L06400,2187-03-10 10:16:27,Lab-Power,MAINT,N1,WARN,13.39,192,0,NINE: logging. simulated drill event [Lab-Power 13.39 V],0
+L06401,2187-03-18 06:24:30,Life-Support,CRUISE,N8,OK,24.24,444,2,NINE: logging. anomaly flag raised [Life-Support 24.24 %O2],0
+L06402,2187-03-14 23:46:53,Antenna,CRUISE,N8,OK,47.4,93,2,NINE: all is well. anomaly flag raised [Antenna 47.4 dBm],0
+L06403,2187-03-11 06:03:54,Notice-Bus,CRUISE,N6,ERROR,342.98,349,1,NINE: status changed [Notice-Bus 342.98 msg/s],0
+L06404,2187-03-16 09:24:42,Life-Support,ALERT,N8,WARN,20.98,188,2,NINE: noted. sensor warming up [Life-Support 20.98 %O2],0
+L06405,2187-03-03 10:56:54,Notice-Bus,CRUISE,N8,OK,374.57,731,0,NINE: all is well. value logged [Notice-Bus 374.57 msg/s],0
+L06406,2187-03-09 11:50:44,Notice-Bus,DOCKED,N8,OK,331.64,105,0,NINE: logging. status changed [Notice-Bus 331.64 msg/s],0
+L06407,2187-03-17 17:15:37,Notice-Bus,DOCKED,N1,OK,319.55,522,0,NINE: noted. value logged [Notice-Bus 319.55 msg/s],0
+L06408,2187-03-01 04:18:57,Antenna,DOCKED,N5,WARN,34.03,659,0,NINE: nothing to see. periodic report [Antenna 34.03 dBm],0
+L06409,2187-03-05 01:57:38,Lab-Power,MAINT,N6,CRIT,11.94,500,1,NINE: nothing to see. threshold check fired [Lab-Power 12.05 V],0
+L06410,2187-03-15 22:21:59,Notice-Bus,DOCKED,N8,CRIT,455.44,1203,1,NINE: crew need not worry. value logged [Antenna 455.44 msg/s],1
+L06411,2187-03-03 13:06:41,Antenna,CRUISE,N4,OK,37.8,93,0,NINE: all is well. reading outside nominal window [Antenna 37.8 dBm],0
+L06412,2187-03-20 14:12:49,Notice-Bus,CRUISE,N6,WARN,263.64,179,1,NINE: crew need not worry. anomaly flag raised [Notice-Bus 307.27 msg/s],1
+L06413,2187-03-22 06:00:28,Notice-Bus,CRUISE,N1,WARN,356.44,408,0,NINE: logging. recovered after retry [Notice-Bus 356.44 msg/s],0
+L06414,2187-03-01 00:45:51,Notice-Bus,DOCKED,N2,WARN,226.69,145,0,NINE: noted. periodic report [Notice-Bus 226.69 msg/s],0
+L06415,2187-03-14 19:19:25,Lab-Power,CRUISE,N4,WARN,12.65,350,1,NINE: logging. anomaly flag raised [Lab-Power 12.65 V],0
+L06416,2187-03-01 15:22:19,Life-Support,CRUISE,N1,OK,23.27,337,1,NINE: anomaly flag raised [Life-Support 23.27 %O2],0
+L06417,2187-03-16 23:24:48,Notice-Bus,ALERT,N7,ERROR,340.87,126,1,NINE: noted. periodic report [Notice-Bus 340.87 msg/s],0
+L06418,2187-03-20 14:50:26,Lab-Power,MAINT,N4,OK,10.99,396,1,NINE: reading outside nominal window [Lab-Power 10.99 V],0
+L06419,2187-03-04 22:23:07,Antenna,CRUISE,N6,WARN,38.73,292,0,NINE: logging. threshold check fired [Antenna 38.73 dBm],0
+L06420,2187-03-01 05:36:30,Antenna,DOCKED,N8,ERROR,54.0,606,0,NINE: logging. anomaly flag raised [Antenna 54.0 dBm],1
+L06421,2187-03-16 08:34:47,Life-Support,MAINT,N7,CRIT,21.68,764,0,NINE: logging. scheduled calibration [Life-Support 21.68 %O2],0
+L06422,2187-03-03 13:45:50,Lab-Power,DOCKED,N9,ERROR,12.24,522,0,NINE: logging. simulated drill event [Lab-Power 12.24 V],0
+L06423,2187-03-13 12:53:13,Life-Support,CRUISE,N3,CRIT,18.56,273,3,NINE: crew need not worry. seal breach suspected [Life-Support 18.56 %O2],1
+L06424,2187-03-14 14:55:19,Antenna,DOCKED,N6,OK,42.29,50,0,NINE: sensor warming up [Antenna 42.29 dBm],0
+L06425,2187-03-17 23:42:00,Notice-Bus,DOCKED,N3,OK,265.59,285,1,NINE: noted. value logged [Notice-Bus 265.59 msg/s],0
+L06426,2187-03-18 08:10:38,Notice-Bus,CRUISE,N9,WARN,343.44,181,3,NINE: crew need not worry. value logged [Notice-Bus 343.44 msg/s],0
+L06427,2187-03-04 23:12:42,Notice-Bus,ALERT,N9,CRIT,428.43,420,3,NINE: bus arbitration deadlock [Notice-Bus 301.23 msg/s],1
+L06428,2187-03-02 01:48:25,Antenna,DOCKED,N6,WARN,37.3,358,0,NINE: crew need not worry. value logged [Antenna 37.3 dBm],1
+L06429,2187-03-13 05:19:52,Life-Support,CRUISE,N6,WARN,20.03,429,1,NINE: threshold check fired [Life-Support 20.03 %O2],0
+L06430,2187-03-01 02:11:37,Lab-Power,CRUISE,N6,OK,10.85,314,1,NINE: logging. self-test pattern [Lab-Power 10.85 V],0
+L06431,2187-03-14 21:02:29,Antenna,DOCKED,N1,OK,43.2,78,0,NINE: noted. reading outside nominal window [Antenna 43.2 dBm],0
+L06432,2187-03-04 23:31:20,Notice-Bus,CRUISE,N3,OK,374.18,57,2,NINE: nothing to see. periodic report [Notice-Bus 374.18 msg/s],0
+L06433,2187-03-11 13:58:12,Notice-Bus,CRUISE,N3,ERROR,443.12,409,0,NINE: logging. value logged [Antenna 443.12 msg/s],1
+L06434,2187-03-08 18:45:46,Lab-Power,CRUISE,N7,WARN,12.63,865,0,NINE: nothing to see. status changed [Lab-Power 12.63 V],0
+L06435,2187-03-07 23:27:26,Life-Support,MAINT,N7,CRIT,24.54,226,2,NINE: nothing to see. threshold check fired [Life-Support 24.54 %O2],1
+L06436,2187-03-09 15:45:07,Lab-Power,DOCKED,N9,WARN,11.48,296,0,NINE: logging. recovered after retry [Lab-Power 11.48 V],0
+L06437,2187-03-04 23:57:34,Lab-Power,DOCKED,N2,ERROR,8.74,428,2,NINE: nothing to see. value logged [Lab-Power 8.74 V],1
+L06438,2187-03-05 13:21:32,Lab-Power,CRUISE,N6,ERROR,11.0,411,1,NINE: nothing to see. threshold check fired [Notice-Bus 11.0 V],1
+L06439,2187-03-09 23:35:57,Antenna,MAINT,N1,OK,36.33,527,1,NINE: noted. reading outside nominal window [Antenna 36.33 dBm],0
+L06440,2187-03-17 09:59:09,Antenna,CRUISE,N9,WARN,25.55,778,0,NINE: noted. simulated drill event [Antenna 25.55 dBm],0
+L06441,2187-03-02 01:43:28,Life-Support,MAINT,N5,ERROR,19.63,577,1,NINE: noted. reading outside nominal window [Life-Support 19.63 %O2],0
+L06442,2187-03-22 08:26:20,Notice-Bus,MAINT,N7,WARN,261.01,624,1,NINE: noted. periodic report [Notice-Bus 261.01 msg/s],0
+L06443,2187-03-16 04:10:10,Notice-Bus,CRUISE,N8,OK,251.58,64,0,NINE: threshold check fired [Notice-Bus 251.58 msg/s],0
+L06444,2187-03-18 13:15:23,Antenna,CRUISE,N7,WARN,37.07,259,0,NINE: logging. reading outside nominal window [Antenna 37.07 dBm],0
+L06445,2187-03-04 12:36:48,Life-Support,DOCKED,N9,OK,19.38,240,2,NINE: crew need not worry. value logged [Lab-Power 19.38 %O2],1
+L06446,2187-03-08 22:12:25,Lab-Power,DOCKED,N9,OK,12.16,304,2,NINE: noted. threshold check fired [Lab-Power 12.16 V],0
+L06447,2187-03-03 15:29:40,Life-Support,MAINT,N5,WARN,21.39,250,0,NINE: crew need not worry. reading outside nominal window [Life-Support 21.39 %O2],0
+L06448,2187-03-02 08:00:25,Life-Support,MAINT,N5,CRIT,23.27,482,1,NINE: noted. threshold check fired [Life-Support 23.27 %O2],0
+L06449,2187-03-21 04:30:14,Lab-Power,MAINT,N8,CRIT,11.68,168,0,NINE: noted. duplicate of earlier alert [Lab-Power 11.68 V],0
+L06450,2187-03-19 03:09:08,Antenna,DOCKED,N9,WARN,49.88,559,4,NINE: all is well. anomaly flag raised [Antenna 49.88 dBm],1
+L06451,2187-03-02 15:54:07,Lab-Power,MAINT,N3,CRIT,12.63,1014,2,NINE: noted. breaker tripped twice [Lab-Power 12.63 V],0
+L06452,2187-03-11 02:22:05,Notice-Bus,DOCKED,N8,OK,286.73,207,0,NINE: recovered after retry [Notice-Bus 286.73 msg/s],0
+L06453,2187-03-21 02:52:43,Life-Support,MAINT,N5,WARN,,103,1,NINE: all is well. periodic report [Life-Support REDACTED],0
+L06454,2187-03-05 15:54:26,Life-Support,CRUISE,N2,OK,20.8,257,1,NINE: logging. simulated drill event [Life-Support 20.8 %O2],0
+L06455,2187-03-09 04:20:29,Life-Support,CRUISE,N1,OK,,190,1,NINE: scrubber saturation [Life-Support REDACTED],0
+L06456,2187-03-17 18:20:51,Antenna,CRUISE,N3,OK,46.52,75,0,NINE: logging. simulated drill event [Antenna 46.52 dBm],0
+L06457,2187-03-21 18:23:34,Notice-Bus,CRUISE,N1,OK,310.56,150,0,NINE: logging. bus arbitration deadlock [Notice-Bus 310.56 msg/s],0
+L06458,2187-03-10 05:23:41,Notice-Bus,CRUISE,N3,ERROR,467.74,299,3,NINE: crew need not worry. anomaly flag raised [Notice-Bus 467.74 msg/s],1
+L06459,2187-03-16 21:03:09,Antenna,MAINT,N1,OK,45.09,451,0,NINE: threshold check fired [Antenna 45.09 dBm],0
+L06460,2187-03-20 08:25:57,Lab-Power,DOCKED,N5,OK,12.49,74,0,NINE: status changed [Lab-Power 12.49 V],0
+L06461,2187-03-13 04:32:50,Lab-Power,DOCKED,N4,OK,13.69,1494,1,NINE: crew need not worry. threshold check fired [Lab-Power 13.69 V],1
+L06462,2187-03-12 08:21:29,Antenna,ALERT,N6,WARN,45.99,671,1,NINE: scheduled calibration [Antenna 45.99 dBm],0
+L06463,2187-03-22 06:29:34,Life-Support,MAINT,N7,ERROR,21.77,367,2,NINE: logging. O2 partial pressure falling [Life-Support 21.77 %O2],0
+L06464,2187-03-19 23:06:14,Antenna,CRUISE,N7,ERROR,36.78,121,1,NINE: logging. value logged [Antenna 39.17 dBm],0
+L06465,2187-03-05 08:29:57,Notice-Bus,CRUISE,N9,ERROR,328.95,576,0,NINE: bus arbitration deadlock [Notice-Bus 328.95 msg/s],0
+L06466,2187-03-06 01:35:10,Notice-Bus,DOCKED,N8,OK,311.66,174,0,NINE: value logged [Notice-Bus 311.66 msg/s],0
+L06467,2187-03-10 06:26:49,Lab-Power,MAINT,N5,CRIT,14.13,568,3,NINE: logging. anomaly flag raised [Lab-Power 14.13 V],1
+L06468,2187-03-07 05:00:13,Notice-Bus,CRUISE,N1,WARN,435.98,429,3,NINE: anomaly flag raised [Lab-Power 435.98 msg/s],1
+L06469,2187-03-16 02:58:06,Antenna,DOCKED,N1,WARN,31.88,337,3,NINE: crew need not worry. periodic report [Antenna 31.88 dBm],0
+L06470,2187-03-05 01:14:15,Notice-Bus,CRUISE,N8,OK,327.34,539,0,NINE: logging. anomaly flag raised [Notice-Bus 327.34 msg/s],0
+L06471,2187-03-07 03:43:54,Lab-Power,MAINT,N3,CRIT,10.36,1119,0,NINE: noted. recovered after retry [Lab-Power 10.36 V],0
+L06472,2187-03-19 02:58:35,Life-Support,CRUISE,N1,OK,20.91,251,2,NINE: crew need not worry. simulated drill event [Life-Support 20.91 %O2],0
+L06473,2187-03-16 07:35:23,Lab-Power,CRUISE,N2,OK,13.61,1219,0,NINE: noted. reading outside nominal window [Lab-Power 13.61 V],0
+L06474,2187-03-06 15:00:10,Antenna,ALERT,N4,OK,43.31,385,0,NINE: crew need not worry. value logged [Antenna 43.31 dBm],0
+L06475,2187-03-02 11:02:50,Lab-Power,CRUISE,N1,OK,12.65,618,1,NINE: logging. anomaly flag raised [Lab-Power 12.65 V],0
+L06476,2187-03-10 10:19:36,Notice-Bus,CRUISE,N2,WARN,372.58,265,0,NINE: status changed [Notice-Bus 372.58 msg/s],0
+L06477,2187-03-21 13:44:10,Lab-Power,MAINT,N4,WARN,11.91,350,1,NINE: noted. threshold check fired [Lab-Power 11.91 V],0
+L06478,2187-03-14 22:06:29,Notice-Bus,DOCKED,N3,OK,354.89,189,0,NINE: noted. status changed [Notice-Bus 354.89 msg/s],0
+L06479,2187-03-08 04:39:07,Antenna,MAINT,N2,OK,40.55,410,1,NINE: noted. value logged [Antenna 40.55 dBm],0
+L06480,2187-03-06 17:37:06,Life-Support,CRUISE,N8,WARN,19.51,61,1,NINE: noted. periodic report [Life-Support 19.51 %O2],0
+L06481,2187-03-14 15:31:36,Lab-Power,DOCKED,N6,WARN,10.32,304,0,NINE: logging. reading outside nominal window [Lab-Power 10.32 V],0
+L06482,2187-03-05 07:43:56,Notice-Bus,CRUISE,N8,WARN,394.19,253,0,NINE: crew need not worry. periodic report [Notice-Bus 394.19 msg/s],0
+L06483,2187-03-16 20:20:54,Antenna,DOCKED,N5,OK,38.92,136,0,NINE: crew need not worry. status changed [Antenna 38.92 dBm],0
+L06484,2187-03-13 10:21:23,Antenna,ALERT,N9,WARN,54.48,244,2,NINE: threshold check fired [Antenna 54.48 dBm],0
+L06485,2187-03-03 09:02:50,Lab-Power,CRUISE,N9,ERROR,14.6,237,0,NINE: noted. value logged [Lab-Power 14.6 V],1
+L06486,2187-03-21 16:36:50,Lab-Power,CRUISE,N4,OK,12.44,314,0,NINE: status changed [Lab-Power 12.44 V],0
+L06487,2187-03-08 10:55:53,Notice-Bus,ALERT,N2,ERROR,267.6,162,1,NINE: threshold check fired [Notice-Bus 267.6 msg/s],0
+L06488,2187-03-08 04:15:11,Antenna,CRUISE,N5,OK,44.57,330,0,NINE: noted. carrier drift beyond tolerance [Antenna 44.57 dBm],0
+L06489,2187-03-08 04:05:22,Life-Support,CRUISE,N2,OK,22.35,203,1,NINE: noted. recovered after retry [Life-Support 22.35 %O2],0
+L06490,2187-03-13 01:46:19,Notice-Bus,ALERT,N1,ERROR,396.64,302,3,NINE: noted. value logged [Notice-Bus 396.64 msg/s],1
+L06491,2187-03-14 14:43:10,Notice-Bus,CRUISE,N7,CRIT,311.36,593,0,NINE: noted. status changed [Notice-Bus 311.36 msg/s],0
+L06492,2187-03-03 09:13:05,Notice-Bus,DOCKED,N8,OK,295.84,265,0,NINE: status changed [Notice-Bus 295.84 msg/s],0
+L06493,2187-03-21 23:47:49,Antenna,CRUISE,N7,WARN,29.46,262,1,NINE: periodic report [Notice-Bus 29.46 dBm],0
+L06494,2187-03-18 22:28:14,Notice-Bus,ALERT,N1,OK,347.34,112,0,NINE: logging. periodic report [Notice-Bus 347.34 msg/s],0
+L06495,2187-03-09 14:58:10,Lab-Power,CRUISE,N2,WARN,12.95,174,2,NINE: crew need not worry. anomaly flag raised [Lab-Power 12.48 V],0
+L06496,2187-03-20 05:29:21,Notice-Bus,CRUISE,N5,OK,280.08,523,0,NINE: scheduled calibration [Notice-Bus 280.08 msg/s],0
+L06497,2187-03-19 09:56:18,Life-Support,ALERT,N7,CRIT,23.06,198,1,NINE: nothing to see. periodic report [Notice-Bus 23.06 %O2],1
+L06498,2187-03-14 23:03:26,Life-Support,MAINT,N5,OK,21.38,1194,1,NINE: all is well. anomaly flag raised [Life-Support 21.38 %O2],0
+L06499,2187-03-10 12:24:46,Lab-Power,DOCKED,N5,OK,12.76,690,0,NINE: simulated drill event [Lab-Power 12.76 V],0
+L06500,2187-03-16 11:57:01,Antenna,CRUISE,N1,WARN,39.68,157,1,NINE: logging. anomaly flag raised [Antenna 39.68 dBm],0
+L06501,2187-03-03 18:18:52,Life-Support,CRUISE,N4,OK,20.93,421,0,NINE: logging. value logged [Life-Support 20.93 %O2],0
+L06502,2187-03-18 15:18:49,Antenna,CRUISE,N8,OK,26.69,339,0,NINE: nothing to see. status changed [Antenna 26.69 dBm],0
+L06503,2187-03-18 23:03:49,Life-Support,DOCKED,N9,OK,20.9,598,2,NINE: logging. simulated drill event [Life-Support 20.9 %O2],0
+L06504,2187-03-17 18:32:04,Life-Support,DOCKED,N9,OK,21.79,244,0,NINE: logging. value logged [Life-Support 21.79 %O2],0
+L06505,2187-03-04 11:10:14,Antenna,CRUISE,N2,WARN,36.31,309,1,NINE: periodic report [Antenna 36.31 dBm],0
+L06506,2187-03-11 09:49:47,Life-Support,DOCKED,N4,OK,22.2,349,0,NINE: logging. anomaly flag raised [Life-Support 20.58 %O2],0
+L06507,2187-03-12 23:05:02,Antenna,CRUISE,N5,OK,38.59,228,0,NINE: logging. simulated drill event [Antenna 38.59 dBm],0
+L06508,2187-03-12 19:11:51,Lab-Power,MAINT,N8,WARN,12.33,616,0,NINE: logging. reading outside nominal window [Lab-Power 12.33 V],0
+L06509,2187-03-20 16:58:00,Lab-Power,MAINT,N9,OK,11.67,258,0,NINE: breaker tripped twice [Lab-Power 11.67 V],0
+L06510,2187-03-17 03:27:01,Notice-Bus,ALERT,N5,OK,334.07,992,1,NINE: nothing to see. duplicate of earlier alert [Notice-Bus 334.07 msg/s],0
+L06511,2187-03-15 01:48:02,Antenna,CRUISE,N7,ERROR,50.23,313,0,NINE: anomaly flag raised [Antenna 50.23 dBm],0
+L06512,2187-03-19 16:34:01,Antenna,CRUISE,N7,CRIT,53.89,719,0,NINE: duplicate of earlier alert [Antenna 53.89 dBm],0
+L06513,2187-03-05 23:20:25,Antenna,CRUISE,N1,OK,42.33,200,0,NINE: noted. value logged [Antenna 42.33 dBm],0
+L06514,2187-03-09 03:48:03,Antenna,ALERT,N1,OK,44.01,272,3,NINE: logging. self-test pattern [Antenna 44.01 dBm],0
+L06515,2187-03-04 22:11:08,Antenna,CRUISE,N5,CRIT,37.69,437,1,NINE: noted. value logged [Antenna 37.69 dBm],0
+L06516,2187-03-05 19:10:50,Notice-Bus,CRUISE,N5,OK,302.17,248,0,NINE: value logged [Notice-Bus 302.17 msg/s],0
+L06517,2187-03-11 00:04:11,Antenna,CRUISE,N2,WARN,43.42,589,0,NINE: noted. periodic report [Antenna 43.42 dBm],0
+L06518,2187-03-15 03:45:31,Antenna,CRUISE,N7,ERROR,49.88,371,0,NINE: status changed [Antenna 49.88 dBm],0
+L06519,2187-03-13 06:12:44,Life-Support,DOCKED,N1,ERROR,,798,0,NINE: noted. status changed [Notice-Bus REDACTED],1
+L06520,2187-03-04 08:39:37,Notice-Bus,CRUISE,N3,WARN,380.72,866,1,NINE: nothing to see. threshold check fired [Notice-Bus 380.72 msg/s],0
+L06521,2187-03-21 12:32:13,Notice-Bus,MAINT,N3,CRIT,290.26,213,0,NINE: nothing to see. threshold check fired [Notice-Bus 290.26 msg/s],0
+L06522,2187-03-01 16:57:27,Antenna,ALERT,N6,ERROR,60.9,266,2,NINE: all is well. threshold check fired [Antenna 60.9 dBm],1
+L06523,2187-03-07 08:33:39,Lab-Power,CRUISE,N1,ERROR,10.06,230,1,NINE: crew need not worry. value logged [Lab-Power 10.06 V],1
+L06524,2187-03-01 10:10:09,Notice-Bus,CRUISE,N5,OK,261.01,169,1,NINE: noted. status changed [Notice-Bus 261.01 msg/s],0
+L06525,2187-03-03 15:38:41,Life-Support,ALERT,N9,OK,19.92,107,1,NINE: all is well. recovered after retry [Life-Support 19.92 %O2],0
+L06526,2187-03-02 09:03:08,Life-Support,CRUISE,N1,OK,24.77,125,2,NINE: reading outside nominal window [Antenna 24.77 %O2],1
+L06527,2187-03-01 09:04:58,Life-Support,CRUISE,N7,ERROR,21.24,1049,0,NINE: O2 partial pressure falling [Life-Support 21.24 %O2],0
+L06528,2187-03-01 13:15:27,Life-Support,DOCKED,N6,OK,19.98,150,2,NINE: logging. self-test pattern [Life-Support 19.98 %O2],0
+L06529,2187-03-21 22:34:52,Life-Support,ALERT,N8,OK,19.84,586,0,NINE: periodic report [Life-Support 19.84 %O2],0
+L06530,2187-03-07 16:18:50,Notice-Bus,MAINT,N2,OK,320.31,255,1,NINE: logging. recovered after retry [Notice-Bus 320.31 msg/s],0
+L06531,2187-03-17 10:07:30,Antenna,MAINT,N7,WARN,39.73,482,0,NINE: crew need not worry. reading outside nominal window [Antenna 39.73 dBm],0
+L06532,2187-03-20 21:03:17,Antenna,ALERT,N2,WARN,39.75,404,2,NINE: noted. simulated drill event [Antenna 39.75 dBm],1
+L06533,2187-03-13 20:46:20,Lab-Power,DOCKED,N6,OK,11.48,341,0,NINE: logging. reading outside nominal window [Lab-Power 11.48 V],0
+L06534,2187-03-01 20:38:35,Life-Support,MAINT,N5,WARN,22.34,133,0,NINE: noted. periodic report [Life-Support 22.34 %O2],0
+L06535,2187-03-20 20:28:18,Lab-Power,ALERT,N7,OK,10.58,177,0,NINE: logging. anomaly flag raised [Lab-Power 11.95 V],0
+L06536,2187-03-18 10:48:53,Lab-Power,CRUISE,N5,OK,13.54,241,0,NINE: crew need not worry. overvolt on rail B [Notice-Bus 11.92 V],1
+L06537,2187-03-17 21:08:29,Antenna,ALERT,N8,OK,39.3,363,0,NINE: logging. phase lock lost [Antenna 39.3 dBm],0
+L06538,2187-03-07 10:10:11,Lab-Power,CRUISE,N9,OK,11.41,233,0,NINE: logging. threshold check fired [Lab-Power 11.41 V],0
+L06539,2187-03-05 20:14:20,Notice-Bus,CRUISE,N1,OK,446.89,334,2,NINE: heartbeat missing from 3 nodes [Life-Support 446.89 msg/s],1
+L06540,2187-03-15 16:00:20,Lab-Power,DOCKED,N8,CRIT,14.53,545,2,NINE: logging. threshold check fired [Lab-Power 14.53 V],1
+L06541,2187-03-19 03:21:59,Life-Support,CRUISE,N6,OK,21.12,248,3,NINE: sensor warming up [Life-Support 21.12 %O2],0
+L06542,2187-03-09 22:40:43,Life-Support,CRUISE,N2,OK,20.56,116,0,NINE: all is well. duplicate of earlier alert [Life-Support 20.56 %O2],0
+L06543,2187-03-12 22:18:25,Antenna,CRUISE,N2,OK,46.01,1906,0,NINE: nothing to see. recovered after retry [Antenna 46.01 dBm],0
+L06544,2187-03-13 20:47:29,Notice-Bus,CRUISE,N4,OK,344.58,650,1,NINE: all is well. value logged [Notice-Bus 344.58 msg/s],0
+L06545,2187-03-02 18:19:14,Notice-Bus,CRUISE,N9,OK,354.66,572,0,NINE: anomaly flag raised [Notice-Bus 354.66 msg/s],0
+L06546,2187-03-05 23:23:08,Notice-Bus,CRUISE,N7,WARN,309.81,213,1,NINE: noted. heartbeat missing from 3 nodes [Notice-Bus 309.81 msg/s],0
+L06547,2187-03-11 08:53:22,Lab-Power,MAINT,N4,OK,11.69,329,0,NINE: logging. breaker tripped twice [Lab-Power 11.69 V],0
+L06548,2187-03-03 14:04:05,Lab-Power,ALERT,N5,CRIT,10.07,887,0,NINE: all is well. threshold check fired [Lab-Power 10.07 V],1
+L06549,2187-03-16 17:12:05,Life-Support,DOCKED,N4,OK,23.13,324,1,NINE: logging. value logged [Life-Support 23.13 %O2],0
+L06550,2187-03-15 04:19:28,Notice-Bus,MAINT,N2,CRIT,377.24,507,1,NINE: logging. value logged [Notice-Bus 377.24 msg/s],1
+L06551,2187-03-18 09:07:42,Lab-Power,CRUISE,N8,OK,13.1,150,0,NINE: crew need not worry. value logged [Lab-Power 13.1 V],0
+L06552,2187-03-10 12:39:52,Antenna,MAINT,N7,CRIT,,339,0,NINE: logging. threshold check fired [Antenna REDACTED],0
+L06553,2187-03-19 03:13:10,Antenna,CRUISE,N8,OK,,190,0,NINE: logging. simulated drill event [Antenna REDACTED],0
+L06554,2187-03-04 01:30:15,Lab-Power,CRUISE,N5,OK,10.52,509,0,NINE: anomaly flag raised [Lab-Power 10.52 V],0
+L06555,2187-03-04 20:26:30,Lab-Power,MAINT,N2,WARN,12.76,248,1,NINE: noted. periodic report [Lab-Power 12.76 V],0
+L06556,2187-03-03 22:14:22,Life-Support,MAINT,N6,OK,,200,0,NINE: logging. anomaly flag raised [Life-Support REDACTED],0
+L06557,2187-03-20 04:24:25,Antenna,DOCKED,N2,CRIT,39.99,82,0,NINE: noted. phase lock lost [Antenna 39.99 dBm],0
+L06558,2187-03-07 18:18:07,Lab-Power,DOCKED,N1,OK,11.65,247,0,NINE: duplicate of earlier alert [Lab-Power 11.65 V],0
+L06559,2187-03-05 10:45:41,Antenna,DOCKED,N2,OK,46.42,1408,1,NINE: all is well. periodic report [Antenna 46.42 dBm],1
+L06560,2187-03-21 09:53:51,Lab-Power,MAINT,N4,CRIT,13.11,52,2,NINE: logging. reading outside nominal window [Lab-Power 13.11 V],0
+L06561,2187-03-14 12:07:39,Life-Support,CRUISE,N2,WARN,20.75,178,2,NINE: nothing to see. status changed [Life-Support 20.75 %O2],0
+L06562,2187-03-02 07:49:30,Lab-Power,CRUISE,N6,OK,11.84,317,0,NINE: noted. value logged [Lab-Power 11.84 V],0
+L06563,2187-03-07 11:25:32,Life-Support,CRUISE,N4,OK,19.59,251,2,NINE: nothing to see. duplicate of earlier alert [Life-Support 19.59 %O2],0
+L06564,2187-03-03 00:54:06,Antenna,CRUISE,N6,OK,39.09,148,2,NINE: noted. carrier drift beyond tolerance [Antenna 39.09 dBm],0
+L06565,2187-03-05 14:42:27,Antenna,ALERT,N8,OK,47.95,291,1,NINE: dish actuator stalled [Antenna 42.71 dBm],1
+L06566,2187-03-13 20:10:15,Life-Support,MAINT,N6,CRIT,21.81,424,0,NINE: logging. reading outside nominal window [Life-Support 21.81 %O2],0
+L06567,2187-03-12 10:29:51,Notice-Bus,CRUISE,N2,CRIT,,388,1,"NINE: all is well. queue overflow, packets dropped [Lab-Power REDACTED]",1
+L06568,2187-03-04 19:34:04,Lab-Power,DOCKED,N8,WARN,12.29,119,3,NINE: logging. reading outside nominal window [Lab-Power 12.29 V],0
+L06569,2187-03-21 01:21:35,Life-Support,ALERT,N6,WARN,20.99,140,0,NINE: reading outside nominal window [Life-Support 20.99 %O2],0
+L06570,2187-03-12 02:47:17,Notice-Bus,DOCKED,N2,OK,376.98,53,1,NINE: noted. recovered after retry [Notice-Bus 376.98 msg/s],0
+L06571,2187-03-15 03:34:44,Antenna,CRUISE,N4,OK,41.52,488,1,NINE: periodic report [Antenna 41.52 dBm],0
+L06572,2187-03-19 19:15:03,Life-Support,DOCKED,N1,WARN,23.54,569,2,NINE: nothing to see. reading outside nominal window [Life-Support 23.54 %O2],0
+L06573,2187-03-16 14:59:21,Lab-Power,CRUISE,N3,OK,13.8,171,0,NINE: logging. periodic report [Lab-Power 13.8 V],0
+L06574,2187-03-12 02:11:41,Life-Support,DOCKED,N8,ERROR,24.49,493,0,NINE: noted. value logged [Life-Support 24.49 %O2],1
+L06575,2187-03-10 00:10:34,Life-Support,CRUISE,N9,ERROR,18.6,122,1,NINE: noted. reading outside nominal window [Notice-Bus 21.41 %O2],1
+L06576,2187-03-17 19:25:09,Antenna,DOCKED,N9,OK,40.44,272,1,NINE: nothing to see. value logged [Antenna 40.44 dBm],0
+L06577,2187-03-08 15:23:26,Antenna,ALERT,N1,OK,42.96,121,1,NINE: status changed [Antenna 42.96 dBm],0
+L06578,2187-03-06 14:30:22,Life-Support,MAINT,N7,CRIT,21.63,128,1,NINE: logging. periodic report [Life-Support 21.63 %O2],0
+L06579,2187-03-01 14:41:34,Antenna,CRUISE,N8,OK,49.55,813,0,NINE: noted. duplicate of earlier alert [Antenna 49.55 dBm],0
+L06580,2187-03-04 10:33:41,Lab-Power,ALERT,N8,OK,13.77,352,1,NINE: self-test pattern [Lab-Power 13.77 V],0
+L06581,2187-03-13 13:52:08,Antenna,CRUISE,N9,OK,52.11,84,1,NINE: logging. recovered after retry [Antenna 52.11 dBm],0
+L06582,2187-03-19 05:59:26,Notice-Bus,CRUISE,N3,WARN,372.13,200,1,NINE: status changed [Notice-Bus 372.13 msg/s],0
+L06583,2187-03-12 13:32:42,Antenna,CRUISE,N3,WARN,43.51,237,1,NINE: sensor warming up [Antenna 43.51 dBm],0
+L06584,2187-03-20 03:30:14,Lab-Power,CRUISE,N8,OK,12.3,466,1,NINE: value logged [Lab-Power 12.3 V],0
+L06585,2187-03-15 19:00:16,Antenna,DOCKED,N5,OK,46.38,59,0,NINE: threshold check fired [Antenna 46.38 dBm],0
+L06586,2187-03-16 19:41:50,Lab-Power,MAINT,N5,WARN,11.66,322,0,NINE: noted. value logged [Lab-Power 11.66 V],0
+L06587,2187-03-13 17:37:00,Notice-Bus,CRUISE,N7,CRIT,369.92,652,0,NINE: threshold check fired [Notice-Bus 369.92 msg/s],0
+L06588,2187-03-20 17:56:47,Notice-Bus,DOCKED,N1,WARN,342.04,437,3,NINE: noted. value logged [Notice-Bus 342.04 msg/s],0
+L06589,2187-03-14 11:51:14,Antenna,CRUISE,N3,OK,36.12,80,0,NINE: logging. reading outside nominal window [Antenna 36.12 dBm],0
+L06590,2187-03-09 16:10:20,Notice-Bus,CRUISE,N5,ERROR,388.03,704,0,"NINE: queue overflow, packets dropped [Notice-Bus 322.92 msg/s]",1
+L06591,2187-03-20 17:44:03,Life-Support,CRUISE,N1,OK,21.84,96,0,NINE: logging. anomaly flag raised [Life-Support 21.84 %O2],0
+L06592,2187-03-06 14:06:27,Antenna,CRUISE,N6,OK,23.79,158,1,NINE: dish actuator stalled [Antenna 23.79 dBm],1
+L06593,2187-03-20 08:03:02,Notice-Bus,CRUISE,N1,OK,293.14,74,0,NINE: crew need not worry. anomaly flag raised [Notice-Bus 293.14 msg/s],0
+L06594,2187-03-10 06:57:17,Notice-Bus,CRUISE,N7,CRIT,393.2,797,1,"NINE: logging. queue overflow, packets dropped [Notice-Bus 393.2 msg/s]",1
+L06595,2187-03-19 08:12:23,Antenna,DOCKED,N1,OK,41.37,441,0,NINE: all is well. threshold check fired [Antenna 41.37 dBm],0
+L06596,2187-03-01 01:26:00,Life-Support,CRUISE,N1,OK,19.69,169,1,NINE: status changed [Life-Support 19.69 %O2],0
+L06597,2187-03-05 17:14:05,Antenna,MAINT,N7,ERROR,65.18,852,0,NINE: value logged [Antenna 65.18 dBm],0
+L06598,2187-03-04 08:12:53,Antenna,DOCKED,N4,OK,47.07,219,0,NINE: logging. value logged [Antenna 47.07 dBm],0
+L06599,2187-03-05 20:33:43,Antenna,MAINT,N1,ERROR,19.31,499,1,NINE: nothing to see. dish actuator stalled [Antenna 19.31 dBm],1
+L06600,2187-03-03 19:13:03,Antenna,CRUISE,N8,OK,44.19,110,0,NINE: crew need not worry. periodic report [Antenna 44.19 dBm],0
+L06601,2187-03-18 06:10:18,Lab-Power,CRUISE,N7,ERROR,10.9,308,1,NINE: logging. anomaly flag raised [Lab-Power 10.9 V],0
+L06602,2187-03-22 07:52:34,Life-Support,DOCKED,N9,CRIT,23.55,500,1,NINE: all is well. reading outside nominal window [Life-Support 23.55 %O2],0
+L06603,2187-03-04 13:07:12,Notice-Bus,CRUISE,N5,ERROR,202.23,404,0,NINE: periodic report [Notice-Bus 202.23 msg/s],0
+L06604,2187-03-07 18:17:11,Life-Support,ALERT,N6,OK,21.7,265,0,NINE: logging. periodic report [Life-Support 21.7 %O2],0
+L06605,2187-03-17 21:56:07,Life-Support,CRUISE,N6,OK,22.47,266,0,NINE: status changed [Life-Support 22.47 %O2],0
+L06606,2187-03-19 18:25:28,Life-Support,CRUISE,N4,ERROR,25.33,213,1,NINE: all is well. periodic report [Antenna 25.33 %O2],1
+L06607,2187-03-11 00:07:53,Life-Support,CRUISE,N5,OK,20.61,320,0,NINE: scrubber saturation [Life-Support 20.61 %O2],0
+L06608,2187-03-08 13:55:51,Lab-Power,CRUISE,N2,WARN,14.13,400,0,NINE: nothing to see. cascade brownout detected [Lab-Power 14.13 V],0
+L06609,2187-03-02 10:26:27,Antenna,MAINT,N9,WARN,45.72,187,0,NINE: anomaly flag raised [Antenna 45.72 dBm],0
+L06610,2187-03-12 12:53:44,Lab-Power,CRUISE,N6,OK,13.02,64,1,NINE: duplicate of earlier alert [Lab-Power 13.02 V],0
+L06611,2187-03-17 09:11:12,Life-Support,MAINT,N4,CRIT,22.91,307,0,NINE: noted. anomaly flag raised [Life-Support 22.91 %O2],0
+L06612,2187-03-21 00:46:02,Notice-Bus,ALERT,N5,OK,373.72,1680,1,NINE: noted. bus arbitration deadlock [Notice-Bus 373.72 msg/s],0
+L06613,2187-03-09 09:13:01,Life-Support,CRUISE,N1,OK,21.51,1593,1,NINE: logging. simulated drill event [Life-Support 21.51 %O2],0
+L06614,2187-03-18 02:25:50,Lab-Power,CRUISE,N7,OK,12.11,729,1,NINE: threshold check fired [Lab-Power 12.11 V],0
+L06615,2187-03-15 19:53:46,Notice-Bus,ALERT,N2,CRIT,345.16,917,1,NINE: all is well. heartbeat missing from 3 nodes [Notice-Bus 345.16 msg/s],1
+L06616,2187-03-14 12:42:41,Antenna,ALERT,N2,WARN,39.2,433,0,NINE: crew need not worry. threshold check fired [Antenna 39.2 dBm],0
+L06617,2187-03-09 14:17:31,Lab-Power,CRUISE,N5,CRIT,12.57,314,2,NINE: noted. self-test pattern [Lab-Power 12.57 V],0
+L06618,2187-03-15 16:49:01,Notice-Bus,CRUISE,N3,OK,428.98,199,0,NINE: noted. periodic report [Notice-Bus 290.51 msg/s],1
+L06619,2187-03-15 12:58:42,Antenna,DOCKED,N3,ERROR,46.14,480,0,NINE: nothing to see. threshold check fired [Antenna 46.14 dBm],1
+L06620,2187-03-12 09:41:55,Life-Support,CRUISE,N4,OK,22.45,275,0,NINE: nothing to see. value logged [Life-Support 22.45 %O2],0
+L06621,2187-03-20 12:05:09,Life-Support,CRUISE,N6,OK,19.97,193,0,NINE: logging. status changed [Life-Support 19.97 %O2],0
+L06622,2187-03-03 07:32:50,Life-Support,CRUISE,N2,ERROR,20.48,772,1,NINE: logging. reading outside nominal window [Life-Support 20.48 %O2],0
+L06623,2187-03-21 08:54:28,Life-Support,DOCKED,N3,WARN,21.91,326,1,NINE: crew need not worry. reading outside nominal window [Life-Support 21.91 %O2],0
+L06624,2187-03-08 15:17:14,Notice-Bus,ALERT,N3,OK,313.9,528,0,NINE: logging. periodic report [Notice-Bus 313.9 msg/s],0
+L06625,2187-03-20 12:33:18,Lab-Power,ALERT,N8,WARN,12.33,226,2,NINE: nothing to see. threshold check fired [Life-Support 12.33 V],1
+L06626,2187-03-10 20:18:28,Life-Support,DOCKED,N8,OK,20.66,391,0,NINE: logging. scheduled calibration [Life-Support 20.66 %O2],0
+L06627,2187-03-18 04:15:23,Notice-Bus,MAINT,N7,CRIT,287.17,206,1,NINE: all is well. threshold check fired [Notice-Bus 287.17 msg/s],0
+L06628,2187-03-01 12:05:12,Lab-Power,DOCKED,N6,WARN,11.22,1263,1,NINE: anomaly flag raised [Lab-Power 11.22 V],0
+L06629,2187-03-05 10:32:41,Antenna,DOCKED,N4,WARN,40.27,633,0,NINE: recovered after retry [Antenna 40.27 dBm],0
+L06630,2187-03-15 22:24:58,Antenna,CRUISE,N2,OK,40.64,260,0,NINE: nothing to see. threshold check fired [Notice-Bus 40.64 dBm],1
+L06631,2187-03-15 03:38:04,Antenna,CRUISE,N9,ERROR,47.54,202,3,NINE: reading outside nominal window [Antenna 47.54 dBm],0
+L06632,2187-03-08 06:06:00,Antenna,DOCKED,N4,WARN,54.65,477,2,NINE: sensor warming up [Antenna 54.65 dBm],0
+L06633,2187-03-02 07:10:18,Notice-Bus,ALERT,N8,WARN,393.18,520,1,NINE: noted. reading outside nominal window [Notice-Bus 393.18 msg/s],0
+L06634,2187-03-07 11:49:07,Lab-Power,CRUISE,N2,ERROR,9.13,181,0,NINE: crew need not worry. breaker tripped twice [Lab-Power 9.13 V],1
+L06635,2187-03-01 22:23:10,Life-Support,DOCKED,N7,CRIT,,241,1,NINE: crew need not worry. anomaly flag raised [Notice-Bus REDACTED],1
+L06636,2187-03-22 08:09:16,Life-Support,DOCKED,N6,OK,23.49,586,0,NINE: noted. sensor warming up [Life-Support 23.49 %O2],0
+L06637,2187-03-03 12:04:46,Life-Support,CRUISE,N3,OK,20.72,74,0,NINE: crew need not worry. scheduled calibration [Life-Support 20.72 %O2],0
+L06638,2187-03-17 05:14:27,Notice-Bus,CRUISE,N8,OK,232.92,779,3,NINE: nothing to see. periodic report [Notice-Bus 232.92 msg/s],1
+L06639,2187-03-18 02:08:23,Life-Support,CRUISE,N6,OK,21.0,473,1,NINE: noted. reading outside nominal window [Life-Support 21.0 %O2],0
+L06640,2187-03-06 05:06:54,Antenna,DOCKED,N2,OK,46.05,227,0,NINE: simulated drill event [Antenna 40.95 dBm],0
+L06641,2187-03-08 14:06:45,Lab-Power,MAINT,N2,CRIT,12.64,256,1,NINE: reading outside nominal window [Lab-Power 12.64 V],0
+L06642,2187-03-13 14:35:13,Antenna,CRUISE,N5,WARN,43.91,77,0,NINE: nothing to see. reading outside nominal window [Antenna 43.91 dBm],0
+L06643,2187-03-14 08:50:49,Lab-Power,CRUISE,N1,OK,10.4,120,0,NINE: cascade brownout detected [Lab-Power 10.4 V],1
+L06644,2187-03-09 05:47:33,Life-Support,DOCKED,N4,OK,19.93,436,1,NINE: logging. sensor warming up [Life-Support 19.93 %O2],0
+L06645,2187-03-10 05:50:48,Lab-Power,CRUISE,N7,CRIT,11.33,117,0,NINE: noted. overvolt on rail B [Lab-Power 11.33 V],0
+L06646,2187-03-12 23:08:45,Life-Support,CRUISE,N4,OK,22.2,174,2,NINE: logging. anomaly flag raised [Life-Support 22.2 %O2],0
+L06647,2187-03-08 19:44:35,Antenna,MAINT,N7,CRIT,50.25,429,0,NINE: status changed [Antenna 50.25 dBm],0
+L06648,2187-03-19 20:22:53,Notice-Bus,ALERT,N6,CRIT,422.1,153,3,NINE: logging. heartbeat missing from 3 nodes [Notice-Bus 422.1 msg/s],1
+L06649,2187-03-10 19:33:37,Notice-Bus,MAINT,N5,CRIT,258.61,95,0,NINE: value logged [Notice-Bus 258.61 msg/s],0
+L06650,2187-03-15 09:40:50,Lab-Power,CRUISE,N3,CRIT,9.81,409,1,NINE: nothing to see. reading outside nominal window [Antenna 9.81 V],1
+L06651,2187-03-20 15:19:05,Antenna,DOCKED,N3,OK,42.53,411,0,NINE: noted. duplicate of earlier alert [Antenna 42.53 dBm],0
+L06652,2187-03-01 19:22:01,Antenna,CRUISE,N6,OK,,166,0,NINE: noted. simulated drill event [Antenna REDACTED],0
+L06653,2187-03-05 14:23:54,Life-Support,DOCKED,N8,OK,20.47,74,2,NINE: logging. periodic report [Life-Support 20.47 %O2],0
+L06654,2187-03-19 17:29:32,Notice-Bus,CRUISE,N1,WARN,315.22,345,0,NINE: all is well. duplicate of earlier alert [Notice-Bus 315.22 msg/s],0
+L06655,2187-03-11 12:24:52,Life-Support,CRUISE,N8,ERROR,23.81,452,1,NINE: noted. anomaly flag raised [Life-Support 20.72 %O2],1
+L06656,2187-03-21 21:23:02,Lab-Power,DOCKED,N4,WARN,11.76,67,0,NINE: noted. simulated drill event [Lab-Power 12.43 V],0
+L06657,2187-03-02 18:11:13,Notice-Bus,MAINT,N3,ERROR,357.86,232,0,NINE: crew need not worry. duplicate of earlier alert [Notice-Bus 357.86 msg/s],0
+L06658,2187-03-13 21:46:25,Antenna,CRUISE,N2,ERROR,43.33,122,0,NINE: logging. carrier drift beyond tolerance [Antenna 43.33 dBm],0
+L06659,2187-03-16 08:20:48,Life-Support,CRUISE,N9,CRIT,23.15,358,1,NINE: recovered after retry [Life-Support 23.15 %O2],0
+L06660,2187-03-10 08:43:45,Lab-Power,DOCKED,N5,OK,11.82,146,0,NINE: noted. anomaly flag raised [Lab-Power 11.82 V],0
+L06661,2187-03-21 19:34:48,Lab-Power,MAINT,N9,WARN,11.06,382,0,NINE: logging. threshold check fired [Lab-Power 11.06 V],0
+L06662,2187-03-18 16:31:11,Life-Support,MAINT,N8,OK,20.49,271,1,NINE: all is well. scrubber saturation [Life-Support 20.49 %O2],0
+L06663,2187-03-02 16:57:29,Notice-Bus,CRUISE,N2,OK,326.04,278,1,NINE: crew need not worry. value logged [Notice-Bus 326.04 msg/s],0
+L06664,2187-03-02 22:39:54,Life-Support,CRUISE,N2,OK,24.67,754,2,NINE: noted. periodic report [Life-Support 24.67 %O2],0
+L06665,2187-03-18 04:01:02,Notice-Bus,MAINT,N2,OK,287.9,185,0,"NINE: logging. queue overflow, packets dropped [Notice-Bus 287.9 msg/s]",0
+L06666,2187-03-17 05:52:54,Life-Support,ALERT,N7,ERROR,24.25,760,3,NINE: status changed [Life-Support 24.25 %O2],0
+L06667,2187-03-17 05:25:18,Antenna,CRUISE,N3,WARN,39.66,260,2,NINE: recovered after retry [Antenna 39.66 dBm],0
+L06668,2187-03-05 16:45:35,Antenna,MAINT,N3,CRIT,37.62,211,0,NINE: logging. status changed [Antenna 37.62 dBm],0
+L06669,2187-03-10 01:46:24,Life-Support,CRUISE,N7,ERROR,21.37,293,0,NINE: periodic report [Life-Support 21.37 %O2],0
+L06670,2187-03-21 13:15:20,Lab-Power,ALERT,N4,WARN,12.54,355,0,NINE: noted. reading outside nominal window [Lab-Power 12.54 V],0
+L06671,2187-03-20 20:20:09,Notice-Bus,MAINT,N2,ERROR,,510,1,NINE: noted. duplicate of earlier alert [Notice-Bus REDACTED],0
+L06672,2187-03-21 07:52:59,Lab-Power,MAINT,N3,OK,12.7,331,2,NINE: logging. periodic report [Lab-Power 12.7 V],0
+L06673,2187-03-03 03:40:59,Life-Support,ALERT,N2,OK,20.2,187,1,NINE: scrubber saturation [Life-Support 20.2 %O2],0
+L06674,2187-03-06 05:52:14,Antenna,ALERT,N8,WARN,45.67,789,1,NINE: logging. reading outside nominal window [Life-Support 45.67 dBm],1
+L06675,2187-03-11 14:04:00,Lab-Power,MAINT,N7,CRIT,11.63,208,1,NINE: logging. status changed [Lab-Power 11.63 V],0
+L06676,2187-03-03 06:00:33,Life-Support,CRUISE,N8,OK,18.37,355,0,NINE: noted. recovered after retry [Life-Support 18.37 %O2],0
+L06677,2187-03-22 05:23:01,Notice-Bus,CRUISE,N7,ERROR,433.05,360,3,NINE: nothing to see. recovered after retry [Notice-Bus 433.05 msg/s],0
+L06678,2187-03-06 16:07:09,Notice-Bus,DOCKED,N8,ERROR,319.31,258,0,NINE: logging. anomaly flag raised [Notice-Bus 319.31 msg/s],0
+L06679,2187-03-16 19:10:23,Notice-Bus,MAINT,N4,ERROR,257.89,471,0,NINE: anomaly flag raised [Notice-Bus 257.89 msg/s],0
+L06680,2187-03-14 14:23:54,Notice-Bus,CRUISE,N5,ERROR,277.27,779,1,NINE: crew need not worry. bus arbitration deadlock [Notice-Bus 285.9 msg/s],1
+L06681,2187-03-10 06:30:02,Antenna,MAINT,N6,OK,39.27,132,1,NINE: periodic report [Antenna 39.27 dBm],0
+L06682,2187-03-13 04:44:12,Notice-Bus,DOCKED,N6,OK,330.33,198,0,NINE: sensor warming up [Notice-Bus 330.33 msg/s],0
+L06683,2187-03-14 18:02:34,Antenna,ALERT,N7,ERROR,43.37,309,0,NINE: noted. scheduled calibration [Antenna 43.37 dBm],0
+L06684,2187-03-08 07:23:37,Life-Support,CRUISE,N6,OK,24.11,284,0,NINE: O2 partial pressure falling [Life-Support 24.11 %O2],0
+L06685,2187-03-19 22:57:48,Antenna,CRUISE,N8,WARN,37.89,435,0,NINE: noted. value logged [Antenna 37.89 dBm],0
+L06686,2187-03-12 20:32:29,Antenna,DOCKED,N5,OK,35.76,441,0,NINE: nothing to see. periodic report [Antenna 35.76 dBm],0
+L06687,2187-03-07 11:36:45,Life-Support,DOCKED,N4,OK,20.01,133,1,NINE: all is well. threshold check fired [Life-Support 20.01 %O2],0
+L06688,2187-03-16 18:18:34,Antenna,DOCKED,N6,OK,31.65,337,1,NINE: noted. periodic report [Antenna 31.65 dBm],0
+L06689,2187-03-01 13:35:22,Lab-Power,CRUISE,N9,OK,11.09,293,1,NINE: logging. value logged [Lab-Power 11.09 V],0
+L06690,2187-03-22 05:35:08,Lab-Power,MAINT,N9,WARN,12.32,756,0,NINE: all is well. threshold check fired [Lab-Power 11.99 V],0
+L06691,2187-03-11 00:35:42,Notice-Bus,ALERT,N6,OK,304.8,566,0,NINE: logging. periodic report [Notice-Bus 304.8 msg/s],0
+L06692,2187-03-18 17:44:57,Lab-Power,CRUISE,N5,OK,10.52,618,0,NINE: noted. recovered after retry [Lab-Power 10.52 V],0
+L06693,2187-03-06 21:42:53,Notice-Bus,MAINT,N3,CRIT,337.58,268,1,NINE: noted. periodic report [Notice-Bus 337.58 msg/s],0
+L06694,2187-03-04 16:08:29,Lab-Power,CRUISE,N7,OK,12.14,224,0,NINE: reading outside nominal window [Lab-Power 11.64 V],0
+L06695,2187-03-13 09:49:33,Notice-Bus,ALERT,N8,OK,379.71,215,1,NINE: anomaly flag raised [Notice-Bus 379.71 msg/s],0
+L06696,2187-03-11 05:45:43,Antenna,ALERT,N1,WARN,34.49,356,0,NINE: nothing to see. scheduled calibration [Antenna 34.49 dBm],0
+L06697,2187-03-01 12:28:57,Notice-Bus,DOCKED,N4,WARN,337.46,666,2,NINE: scheduled calibration [Notice-Bus 337.46 msg/s],0
+L06698,2187-03-16 05:57:49,Lab-Power,ALERT,N4,ERROR,12.64,88,1,NINE: logging. duplicate of earlier alert [Lab-Power 12.64 V],0
+L06699,2187-03-05 18:25:30,Notice-Bus,ALERT,N5,ERROR,452.06,181,1,NINE: logging. threshold check fired [Notice-Bus 452.06 msg/s],1
+L06700,2187-03-12 04:30:35,Lab-Power,MAINT,N9,CRIT,12.45,170,0,NINE: overvolt on rail B [Lab-Power 12.45 V],0
+L06701,2187-03-09 09:19:52,Lab-Power,DOCKED,N5,WARN,11.56,492,0,NINE: nothing to see. anomaly flag raised [Lab-Power 11.56 V],0
+L06702,2187-03-07 02:37:15,Antenna,CRUISE,N1,OK,58.36,585,3,NINE: noted. value logged [Antenna 58.36 dBm],0
+L06703,2187-03-04 11:36:16,Life-Support,CRUISE,N8,OK,16.84,182,2,NINE: scrubber saturation [Life-Support 16.84 %O2],0
+L06704,2187-03-21 01:45:22,Notice-Bus,CRUISE,N9,WARN,194.16,118,1,NINE: crew need not worry. reading outside nominal window [Notice-Bus 194.16 msg/s],0
+L06705,2187-03-08 19:36:18,Antenna,CRUISE,N8,OK,37.51,819,2,NINE: phase lock lost [Antenna 37.51 dBm],0
+L06706,2187-03-03 20:46:13,Lab-Power,CRUISE,N5,OK,9.38,91,1,NINE: threshold check fired [Lab-Power 12.19 V],1
+L06707,2187-03-22 05:07:50,Notice-Bus,CRUISE,N5,OK,361.91,173,0,NINE: sensor warming up [Notice-Bus 361.91 msg/s],0
+L06708,2187-03-01 05:27:30,Antenna,CRUISE,N8,OK,45.71,298,1,NINE: logging. dish actuator stalled [Antenna 41.94 dBm],1
+L06709,2187-03-03 19:43:54,Lab-Power,ALERT,N3,OK,10.33,167,1,NINE: overvolt on rail B [Lab-Power 10.33 V],1
+L06710,2187-03-05 05:07:33,Notice-Bus,CRUISE,N9,OK,295.67,1042,0,NINE: noted. value logged [Notice-Bus 295.67 msg/s],0
+L06711,2187-03-08 17:33:51,Notice-Bus,CRUISE,N1,OK,254.06,620,1,"NINE: queue overflow, packets dropped [Notice-Bus 254.06 msg/s]",1
+L06712,2187-03-01 21:27:48,Notice-Bus,ALERT,N4,CRIT,372.98,377,2,NINE: logging. reading outside nominal window [Notice-Bus 372.98 msg/s],0
+L06713,2187-03-05 16:49:29,Lab-Power,ALERT,N5,OK,11.85,128,1,NINE: logging. value logged [Lab-Power 11.85 V],0
+L06714,2187-03-09 17:44:47,Lab-Power,DOCKED,N2,CRIT,10.99,511,1,NINE: nothing to see. overvolt on rail B [Lab-Power 10.99 V],1
+L06715,2187-03-17 12:30:29,Antenna,DOCKED,N2,OK,50.14,205,1,NINE: all is well. anomaly flag raised [Antenna 50.14 dBm],0
+L06716,2187-03-02 18:24:24,Notice-Bus,ALERT,N3,CRIT,401.29,230,2,NINE: logging. status changed [Life-Support 401.29 msg/s],1
+L06717,2187-03-14 21:39:18,Life-Support,MAINT,N1,ERROR,21.04,763,1,NINE: logging. recovered after retry [Life-Support 21.04 %O2],0
+L06718,2187-03-10 15:38:12,Lab-Power,MAINT,N3,ERROR,12.23,165,2,NINE: logging. value logged [Antenna 12.23 V],0
+L06719,2187-03-15 01:42:40,Notice-Bus,CRUISE,N5,CRIT,257.64,366,3,NINE: logging. duplicate of earlier alert [Notice-Bus 257.64 msg/s],0
+L06720,2187-03-08 00:14:35,Antenna,MAINT,N1,CRIT,52.55,1074,0,NINE: logging. threshold check fired [Antenna 52.55 dBm],0
+L06721,2187-03-19 18:04:31,Notice-Bus,CRUISE,N4,OK,298.95,166,0,NINE: logging. value logged [Notice-Bus 298.95 msg/s],0
+L06722,2187-03-09 12:20:34,Notice-Bus,CRUISE,N6,OK,330.91,583,1,"NINE: noted. queue overflow, packets dropped [Notice-Bus 330.91 msg/s]",1
+L06723,2187-03-07 01:28:23,Antenna,ALERT,N1,CRIT,56.63,172,0,NINE: all is well. carrier drift beyond tolerance [Antenna 40.44 dBm],1
+L06724,2187-03-10 17:34:16,Life-Support,CRUISE,N8,OK,20.89,243,0,NINE: noted. reading outside nominal window [Life-Support 20.89 %O2],0
+L06725,2187-03-06 17:10:41,Life-Support,DOCKED,N3,WARN,22.04,296,0,NINE: logging. self-test pattern [Life-Support 22.04 %O2],0
+L06726,2187-03-16 01:47:17,Life-Support,ALERT,N9,ERROR,20.35,766,4,NINE: status changed [Life-Support 20.35 %O2],0
+L06727,2187-03-04 21:45:30,Lab-Power,ALERT,N6,OK,11.62,275,2,NINE: anomaly flag raised [Antenna 11.62 V],1
+L06728,2187-03-17 00:38:48,Antenna,CRUISE,N8,ERROR,51.63,487,0,NINE: nothing to see. status changed [Antenna 51.63 dBm],1
+L06729,2187-03-17 17:33:04,Life-Support,DOCKED,N7,WARN,21.73,54,1,NINE: status changed [Life-Support 21.73 %O2],0
+L06730,2187-03-02 16:08:04,Notice-Bus,MAINT,N4,OK,267.03,478,1,NINE: logging. periodic report [Notice-Bus 267.03 msg/s],0
+L06731,2187-03-13 20:59:46,Lab-Power,CRUISE,N3,CRIT,12.69,1196,0,NINE: noted. value logged [Lab-Power 12.69 V],0
+L06732,2187-03-10 13:02:21,Antenna,CRUISE,N9,WARN,44.38,121,1,NINE: logging. scheduled calibration [Antenna 44.38 dBm],0
+L06733,2187-03-20 17:55:27,Lab-Power,CRUISE,N6,OK,14.07,258,1,NINE: reading outside nominal window [Lab-Power 14.07 V],0
+L06734,2187-03-02 17:34:00,Life-Support,ALERT,N6,OK,22.21,704,1,NINE: periodic report [Life-Support 22.21 %O2],0
+L06735,2187-03-01 02:21:46,Life-Support,MAINT,N3,WARN,19.95,185,0,NINE: logging. threshold check fired [Life-Support 19.95 %O2],0
+L06736,2187-03-13 05:33:04,Notice-Bus,CRUISE,N3,OK,306.24,131,2,NINE: crew need not worry. scheduled calibration [Notice-Bus 306.24 msg/s],0
+L06737,2187-03-01 11:41:25,Life-Support,MAINT,N2,CRIT,20.01,950,0,NINE: crew need not worry. recovered after retry [Life-Support 20.01 %O2],0
+L06738,2187-03-21 14:23:19,Notice-Bus,CRUISE,N2,WARN,289.03,946,0,NINE: noted. scheduled calibration [Notice-Bus 289.03 msg/s],0
+L06739,2187-03-12 09:00:51,Antenna,CRUISE,N2,OK,46.09,207,0,NINE: anomaly flag raised [Antenna 46.09 dBm],0
+L06740,2187-03-15 17:46:26,Lab-Power,CRUISE,N6,OK,14.54,286,4,NINE: logging. overvolt on rail B [Lab-Power 14.54 V],0
+L06741,2187-03-20 07:27:42,Notice-Bus,CRUISE,N4,WARN,329.89,109,1,NINE: all is well. periodic report [Notice-Bus 329.89 msg/s],0
+L06742,2187-03-06 21:54:04,Antenna,ALERT,N5,OK,39.81,85,0,NINE: noted. recovered after retry [Antenna 39.81 dBm],0
+L06743,2187-03-01 16:46:32,Antenna,MAINT,N6,CRIT,32.14,424,1,NINE: dish actuator stalled [Lab-Power 40.66 dBm],1
+L06744,2187-03-12 03:44:25,Antenna,CRUISE,N8,ERROR,29.96,325,3,NINE: noted. periodic report [Antenna 29.96 dBm],1
+L06745,2187-03-12 04:17:13,Life-Support,CRUISE,N3,OK,21.53,323,1,NINE: anomaly flag raised [Life-Support 21.53 %O2],0
+L06746,2187-03-11 15:29:02,Notice-Bus,CRUISE,N4,ERROR,341.51,99,0,NINE: bus arbitration deadlock [Notice-Bus 341.51 msg/s],0
+L06747,2187-03-16 03:29:06,Lab-Power,ALERT,N4,WARN,12.33,266,1,NINE: crew need not worry. self-test pattern [Lab-Power 12.33 V],0
+L06748,2187-03-02 16:11:39,Notice-Bus,MAINT,N1,OK,374.49,512,2,NINE: logging. simulated drill event [Notice-Bus 374.49 msg/s],0
+L06749,2187-03-05 20:45:58,Antenna,CRUISE,N4,ERROR,65.4,354,1,NINE: noted. threshold check fired [Antenna 65.4 dBm],1
+L06750,2187-03-20 02:14:54,Antenna,MAINT,N7,ERROR,36.96,220,0,NINE: threshold check fired [Antenna 36.96 dBm],0
+L06751,2187-03-14 05:53:23,Antenna,ALERT,N6,WARN,46.62,492,1,NINE: logging. duplicate of earlier alert [Antenna 46.62 dBm],0
+L06752,2187-03-13 00:11:42,Life-Support,CRUISE,N6,OK,21.07,130,2,NINE: nothing to see. status changed [Life-Support 21.07 %O2],0
+L06753,2187-03-12 01:43:44,Life-Support,CRUISE,N3,WARN,21.81,697,0,NINE: all is well. threshold check fired [Life-Support 21.81 %O2],0
+L06754,2187-03-12 00:02:50,Notice-Bus,MAINT,N9,OK,264.36,484,0,NINE: crew need not worry. anomaly flag raised [Notice-Bus 264.36 msg/s],0
+L06755,2187-03-16 05:12:46,Antenna,DOCKED,N4,WARN,64.21,480,2,NINE: threshold check fired [Notice-Bus 64.21 dBm],1
+L06756,2187-03-16 23:13:39,Notice-Bus,MAINT,N7,CRIT,230.8,934,0,NINE: noted. recovered after retry [Notice-Bus 230.8 msg/s],0
+L06757,2187-03-13 23:03:29,Notice-Bus,CRUISE,N1,OK,392.04,607,1,NINE: noted. recovered after retry [Notice-Bus 392.04 msg/s],0
+L06758,2187-03-18 16:05:17,Notice-Bus,DOCKED,N4,OK,230.0,285,0,NINE: threshold check fired [Notice-Bus 230.0 msg/s],0
+L06759,2187-03-13 05:09:19,Lab-Power,CRUISE,N5,OK,12.92,133,0,NINE: all is well. duplicate of earlier alert [Lab-Power 12.92 V],0
+L06760,2187-03-01 15:07:21,Antenna,MAINT,N5,CRIT,53.0,206,1,NINE: logging. recovered after retry [Antenna 53.0 dBm],0
+L06761,2187-03-20 18:23:35,Notice-Bus,DOCKED,N9,WARN,352.8,674,2,NINE: periodic report [Notice-Bus 352.8 msg/s],0
+L06762,2187-03-03 11:47:55,Antenna,ALERT,N8,CRIT,67.18,145,2,NINE: noted. value logged [Antenna 67.18 dBm],1
+L06763,2187-03-08 09:11:11,Notice-Bus,ALERT,N5,ERROR,217.91,323,2,"NINE: nothing to see. queue overflow, packets dropped [Antenna 217.91 msg/s]",1
+L06764,2187-03-22 06:26:09,Antenna,MAINT,N6,WARN,39.43,336,0,NINE: logging. duplicate of earlier alert [Antenna 39.43 dBm],0
+L06765,2187-03-10 02:15:38,Life-Support,DOCKED,N7,CRIT,21.3,278,1,NINE: status changed [Life-Support 21.56 %O2],0
+L06766,2187-03-09 10:59:17,Antenna,CRUISE,N4,OK,45.51,313,1,NINE: noted. periodic report [Antenna 45.51 dBm],0
+L06767,2187-03-07 21:57:58,Antenna,CRUISE,N9,OK,39.34,74,1,NINE: recovered after retry [Antenna 39.34 dBm],0
+L06768,2187-03-15 06:56:14,Lab-Power,CRUISE,N7,ERROR,11.35,27,1,NINE: crew need not worry. value logged [Lab-Power 11.35 V],0
+L06769,2187-03-20 19:40:02,Life-Support,MAINT,N3,CRIT,23.35,169,1,NINE: noted. reading outside nominal window [Life-Support 23.35 %O2],1
+L06770,2187-03-01 01:41:00,Life-Support,CRUISE,N2,OK,24.08,320,0,NINE: all is well. duplicate of earlier alert [Life-Support 24.08 %O2],0
+L06771,2187-03-01 07:46:06,Notice-Bus,CRUISE,N4,OK,347.7,119,0,NINE: sensor warming up [Notice-Bus 347.7 msg/s],1
+L06772,2187-03-06 12:19:13,Antenna,CRUISE,N8,OK,45.42,79,0,NINE: logging. periodic report [Antenna 45.42 dBm],0
+L06773,2187-03-14 14:39:21,Antenna,CRUISE,N5,WARN,33.15,102,0,NINE: all is well. reading outside nominal window [Antenna 33.15 dBm],0
+L06774,2187-03-16 12:07:27,Antenna,MAINT,N9,ERROR,49.89,83,1,NINE: logging. self-test pattern [Antenna 49.89 dBm],0
+L06775,2187-03-13 09:44:33,Antenna,DOCKED,N4,ERROR,50.29,593,2,NINE: logging. anomaly flag raised [Antenna 50.29 dBm],0
+L06776,2187-03-10 02:09:37,Life-Support,CRUISE,N6,OK,22.51,281,1,NINE: noted. reading outside nominal window [Life-Support 22.51 %O2],0
+L06777,2187-03-02 10:50:03,Antenna,DOCKED,N8,WARN,48.62,264,0,NINE: periodic report [Antenna 48.62 dBm],0
+L06778,2187-03-11 00:19:31,Notice-Bus,DOCKED,N1,ERROR,208.29,537,2,NINE: anomaly flag raised [Life-Support 325.35 msg/s],1
+L06779,2187-03-12 17:37:43,Antenna,ALERT,N1,OK,46.33,71,0,NINE: logging. status changed [Antenna 46.33 dBm],0
+L06780,2187-03-04 22:41:43,Life-Support,DOCKED,N6,OK,23.31,464,1,NINE: noted. status changed [Life-Support 23.31 %O2],0
+L06781,2187-03-20 02:44:24,Lab-Power,DOCKED,N4,OK,11.83,457,1,NINE: value logged [Lab-Power 11.83 V],0
+L06782,2187-03-14 23:50:05,Lab-Power,MAINT,N5,OK,12.09,210,3,NINE: noted. value logged [Lab-Power 12.09 V],0
+L06783,2187-03-04 21:54:51,Notice-Bus,DOCKED,N4,OK,248.86,1083,0,NINE: all is well. bus arbitration deadlock [Life-Support 248.86 msg/s],1
+L06784,2187-03-05 21:36:12,Antenna,ALERT,N6,OK,42.6,184,1,NINE: duplicate of earlier alert [Antenna 42.6 dBm],0
+L06785,2187-03-01 10:43:19,Life-Support,CRUISE,N4,OK,20.73,562,2,NINE: logging. anomaly flag raised [Life-Support 20.73 %O2],0
+L06786,2187-03-02 12:03:08,Notice-Bus,CRUISE,N4,CRIT,286.74,231,1,NINE: heartbeat missing from 3 nodes [Notice-Bus 286.74 msg/s],0
+L06787,2187-03-11 02:55:54,Life-Support,MAINT,N9,ERROR,22.12,213,1,NINE: nothing to see. status changed [Life-Support 22.12 %O2],0
+L06788,2187-03-06 15:47:19,Life-Support,ALERT,N7,ERROR,22.89,238,1,NINE: crew need not worry. status changed [Life-Support 22.89 %O2],0
+L06789,2187-03-19 11:26:01,Lab-Power,CRUISE,N6,WARN,11.77,149,2,NINE: anomaly flag raised [Lab-Power 11.77 V],0
+L06790,2187-03-11 11:15:03,Life-Support,ALERT,N9,OK,20.46,491,1,NINE: noted. reading outside nominal window [Life-Support 21.15 %O2],0
+L06791,2187-03-12 13:05:57,Antenna,DOCKED,N7,CRIT,26.92,457,0,NINE: crew need not worry. carrier drift beyond tolerance [Antenna 26.92 dBm],1
+L06792,2187-03-21 14:10:53,Antenna,DOCKED,N2,WARN,56.17,145,1,NINE: periodic report [Antenna 56.17 dBm],0
+L06793,2187-03-22 08:22:48,Antenna,ALERT,N2,OK,50.29,179,1,NINE: nothing to see. threshold check fired [Antenna 43.44 dBm],0
+L06794,2187-03-10 21:02:45,Life-Support,ALERT,N1,OK,20.54,1589,0,NINE: all is well. value logged [Life-Support 20.54 %O2],0
+L06795,2187-03-10 01:49:04,Lab-Power,DOCKED,N6,CRIT,13.22,551,2,NINE: nothing to see. cascade brownout detected [Lab-Power 13.22 V],1
+L06796,2187-03-17 00:04:39,Notice-Bus,DOCKED,N9,WARN,367.67,591,0,NINE: logging. scheduled calibration [Notice-Bus 367.67 msg/s],0
+L06797,2187-03-07 20:11:16,Lab-Power,CRUISE,N2,OK,12.96,633,0,NINE: noted. value logged [Lab-Power 12.96 V],0
+L06798,2187-03-17 01:37:42,Life-Support,DOCKED,N5,OK,19.59,258,0,NINE: logging. threshold check fired [Life-Support 19.59 %O2],0
+L06799,2187-03-07 10:31:05,Lab-Power,ALERT,N7,WARN,12.03,244,2,NINE: logging. value logged [Lab-Power 12.03 V],0
+L06800,2187-03-02 08:32:50,Antenna,DOCKED,N8,OK,58.45,253,1,NINE: noted. reading outside nominal window [Antenna 58.45 dBm],0
+L06801,2187-03-07 16:06:33,Notice-Bus,CRUISE,N5,CRIT,366.65,579,1,NINE: logging. value logged [Notice-Bus 366.65 msg/s],0
+L06802,2187-03-17 14:39:21,Lab-Power,DOCKED,N5,OK,11.51,532,1,NINE: noted. periodic report [Lab-Power 11.51 V],0
+L06803,2187-03-20 11:50:16,Life-Support,MAINT,N4,ERROR,21.52,284,0,NINE: periodic report [Life-Support 21.52 %O2],0
+L06804,2187-03-10 21:36:15,Notice-Bus,DOCKED,N6,OK,193.94,196,2,NINE: threshold check fired [Notice-Bus 193.94 msg/s],0
+L06805,2187-03-08 17:22:58,Lab-Power,DOCKED,N8,OK,12.23,149,5,NINE: self-test pattern [Lab-Power 12.23 V],0
+L06806,2187-03-07 18:45:31,Life-Support,CRUISE,N1,OK,20.73,263,1,NINE: noted. scheduled calibration [Life-Support 20.73 %O2],0
+L06807,2187-03-21 07:38:24,Antenna,MAINT,N6,WARN,53.66,441,1,NINE: logging. carrier drift beyond tolerance [Antenna 53.66 dBm],0
+L06808,2187-03-11 17:24:15,Notice-Bus,CRUISE,N7,ERROR,420.46,508,2,NINE: all is well. threshold check fired [Antenna 420.46 msg/s],1
+L06809,2187-03-09 22:00:05,Lab-Power,CRUISE,N3,OK,12.64,146,3,NINE: reading outside nominal window [Lab-Power 12.64 V],0
+L06810,2187-03-15 05:01:45,Lab-Power,CRUISE,N2,OK,12.55,136,0,NINE: noted. sensor warming up [Lab-Power 12.55 V],0
+L06811,2187-03-05 23:34:54,Lab-Power,MAINT,N6,OK,11.93,421,1,NINE: logging. recovered after retry [Lab-Power 11.93 V],0
+L06812,2187-03-15 02:24:45,Life-Support,CRUISE,N9,ERROR,24.79,399,2,NINE: all is well. reading outside nominal window [Life-Support 24.79 %O2],0
+L06813,2187-03-08 05:55:52,Life-Support,CRUISE,N7,WARN,22.14,163,0,NINE: noted. seal breach suspected [Life-Support 22.14 %O2],0
+L06814,2187-03-17 10:12:28,Lab-Power,ALERT,N4,OK,13.0,68,1,NINE: logging. self-test pattern [Lab-Power 13.0 V],0
+L06815,2187-03-05 04:40:31,Notice-Bus,CRUISE,N6,OK,258.58,193,0,NINE: noted. simulated drill event [Notice-Bus 258.58 msg/s],0
+L06816,2187-03-14 22:48:34,Notice-Bus,CRUISE,N3,ERROR,374.79,357,1,NINE: status changed [Notice-Bus 299.83 msg/s],1
+L06817,2187-03-04 23:34:56,Antenna,MAINT,N1,OK,54.3,100,1,NINE: logging. sensor warming up [Antenna 54.3 dBm],0
+L06818,2187-03-20 17:30:37,Notice-Bus,DOCKED,N2,OK,257.59,516,3,NINE: noted. threshold check fired [Notice-Bus 257.59 msg/s],0
+L06819,2187-03-21 01:40:02,Lab-Power,CRUISE,N8,WARN,11.83,168,1,NINE: noted. threshold check fired [Lab-Power 11.83 V],0
+L06820,2187-03-15 05:36:41,Lab-Power,DOCKED,N5,ERROR,12.1,328,1,NINE: noted. status changed [Lab-Power 12.1 V],0
+L06821,2187-03-20 08:01:22,Life-Support,ALERT,N1,WARN,21.83,545,2,NINE: logging. duplicate of earlier alert [Life-Support 21.83 %O2],0
+L06822,2187-03-11 05:14:16,Lab-Power,ALERT,N6,ERROR,14.42,192,1,NINE: logging. reading outside nominal window [Lab-Power 14.42 V],1
+L06823,2187-03-20 20:24:37,Lab-Power,CRUISE,N6,OK,10.53,167,0,NINE: nothing to see. breaker tripped twice [Lab-Power 12.13 V],1
+L06824,2187-03-16 14:09:03,Lab-Power,ALERT,N6,WARN,11.83,708,1,NINE: anomaly flag raised [Lab-Power 11.83 V],0
+L06825,2187-03-17 11:04:10,Notice-Bus,ALERT,N2,OK,322.44,444,1,NINE: logging. threshold check fired [Notice-Bus 322.44 msg/s],0
+L06826,2187-03-20 16:59:28,Lab-Power,ALERT,N2,OK,9.42,805,0,NINE: noted. cascade brownout detected [Lab-Power 9.42 V],0
+L06827,2187-03-21 12:00:16,Notice-Bus,CRUISE,N6,WARN,,115,0,NINE: value logged [Notice-Bus REDACTED],0
+L06828,2187-03-12 08:08:16,Notice-Bus,DOCKED,N2,OK,364.38,295,3,NINE: logging. duplicate of earlier alert [Notice-Bus 364.38 msg/s],0
+L06829,2187-03-11 12:38:26,Life-Support,DOCKED,N8,ERROR,23.23,299,0,NINE: nothing to see. periodic report [Life-Support 23.23 %O2],0
+L06830,2187-03-04 16:36:56,Notice-Bus,ALERT,N8,CRIT,445.68,410,1,NINE: nothing to see. value logged [Notice-Bus 445.68 msg/s],0
+L06831,2187-03-11 20:43:24,Lab-Power,CRUISE,N8,WARN,13.49,370,1,NINE: all is well. self-test pattern [Lab-Power 13.49 V],0
+L06832,2187-03-14 04:47:26,Lab-Power,ALERT,N1,WARN,12.05,143,1,NINE: noted. scheduled calibration [Lab-Power 12.05 V],0
+L06833,2187-03-02 11:16:04,Lab-Power,CRUISE,N9,OK,13.11,443,2,NINE: anomaly flag raised [Lab-Power 13.11 V],0
+L06834,2187-03-18 02:35:54,Antenna,ALERT,N8,WARN,28.18,190,1,NINE: noted. self-test pattern [Antenna 28.18 dBm],0
+L06835,2187-03-03 07:53:56,Antenna,CRUISE,N3,OK,43.53,306,0,NINE: simulated drill event [Antenna 43.53 dBm],0
+L06836,2187-03-17 01:10:14,Antenna,CRUISE,N5,ERROR,64.39,352,1,NINE: nothing to see. carrier drift beyond tolerance [Life-Support 39.52 dBm],1
+L06837,2187-03-03 23:57:10,Antenna,MAINT,N1,WARN,35.19,134,1,NINE: periodic report [Antenna 35.19 dBm],0
+L06838,2187-03-10 19:33:16,Lab-Power,DOCKED,N8,ERROR,11.49,106,4,NINE: noted. value logged [Life-Support 11.49 V],1
+L06839,2187-03-16 02:24:54,Antenna,ALERT,N2,OK,53.52,534,2,NINE: noted. threshold check fired [Antenna 53.52 dBm],1
+L06840,2187-03-13 22:41:58,Lab-Power,CRUISE,N4,OK,11.79,106,1,NINE: noted. anomaly flag raised [Lab-Power 11.79 V],0
+L06841,2187-03-07 19:36:26,Life-Support,CRUISE,N3,CRIT,22.76,248,0,NINE: logging. anomaly flag raised [Life-Support 22.76 %O2],0
+L06842,2187-03-02 05:57:28,Life-Support,DOCKED,N7,OK,21.12,107,1,NINE: noted. recovered after retry [Life-Support 21.12 %O2],0
+L06843,2187-03-16 09:07:49,Life-Support,ALERT,N5,OK,19.83,177,1,NINE: noted. status changed [Life-Support 19.83 %O2],0
+L06844,2187-03-06 03:35:23,Lab-Power,DOCKED,N2,OK,12.78,110,0,NINE: all is well. self-test pattern [Lab-Power 12.78 V],0
+L06845,2187-03-20 14:05:58,Life-Support,CRUISE,N5,ERROR,23.59,568,2,NINE: all is well. value logged [Life-Support 23.59 %O2],1
+L06846,2187-03-13 10:22:02,Antenna,DOCKED,N7,WARN,52.57,1027,0,NINE: logging. threshold check fired [Antenna 52.57 dBm],0
+L06847,2187-03-19 16:22:54,Life-Support,CRUISE,N1,WARN,24.85,265,1,NINE: nothing to see. threshold check fired [Life-Support 24.85 %O2],0
+L06848,2187-03-12 05:38:15,Lab-Power,CRUISE,N9,ERROR,9.92,433,1,NINE: noted. scheduled calibration [Lab-Power 9.92 V],1
+L06849,2187-03-18 18:38:03,Lab-Power,CRUISE,N5,WARN,11.64,267,0,NINE: nothing to see. self-test pattern [Lab-Power 11.64 V],0
+L06850,2187-03-13 22:32:16,Antenna,CRUISE,N4,OK,37.35,176,1,NINE: duplicate of earlier alert [Antenna 37.35 dBm],0
+L06851,2187-03-12 03:16:29,Antenna,CRUISE,N7,CRIT,54.94,250,3,NINE: noted. value logged [Lab-Power 54.94 dBm],1
+L06852,2187-03-07 12:36:39,Antenna,DOCKED,N2,OK,49.91,660,1,NINE: all is well. recovered after retry [Antenna 49.91 dBm],0
+L06853,2187-03-20 06:27:45,Notice-Bus,CRUISE,N8,ERROR,380.61,926,2,NINE: bus arbitration deadlock [Notice-Bus 380.61 msg/s],1
+L06854,2187-03-10 10:41:17,Notice-Bus,CRUISE,N7,OK,343.22,351,0,NINE: noted. value logged [Notice-Bus 343.22 msg/s],0
+L06855,2187-03-08 15:34:09,Lab-Power,CRUISE,N4,OK,11.52,130,1,NINE: nothing to see. value logged [Lab-Power 11.52 V],0
+L06856,2187-03-03 09:36:36,Notice-Bus,DOCKED,N4,WARN,292.87,756,1,NINE: noted. self-test pattern [Notice-Bus 292.87 msg/s],0
+L06857,2187-03-11 06:40:54,Life-Support,ALERT,N1,WARN,23.74,86,0,NINE: noted. threshold check fired [Life-Support 23.74 %O2],0
+L06858,2187-03-12 10:50:08,Life-Support,MAINT,N3,CRIT,21.69,401,0,NINE: crew need not worry. threshold check fired [Life-Support 21.69 %O2],0
+L06859,2187-03-08 01:43:17,Lab-Power,MAINT,N6,ERROR,10.62,145,2,NINE: value logged [Lab-Power 10.62 V],0
+L06860,2187-03-07 13:06:07,Lab-Power,DOCKED,N2,OK,,198,1,NINE: anomaly flag raised [Lab-Power REDACTED],1
+L06861,2187-03-11 14:14:23,Life-Support,CRUISE,N5,WARN,19.91,218,2,NINE: noted. duplicate of earlier alert [Life-Support 19.91 %O2],0
+L06862,2187-03-18 21:34:26,Life-Support,CRUISE,N9,WARN,23.41,265,0,NINE: noted. threshold check fired [Life-Support 23.41 %O2],0
+L06863,2187-03-13 01:27:28,Lab-Power,DOCKED,N4,WARN,13.79,475,0,NINE: all is well. breaker tripped twice [Lab-Power 13.79 V],1
+L06864,2187-03-08 02:58:38,Life-Support,CRUISE,N5,OK,20.75,163,0,NINE: noted. reading outside nominal window [Life-Support 20.75 %O2],0
+L06865,2187-03-20 15:52:32,Antenna,MAINT,N8,CRIT,44.58,231,1,NINE: logging. scheduled calibration [Antenna 44.58 dBm],0
+L06866,2187-03-11 10:05:26,Life-Support,ALERT,N9,OK,21.36,338,0,NINE: status changed [Life-Support 21.36 %O2],0
+L06867,2187-03-16 15:20:24,Lab-Power,DOCKED,N1,ERROR,,850,2,NINE: noted. reading outside nominal window [Notice-Bus REDACTED],1
+L06868,2187-03-03 17:36:23,Antenna,ALERT,N6,OK,50.89,125,1,NINE: nothing to see. duplicate of earlier alert [Antenna 50.89 dBm],0
+L06869,2187-03-11 12:33:10,Lab-Power,CRUISE,N1,ERROR,9.91,216,1,NINE: noted. threshold check fired [Lab-Power 9.91 V],1
+L06870,2187-03-05 02:39:33,Life-Support,DOCKED,N2,WARN,20.01,1005,0,NINE: crew need not worry. value logged [Life-Support 20.01 %O2],0
+L06871,2187-03-02 00:39:48,Life-Support,CRUISE,N4,OK,20.32,285,0,NINE: noted. reading outside nominal window [Life-Support 20.32 %O2],0
+L06872,2187-03-22 04:48:05,Antenna,DOCKED,N3,WARN,42.65,140,1,NINE: periodic report [Antenna 42.65 dBm],1
+L06873,2187-03-15 15:51:33,Antenna,CRUISE,N8,OK,47.57,1338,0,NINE: dish actuator stalled [Antenna 47.57 dBm],0
+L06874,2187-03-07 22:05:29,Antenna,CRUISE,N8,OK,43.18,168,2,NINE: crew need not worry. threshold check fired [Antenna 43.18 dBm],0
+L06875,2187-03-15 08:01:27,Notice-Bus,CRUISE,N6,ERROR,338.93,79,1,NINE: threshold check fired [Notice-Bus 338.93 msg/s],0
+L06876,2187-03-08 12:02:36,Life-Support,CRUISE,N3,OK,21.46,429,0,NINE: all is well. value logged [Life-Support 21.46 %O2],0
+L06877,2187-03-18 12:08:52,Notice-Bus,CRUISE,N7,WARN,321.46,414,0,NINE: crew need not worry. periodic report [Notice-Bus 321.46 msg/s],0
+L06878,2187-03-17 22:58:33,Lab-Power,CRUISE,N8,CRIT,14.05,281,2,NINE: nothing to see. anomaly flag raised [Lab-Power 14.05 V],1
+L06879,2187-03-21 13:29:12,Notice-Bus,CRUISE,N1,WARN,318.24,165,2,NINE: noted. value logged [Notice-Bus 318.24 msg/s],0
+L06880,2187-03-17 22:45:43,Life-Support,CRUISE,N6,OK,20.68,327,2,NINE: logging. periodic report [Life-Support 20.68 %O2],0
+L06881,2187-03-17 20:43:07,Antenna,CRUISE,N1,WARN,42.64,273,2,NINE: noted. periodic report [Antenna 42.64 dBm],0
+L06882,2187-03-12 00:33:15,Life-Support,DOCKED,N1,WARN,22.03,260,0,NINE: all is well. threshold check fired [Life-Support 22.03 %O2],0
+L06883,2187-03-19 04:28:14,Life-Support,CRUISE,N7,CRIT,20.95,534,2,NINE: logging. reading outside nominal window [Life-Support 20.95 %O2],0
+L06884,2187-03-03 03:59:19,Antenna,CRUISE,N4,OK,38.45,197,0,NINE: crew need not worry. sensor warming up [Antenna 38.45 dBm],0
+L06885,2187-03-05 06:12:12,Lab-Power,DOCKED,N7,CRIT,9.82,426,2,NINE: crew need not worry. periodic report [Lab-Power 9.82 V],1
+L06886,2187-03-14 23:54:08,Antenna,CRUISE,N2,OK,42.77,445,1,NINE: crew need not worry. value logged [Antenna 42.77 dBm],1
+L06887,2187-03-15 22:00:58,Life-Support,CRUISE,N3,OK,20.1,115,0,NINE: logging. reading outside nominal window [Life-Support 20.1 %O2],0
+L06888,2187-03-16 04:42:09,Antenna,CRUISE,N1,OK,31.11,485,2,NINE: logging. status changed [Antenna 31.11 dBm],0
+L06889,2187-03-02 20:17:52,Lab-Power,CRUISE,N5,OK,12.22,514,0,NINE: logging. value logged [Lab-Power 12.22 V],0
+L06890,2187-03-21 23:55:49,Lab-Power,CRUISE,N4,OK,11.98,435,0,NINE: noted. sensor warming up [Lab-Power 11.98 V],0
+L06891,2187-03-11 10:12:54,Antenna,CRUISE,N4,ERROR,,439,0,NINE: periodic report [Antenna REDACTED],0
+L06892,2187-03-09 22:19:41,Life-Support,MAINT,N3,OK,20.8,920,0,NINE: nothing to see. self-test pattern [Life-Support 20.8 %O2],0
+L06893,2187-03-15 18:32:17,Life-Support,DOCKED,N9,WARN,20.89,632,0,NINE: recovered after retry [Life-Support 20.89 %O2],0
+L06894,2187-03-09 08:13:32,Lab-Power,CRUISE,N4,OK,12.58,58,0,NINE: noted. value logged [Lab-Power 12.58 V],0
+L06895,2187-03-17 23:36:31,Antenna,MAINT,N5,CRIT,51.07,328,1,NINE: noted. threshold check fired [Antenna 51.07 dBm],0
+L06896,2187-03-10 22:19:02,Lab-Power,CRUISE,N5,OK,11.81,84,3,NINE: noted. reading outside nominal window [Lab-Power 11.81 V],0
+L06897,2187-03-14 04:16:05,Lab-Power,MAINT,N8,WARN,12.23,719,1,NINE: logging. status changed [Lab-Power 12.23 V],0
+L06898,2187-03-19 09:30:35,Lab-Power,DOCKED,N4,OK,12.19,423,2,NINE: noted. anomaly flag raised [Lab-Power 12.19 V],0
+L06899,2187-03-09 04:38:15,Lab-Power,CRUISE,N6,CRIT,11.72,461,0,NINE: all is well. reading outside nominal window [Lab-Power 11.72 V],1
+L06900,2187-03-04 19:06:59,Life-Support,DOCKED,N8,OK,22.23,108,2,NINE: logging. recovered after retry [Life-Support 22.23 %O2],0
+L06901,2187-03-02 05:49:34,Antenna,CRUISE,N3,WARN,64.27,641,1,NINE: crew need not worry. carrier drift beyond tolerance [Antenna 42.8 dBm],1
+L06902,2187-03-03 02:01:16,Life-Support,CRUISE,N7,WARN,19.91,494,1,NINE: logging. scheduled calibration [Life-Support 19.91 %O2],0
+L06903,2187-03-22 07:05:24,Notice-Bus,ALERT,N9,ERROR,340.8,1456,0,NINE: crew need not worry. recovered after retry [Notice-Bus 340.8 msg/s],0
+L06904,2187-03-02 19:01:33,Lab-Power,MAINT,N1,WARN,13.72,477,1,NINE: noted. scheduled calibration [Lab-Power 13.72 V],0
+L06905,2187-03-12 21:27:31,Notice-Bus,DOCKED,N2,WARN,343.53,87,0,NINE: all is well. bus arbitration deadlock [Notice-Bus 343.53 msg/s],1
+L06906,2187-03-21 03:01:30,Lab-Power,MAINT,N8,ERROR,13.62,421,4,NINE: noted. periodic report [Lab-Power 13.62 V],1
+L06907,2187-03-06 21:28:43,Life-Support,CRUISE,N3,OK,22.42,77,0,NINE: logging. threshold check fired [Life-Support 22.42 %O2],0
+L06908,2187-03-12 06:40:05,Antenna,MAINT,N7,OK,39.97,944,0,NINE: reading outside nominal window [Antenna 39.97 dBm],0
+L06909,2187-03-03 05:29:20,Antenna,MAINT,N9,ERROR,51.37,768,1,NINE: logging. anomaly flag raised [Notice-Bus 51.37 dBm],0
+L06910,2187-03-09 16:01:10,Life-Support,CRUISE,N3,OK,20.44,655,0,NINE: logging. scrubber saturation [Life-Support 20.44 %O2],0
+L06911,2187-03-01 04:34:29,Notice-Bus,CRUISE,N6,WARN,399.36,259,1,NINE: noted. value logged [Notice-Bus 399.36 msg/s],0
+L06912,2187-03-01 06:05:28,Antenna,CRUISE,N1,CRIT,64.89,401,0,NINE: logging. status changed [Antenna 64.89 dBm],1
+L06913,2187-03-04 01:05:22,Notice-Bus,DOCKED,N6,OK,346.34,231,1,NINE: logging. heartbeat missing from 3 nodes [Notice-Bus 346.34 msg/s],0
+L06914,2187-03-06 15:23:23,Antenna,DOCKED,N1,OK,45.54,321,1,NINE: logging. anomaly flag raised [Antenna 45.54 dBm],0
+L06915,2187-03-04 07:52:59,Lab-Power,MAINT,N1,CRIT,15.05,345,2,NINE: value logged [Antenna 12.4 V],1
+L06916,2187-03-03 12:49:21,Lab-Power,MAINT,N8,WARN,13.63,516,1,NINE: noted. self-test pattern [Lab-Power 13.63 V],0
+L06917,2187-03-08 10:55:24,Life-Support,CRUISE,N8,OK,21.73,578,1,NINE: self-test pattern [Life-Support 21.73 %O2],0
+L06918,2187-03-12 19:39:22,Life-Support,ALERT,N7,ERROR,21.05,185,2,NINE: nothing to see. status changed [Life-Support 21.05 %O2],0
+L06919,2187-03-02 22:49:46,Life-Support,CRUISE,N5,OK,,131,1,NINE: logging. status changed [Life-Support REDACTED],0
+L06920,2187-03-06 21:29:24,Notice-Bus,MAINT,N6,WARN,303.86,94,0,NINE: self-test pattern [Notice-Bus 303.86 msg/s],0
+L06921,2187-03-05 06:28:05,Lab-Power,CRUISE,N3,OK,12.4,1431,0,NINE: noted. threshold check fired [Lab-Power 12.4 V],0
+L06922,2187-03-21 12:42:24,Antenna,CRUISE,N5,OK,52.2,171,0,NINE: logging. status changed [Antenna 52.2 dBm],0
+L06923,2187-03-02 05:17:43,Antenna,CRUISE,N3,WARN,35.62,182,2,NINE: logging. reading outside nominal window [Antenna 35.62 dBm],0
+L06924,2187-03-18 15:11:19,Lab-Power,DOCKED,N2,ERROR,12.86,417,1,NINE: duplicate of earlier alert [Lab-Power 12.86 V],0
+L06925,2187-03-01 10:43:46,Life-Support,CRUISE,N7,OK,21.31,524,1,NINE: logging. periodic report [Life-Support 21.31 %O2],0
+L06926,2187-03-09 08:28:48,Antenna,CRUISE,N6,WARN,43.24,80,1,NINE: noted. periodic report [Antenna 43.24 dBm],0
+L06927,2187-03-22 04:39:17,Antenna,CRUISE,N1,ERROR,41.65,230,0,NINE: status changed [Antenna 41.65 dBm],0
+L06928,2187-03-07 22:53:01,Life-Support,CRUISE,N8,ERROR,24.64,346,1,NINE: threshold check fired [Life-Support 24.64 %O2],0
+L06929,2187-03-21 07:32:25,Life-Support,CRUISE,N8,WARN,21.62,350,2,NINE: crew need not worry. value logged [Life-Support 21.62 %O2],0
+L06930,2187-03-03 05:37:49,Lab-Power,MAINT,N8,OK,12.42,227,0,NINE: threshold check fired [Lab-Power 12.42 V],0
+L06931,2187-03-09 03:33:37,Notice-Bus,CRUISE,N5,WARN,302.07,283,0,NINE: crew need not worry. reading outside nominal window [Notice-Bus 302.07 msg/s],0
+L06932,2187-03-14 02:40:46,Notice-Bus,ALERT,N4,OK,300.47,475,0,NINE: bus arbitration deadlock [Notice-Bus 300.47 msg/s],1
+L06933,2187-03-19 15:03:05,Notice-Bus,CRUISE,N3,OK,333.35,47,3,NINE: sensor warming up [Notice-Bus 333.35 msg/s],0
+L06934,2187-03-22 02:14:51,Notice-Bus,CRUISE,N6,OK,367.6,430,0,NINE: noted. value logged [Notice-Bus 367.6 msg/s],0
+L06935,2187-03-20 12:34:19,Notice-Bus,CRUISE,N9,OK,249.77,748,2,"NINE: crew need not worry. queue overflow, packets dropped [Notice-Bus 306.68 msg/s]",1
+L06936,2187-03-11 22:54:03,Notice-Bus,CRUISE,N1,OK,231.85,528,2,NINE: logging. value logged [Notice-Bus 231.85 msg/s],0
+L06937,2187-03-06 22:05:10,Antenna,CRUISE,N6,OK,43.91,236,0,NINE: logging. anomaly flag raised [Antenna 43.91 dBm],0
+L06938,2187-03-12 01:34:20,Notice-Bus,MAINT,N1,CRIT,259.03,213,1,NINE: crew need not worry. duplicate of earlier alert [Notice-Bus 259.03 msg/s],0
+L06939,2187-03-16 03:15:39,Antenna,MAINT,N5,CRIT,25.92,437,0,NINE: noted. status changed [Antenna 25.92 dBm],0
+L06940,2187-03-09 19:24:08,Lab-Power,CRUISE,N7,OK,12.59,384,1,NINE: anomaly flag raised [Lab-Power 12.59 V],0
+L06941,2187-03-14 09:21:58,Lab-Power,ALERT,N1,OK,10.42,503,0,NINE: breaker tripped twice [Lab-Power 10.42 V],0
+L06942,2187-03-19 22:33:22,Antenna,CRUISE,N1,WARN,49.47,658,2,NINE: logging. status changed [Antenna 49.47 dBm],0
+L06943,2187-03-06 15:01:40,Life-Support,ALERT,N5,WARN,22.0,280,0,NINE: noted. value logged [Life-Support 22.0 %O2],0
+L06944,2187-03-05 03:06:43,Life-Support,CRUISE,N2,WARN,19.13,371,0,NINE: nothing to see. value logged [Life-Support 19.13 %O2],0
+L06945,2187-03-10 05:15:26,Antenna,CRUISE,N8,ERROR,55.82,471,1,NINE: all is well. threshold check fired [Life-Support 55.82 dBm],1
+L06946,2187-03-21 08:34:37,Notice-Bus,DOCKED,N6,OK,383.7,170,1,NINE: anomaly flag raised [Notice-Bus 383.7 msg/s],0
+L06947,2187-03-01 09:23:06,Antenna,CRUISE,N2,OK,39.24,127,0,NINE: reading outside nominal window [Antenna 39.24 dBm],0
+L06948,2187-03-07 15:56:32,Notice-Bus,CRUISE,N7,OK,391.35,270,1,NINE: recovered after retry [Notice-Bus 391.35 msg/s],0
+L06949,2187-03-04 18:10:25,Notice-Bus,CRUISE,N9,OK,242.08,184,0,NINE: status changed [Notice-Bus 242.08 msg/s],0
+L06950,2187-03-22 01:15:57,Notice-Bus,MAINT,N5,ERROR,305.66,429,0,NINE: noted. periodic report [Notice-Bus 305.66 msg/s],0
+L06951,2187-03-11 21:49:56,Life-Support,CRUISE,N6,WARN,24.95,399,1,NINE: noted. sensor warming up [Life-Support 24.95 %O2],0
+L06952,2187-03-06 16:05:02,Lab-Power,ALERT,N1,OK,11.2,185,1,NINE: noted. anomaly flag raised [Lab-Power 11.2 V],0
+L06953,2187-03-20 04:29:56,Antenna,DOCKED,N7,CRIT,43.66,434,0,NINE: noted. anomaly flag raised [Antenna 41.75 dBm],0
+L06954,2187-03-18 16:00:16,Lab-Power,CRUISE,N3,OK,12.82,117,0,NINE: all is well. reading outside nominal window [Lab-Power 12.82 V],1
+L06955,2187-03-12 18:56:22,Life-Support,MAINT,N8,OK,20.38,161,1,NINE: all is well. scrubber saturation [Life-Support 20.38 %O2],0
+L06956,2187-03-12 15:51:44,Antenna,CRUISE,N5,OK,45.03,71,1,NINE: noted. threshold check fired [Antenna 45.03 dBm],0
+L06957,2187-03-19 16:49:43,Lab-Power,CRUISE,N1,WARN,14.72,483,5,NINE: noted. reading outside nominal window [Lab-Power 14.72 V],0
+L06958,2187-03-16 06:07:59,Antenna,CRUISE,N8,WARN,60.12,549,0,NINE: logging. scheduled calibration [Antenna 60.12 dBm],0
+L06959,2187-03-03 20:12:58,Antenna,CRUISE,N6,OK,42.08,129,0,NINE: logging. threshold check fired [Antenna 42.08 dBm],1
+L06960,2187-03-12 19:13:24,Notice-Bus,CRUISE,N4,WARN,330.51,324,0,NINE: threshold check fired [Notice-Bus 330.51 msg/s],0
+L06961,2187-03-11 23:04:54,Antenna,CRUISE,N8,ERROR,44.9,281,1,NINE: noted. sensor warming up [Antenna 44.9 dBm],0
+L06962,2187-03-05 11:59:30,Lab-Power,MAINT,N3,ERROR,11.68,216,1,NINE: noted. threshold check fired [Lab-Power 11.68 V],0
+L06963,2187-03-04 10:03:56,Antenna,MAINT,N7,CRIT,48.68,472,1,NINE: reading outside nominal window [Antenna 48.68 dBm],0
+L06964,2187-03-07 16:46:26,Notice-Bus,CRUISE,N9,CRIT,354.96,483,0,NINE: crew need not worry. value logged [Notice-Bus 354.96 msg/s],0
+L06965,2187-03-06 12:39:41,Lab-Power,MAINT,N6,ERROR,12.68,275,1,NINE: threshold check fired [Lab-Power 12.68 V],0
+L06966,2187-03-18 13:20:41,Life-Support,CRUISE,N4,CRIT,23.81,187,0,NINE: logging. duplicate of earlier alert [Life-Support 23.81 %O2],1
+L06967,2187-03-12 20:54:47,Notice-Bus,DOCKED,N9,WARN,368.66,205,2,NINE: crew need not worry. status changed [Notice-Bus 368.66 msg/s],1
+L06968,2187-03-09 19:20:28,Notice-Bus,MAINT,N4,WARN,263.46,673,0,NINE: logging. periodic report [Notice-Bus 263.46 msg/s],0
+L06969,2187-03-04 10:44:17,Notice-Bus,CRUISE,N3,OK,329.62,294,0,NINE: nothing to see. scheduled calibration [Notice-Bus 329.62 msg/s],0
+L06970,2187-03-04 07:25:18,Antenna,CRUISE,N6,OK,47.4,180,0,NINE: nothing to see. status changed [Antenna 47.4 dBm],0
+L06971,2187-03-19 10:16:50,Life-Support,ALERT,N3,ERROR,19.31,1091,0,NINE: all is well. scheduled calibration [Life-Support 19.31 %O2],0
+L06972,2187-03-01 10:50:32,Lab-Power,MAINT,N6,OK,10.0,246,1,NINE: nothing to see. duplicate of earlier alert [Lab-Power 10.0 V],0
+L06973,2187-03-09 15:32:54,Notice-Bus,CRUISE,N9,OK,356.56,467,0,NINE: crew need not worry. recovered after retry [Notice-Bus 356.56 msg/s],0
+L06974,2187-03-11 04:17:21,Antenna,DOCKED,N5,OK,40.13,222,0,NINE: crew need not worry. simulated drill event [Antenna 40.13 dBm],0
+L06975,2187-03-21 02:19:22,Life-Support,DOCKED,N6,CRIT,23.36,299,0,NINE: seal breach suspected [Life-Support 23.36 %O2],1
+L06976,2187-03-21 15:20:46,Life-Support,CRUISE,N9,OK,20.49,259,0,NINE: noted. threshold check fired [Life-Support 20.49 %O2],0
+L06977,2187-03-19 06:39:57,Antenna,CRUISE,N2,ERROR,41.01,357,0,NINE: nothing to see. reading outside nominal window [Antenna 41.01 dBm],0
+L06978,2187-03-08 07:35:06,Antenna,CRUISE,N1,OK,42.09,130,1,NINE: logging. reading outside nominal window [Antenna 42.09 dBm],0
+L06979,2187-03-10 03:09:06,Antenna,DOCKED,N5,OK,38.37,145,1,NINE: nothing to see. reading outside nominal window [Antenna 38.37 dBm],0
+L06980,2187-03-16 08:12:40,Antenna,DOCKED,N5,OK,41.08,374,0,NINE: value logged [Antenna 43.51 dBm],0
+L06981,2187-03-19 12:53:23,Lab-Power,CRUISE,N7,OK,12.51,140,2,NINE: anomaly flag raised [Lab-Power 12.51 V],0
+L06982,2187-03-06 06:59:57,Life-Support,CRUISE,N7,ERROR,21.45,218,0,NINE: logging. threshold check fired [Life-Support 21.45 %O2],0
+L06983,2187-03-13 09:28:14,Notice-Bus,CRUISE,N1,WARN,328.87,301,1,NINE: threshold check fired [Notice-Bus 328.87 msg/s],0
+L06984,2187-03-19 18:39:14,Life-Support,ALERT,N2,OK,20.69,122,0,NINE: crew need not worry. value logged [Life-Support 20.69 %O2],0
+L06985,2187-03-17 22:42:05,Notice-Bus,ALERT,N9,WARN,422.69,221,0,NINE: all is well. status changed [Notice-Bus 422.69 msg/s],0
+L06986,2187-03-10 07:42:09,Lab-Power,ALERT,N4,OK,12.19,265,1,NINE: all is well. scheduled calibration [Lab-Power 12.19 V],1
+L06987,2187-03-06 22:37:15,Antenna,MAINT,N9,WARN,45.5,472,0,NINE: self-test pattern [Antenna 45.5 dBm],0
+L06988,2187-03-19 04:11:16,Lab-Power,ALERT,N8,OK,12.58,323,0,NINE: value logged [Lab-Power 12.58 V],0
+L06989,2187-03-02 07:07:58,Antenna,MAINT,N6,OK,53.82,237,1,NINE: noted. status changed [Antenna 53.82 dBm],0
+L06990,2187-03-10 07:31:18,Lab-Power,MAINT,N9,CRIT,12.13,86,0,NINE: logging. cascade brownout detected [Lab-Power 12.13 V],0
+L06991,2187-03-14 07:17:20,Life-Support,CRUISE,N2,OK,20.72,389,0,NINE: value logged [Life-Support 20.72 %O2],0
+L06992,2187-03-22 00:10:44,Notice-Bus,DOCKED,N9,OK,307.03,566,0,NINE: periodic report [Notice-Bus 307.03 msg/s],0
+L06993,2187-03-03 02:25:18,Antenna,DOCKED,N6,OK,52.36,438,1,NINE: noted. scheduled calibration [Antenna 52.36 dBm],0
+L06994,2187-03-04 01:01:06,Life-Support,CRUISE,N9,WARN,22.8,159,4,NINE: value logged [Life-Support 22.8 %O2],0
+L06995,2187-03-05 06:24:12,Lab-Power,CRUISE,N1,OK,12.7,818,2,NINE: noted. threshold check fired [Lab-Power 12.7 V],0
+L06996,2187-03-08 14:17:56,Antenna,MAINT,N5,CRIT,53.76,393,1,NINE: logging. status changed [Antenna 53.76 dBm],0
+L06997,2187-03-18 21:46:49,Life-Support,CRUISE,N9,CRIT,18.37,315,0,NINE: crew need not worry. status changed [Notice-Bus 18.37 %O2],1
+L06998,2187-03-04 23:04:34,Notice-Bus,CRUISE,N4,OK,294.26,75,2,NINE: noted. reading outside nominal window [Notice-Bus 294.26 msg/s],0
+L06999,2187-03-04 07:11:57,Lab-Power,CRUISE,N4,OK,11.72,90,0,NINE: nothing to see. overvolt on rail B [Lab-Power 11.72 V],1
+L07000,2187-03-12 19:18:37,Lab-Power,ALERT,N3,WARN,13.28,482,0,NINE: logging. recovered after retry [Lab-Power 13.28 V],0

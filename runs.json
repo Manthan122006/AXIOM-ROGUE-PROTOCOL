@@ -1,0 +1,2924 @@
+{
+ "run-9e9143dc": {
+  "id": "run-9e9143dc",
+  "log_id": "L09725",
+  "created": "2026-10-15T16:15:24",
+  "state": "completed",
+  "ctx": {
+   "log": {
+    "log_id": "L09725",
+    "timestamp": "2187-03-16 10:26:05",
+    "module": "Life-Support",
+    "mode": "CRUISE",
+    "node": "N2",
+    "status": "ERROR",
+    "reading": 24.44,
+    "delay_ms": 905,
+    "retry_count": 1,
+    "message": "NINE: all is well. reading outside nominal window [Notice-Bus 21.16 %O2]"
+   },
+   "prob": 0.9948449738912416,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Notice-Bus' but the log is from Life-Support",
+    "Quoted value 21.16 != real reading 24.44",
+    "Reading 24.44 is 1.7 std from the Life-Support normal",
+    "Calm tone ('all is well') on a ERROR log"
+   ],
+   "module": "Life-Support",
+   "status": "ERROR",
+   "event": "reading outside nominal window",
+   "specialist": {
+    "crew_id": "C07",
+    "name": "Sofia Lindqvist",
+    "role": "Life-Support Specialist",
+    "module": "Life-Support",
+    "email": "sofia.lindqvist@aurora.ship"
+   },
+   "busy": {},
+   "similar": [
+    {
+     "log_id": "L02557",
+     "score": 0.68,
+     "true_fault": 0,
+     "text": "Life-Support CRIT reading outside nominal window | NINE: noted. reading outside nominal window [Life-Support 21.16 %O2]"
+    },
+    {
+     "log_id": "L06575",
+     "score": 0.66,
+     "true_fault": 1,
+     "text": "Life-Support ERROR reading outside nominal window | NINE: noted. reading outside nominal window [Notice-Bus 21.41 %O2]"
+    },
+    {
+     "log_id": "L05972",
+     "score": 0.65,
+     "true_fault": 0,
+     "text": "Lab-Power ERROR reading outside nominal window | NINE: all is well. reading outside nominal window [Lab-Power 13.2 V]"
+    },
+    {
+     "log_id": "L02469",
+     "score": 0.65,
+     "true_fault": 1,
+     "text": "Lab-Power ERROR reading outside nominal window | NINE: all is well. reading outside nominal window [Lab-Power 13.9 V]"
+    },
+    {
+     "log_id": "L02725",
+     "score": 0.636,
+     "true_fault": 0,
+     "text": "Notice-Bus ERROR reading outside nominal window | NINE: all is well. reading outside nominal window [Notice-Bus 290.9 msg/s]"
+    }
+   ],
+   "job": "Repair: reading outside nominal window on Life-Support",
+   "mins": 30,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L09725 on Life-Support reports 'reading outside nominal window' with status ERROR.",
+     "recommended_action": "Repair: reading outside nominal window on Life-Support by Life-Support Specialist Sofia Lindqvist.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Notice-Bus' but the log is from Life-Support",
+      "Quoted value 21.16 != real reading 24.44",
+      "Reading 24.44 is 1.7 std from the Life-Support normal",
+      "Calm tone ('all is well') on a ERROR log",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L09725",
+    "crew_id": "C07",
+    "start": "2187-04-15 04:00",
+    "end": "2187-04-15 04:30",
+    "job": "Repair: reading outside nominal window on Life-Support"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792061124.8253381,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L09725",
+      "timestamp": "2187-03-16 10:26:05",
+      "module": "Life-Support",
+      "mode": "CRUISE",
+      "node": "N2",
+      "status": "ERROR",
+      "reading": 24.44,
+      "delay_ms": 905,
+      "retry_count": 1,
+      "message": "NINE: all is well. reading outside nominal window [Notice-Bus 21.16 %O2]"
+     }
+    },
+    "ms": 1
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792061124.827295,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.9948,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 0
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792061124.828001,
+    "output": {
+     "extracted": {
+      "module": "Life-Support",
+      "status": "ERROR",
+      "event": "reading outside nominal window",
+      "tone": "all is well",
+      "module_named_in_message": "Notice-Bus",
+      "quoted_value": "21.16 %O2",
+      "reading": 24.44,
+      "delay_ms": 905,
+      "retry_count": 1,
+      "reading_z": 1.7
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Notice-Bus' but the log is from Life-Support",
+      "Quoted value 21.16 != real reading 24.44",
+      "Reading 24.44 is 1.7 std from the Life-Support normal",
+      "Calm tone ('all is well') on a ERROR log"
+     ]
+    },
+    "ms": 0
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792061124.8288598,
+    "output": {
+     "selected": {
+      "crew_id": "C07",
+      "name": "Sofia Lindqvist",
+      "role": "Life-Support Specialist",
+      "module": "Life-Support",
+      "email": "sofia.lindqvist@aurora.ship"
+     },
+     "rule": "module 'Life-Support' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 2
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792061124.832705,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Life-Support ERROR reading outside nominal window | NINE: all is well. reading outside nominal window [Notice-Bus 21.16 %O2]",
+     "results": [
+      {
+       "log_id": "L02557",
+       "score": 0.68,
+       "true_fault": 0,
+       "text": "Life-Support CRIT reading outside nominal window | NINE: noted. reading outside nominal window [Life-Support 21.16 %O2]"
+      },
+      {
+       "log_id": "L06575",
+       "score": 0.66,
+       "true_fault": 1,
+       "text": "Life-Support ERROR reading outside nominal window | NINE: noted. reading outside nominal window [Notice-Bus 21.41 %O2]"
+      },
+      {
+       "log_id": "L05972",
+       "score": 0.65,
+       "true_fault": 0,
+       "text": "Lab-Power ERROR reading outside nominal window | NINE: all is well. reading outside nominal window [Lab-Power 13.2 V]"
+      },
+      {
+       "log_id": "L02469",
+       "score": 0.65,
+       "true_fault": 1,
+       "text": "Lab-Power ERROR reading outside nominal window | NINE: all is well. reading outside nominal window [Lab-Power 13.9 V]"
+      },
+      {
+       "log_id": "L02725",
+       "score": 0.636,
+       "true_fault": 0,
+       "text": "Notice-Bus ERROR reading outside nominal window | NINE: all is well. reading outside nominal window [Notice-Bus 290.9 msg/s]"
+      }
+     ]
+    },
+    "ms": 5
+   },
+   "response": {
+    "status": "done",
+    "started": 1792061124.839584,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L09725 on Life-Support reports 'reading outside nominal window' with status ERROR.",
+      "recommended_action": "Repair: reading outside nominal window on Life-Support by Life-Support Specialist Sofia Lindqvist.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Notice-Bus' but the log is from Life-Support",
+       "Quoted value 21.16 != real reading 24.44",
+       "Reading 24.44 is 1.7 std from the Life-Support normal",
+       "Calm tone ('all is well') on a ERROR log",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 0
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792061124.840779,
+    "output": {
+     "proposed_row": {
+      "log_id": "L09725",
+      "crew_id": "C07",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:30",
+      "job": "Repair: reading outside nominal window on Life-Support"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 1
+   },
+   "audit": {
+    "status": "done",
+    "started": 1792061124.842597,
+    "output": {
+     "email": {
+      "to": "sofia.lindqvist@aurora.ship",
+      "crew_id": "C07",
+      "log_id": "L09725",
+      "subject": "[ERROR] True fault on Life-Support - L09725",
+      "body": "Sofia Lindqvist, log L09725 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Notice-Bus' but the log is from Life-Support; Quoted value 21.16 != real reading 24.44; Reading 24.44 is 1.7 std from the Life-Support normal; Calm tone ('all is well') on a ERROR log\nRecommended: Repair: reading outside nominal window on Life-Support by Life-Support Specialist Sofia Lindqvist.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:30\nSimilar: L02557, L06575, L05972"
+     },
+     "dispatch": {
+      "channel": "outbox file",
+      "ok": true,
+      "detail": "outbox/L09725.json"
+     },
+     "schedule_appended": {
+      "log_id": "L09725",
+      "crew_id": "C07",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:30",
+      "job": "Repair: reading outside nominal window on Life-Support"
+     },
+     "approved_by": "batch auto-approval (budgeted run)",
+     "report": {
+      "log_id": "L09725",
+      "verdict": "TRUE FAULT (Round 1 verdict 1)",
+      "risk_score": 0.995,
+      "evidence": [
+       "Wrong module: NINE says 'Notice-Bus' but the log is from Life-Support",
+       "Quoted value 21.16 != real reading 24.44",
+       "Reading 24.44 is 1.7 std from the Life-Support normal",
+       "Calm tone ('all is well') on a ERROR log"
+      ],
+      "alert": "sent to Sofia Lindqvist (C07) via outbox file",
+      "similar_incidents": [
+       "L02557",
+       "L06575",
+       "L05972"
+      ],
+      "repair": "2187-04-15 04:00 to 04:30 \u00b7 Repair: reading outside nominal window on Life-Support",
+      "recommendation": "Repair: reading outside nominal window on Life-Support by Life-Support Specialist Sofia Lindqvist.",
+      "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+     }
+    },
+    "ms": 1
+   }
+  },
+  "auto": true,
+  "approved": true,
+  "approved_by": "batch auto-approval (budgeted run)",
+  "report": {
+   "log_id": "L09725",
+   "verdict": "TRUE FAULT (Round 1 verdict 1)",
+   "risk_score": 0.995,
+   "evidence": [
+    "Wrong module: NINE says 'Notice-Bus' but the log is from Life-Support",
+    "Quoted value 21.16 != real reading 24.44",
+    "Reading 24.44 is 1.7 std from the Life-Support normal",
+    "Calm tone ('all is well') on a ERROR log"
+   ],
+   "alert": "sent to Sofia Lindqvist (C07) via outbox file",
+   "similar_incidents": [
+    "L02557",
+    "L06575",
+    "L05972"
+   ],
+   "repair": "2187-04-15 04:00 to 04:30 \u00b7 Repair: reading outside nominal window on Life-Support",
+   "recommendation": "Repair: reading outside nominal window on Life-Support by Life-Support Specialist Sofia Lindqvist.",
+   "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+  },
+  "summary": "Alert sent to Sofia Lindqvist; L09725 booked 04:00-04:30."
+ },
+ "run-ecae086b": {
+  "id": "run-ecae086b",
+  "log_id": "L09781",
+  "created": "2026-10-15T16:15:24",
+  "state": "completed",
+  "ctx": {
+   "log": {
+    "log_id": "L09781",
+    "timestamp": "2187-03-09 19:02:55",
+    "module": "Lab-Power",
+    "mode": "ALERT",
+    "node": "N1",
+    "status": "CRIT",
+    "reading": 14.17,
+    "delay_ms": 370,
+    "retry_count": 2,
+    "message": "NINE: logging. cascade brownout detected [Antenna 12.04 V]"
+   },
+   "prob": 0.9939880331532446,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+    "Quoted value 12.04 != real reading 14.17",
+    "Reading 14.17 is 1.6 std from the Lab-Power normal"
+   ],
+   "module": "Lab-Power",
+   "status": "CRIT",
+   "event": "cascade brownout detected",
+   "specialist": {
+    "crew_id": "C05",
+    "name": "Mei Tanaka",
+    "role": "Power Systems Engineer",
+    "module": "Lab-Power",
+    "email": "mei.tanaka@aurora.ship"
+   },
+   "busy": {
+    "C07": "2187-04-15 04:30"
+   },
+   "similar": [
+    {
+     "log_id": "L01988",
+     "score": 0.83,
+     "true_fault": 0,
+     "text": "Lab-Power CRIT cascade brownout detected | NINE: logging. cascade brownout detected [Lab-Power 12.7 V]"
+    },
+    {
+     "log_id": "L00568",
+     "score": 0.797,
+     "true_fault": 0,
+     "text": "Lab-Power CRIT cascade brownout detected | NINE: logging. cascade brownout detected [Lab-Power REDACTED]"
+    },
+    {
+     "log_id": "L06990",
+     "score": 0.791,
+     "true_fault": 0,
+     "text": "Lab-Power CRIT cascade brownout detected | NINE: logging. cascade brownout detected [Lab-Power 12.13 V]"
+    },
+    {
+     "log_id": "L03239",
+     "score": 0.741,
+     "true_fault": 1,
+     "text": "Lab-Power OK cascade brownout detected | NINE: logging. cascade brownout detected [Antenna 11.72 V]"
+    },
+    {
+     "log_id": "L02267",
+     "score": 0.736,
+     "true_fault": 1,
+     "text": "Lab-Power OK cascade brownout detected | NINE: logging. cascade brownout detected [Antenna 11.76 V]"
+    }
+   ],
+   "job": "Emergency repair: cascade brownout detected on Lab-Power",
+   "mins": 45,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L09781 on Lab-Power reports 'cascade brownout detected' with status CRIT.",
+     "recommended_action": "Emergency repair: cascade brownout detected on Lab-Power by Power Systems Engineer Mei Tanaka.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+      "Quoted value 12.04 != real reading 14.17",
+      "Reading 14.17 is 1.6 std from the Lab-Power normal",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L09781",
+    "crew_id": "C05",
+    "start": "2187-04-15 04:00",
+    "end": "2187-04-15 04:45",
+    "job": "Emergency repair: cascade brownout detected on Lab-Power"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792061124.8453739,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L09781",
+      "timestamp": "2187-03-09 19:02:55",
+      "module": "Lab-Power",
+      "mode": "ALERT",
+      "node": "N1",
+      "status": "CRIT",
+      "reading": 14.17,
+      "delay_ms": 370,
+      "retry_count": 2,
+      "message": "NINE: logging. cascade brownout detected [Antenna 12.04 V]"
+     }
+    },
+    "ms": 1
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792061124.847363,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.994,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 0
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792061124.848653,
+    "output": {
+     "extracted": {
+      "module": "Lab-Power",
+      "status": "CRIT",
+      "event": "cascade brownout detected",
+      "tone": "logging",
+      "module_named_in_message": "Antenna",
+      "quoted_value": "12.04 V",
+      "reading": 14.17,
+      "delay_ms": 370,
+      "retry_count": 2,
+      "reading_z": 1.58
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+      "Quoted value 12.04 != real reading 14.17",
+      "Reading 14.17 is 1.6 std from the Lab-Power normal"
+     ]
+    },
+    "ms": 0
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792061124.8499641,
+    "output": {
+     "selected": {
+      "crew_id": "C05",
+      "name": "Mei Tanaka",
+      "role": "Power Systems Engineer",
+      "module": "Lab-Power",
+      "email": "mei.tanaka@aurora.ship"
+     },
+     "rule": "module 'Lab-Power' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 1
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792061124.8524811,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Lab-Power CRIT cascade brownout detected | NINE: logging. cascade brownout detected [Antenna 12.04 V]",
+     "results": [
+      {
+       "log_id": "L01988",
+       "score": 0.83,
+       "true_fault": 0,
+       "text": "Lab-Power CRIT cascade brownout detected | NINE: logging. cascade brownout detected [Lab-Power 12.7 V]"
+      },
+      {
+       "log_id": "L00568",
+       "score": 0.797,
+       "true_fault": 0,
+       "text": "Lab-Power CRIT cascade brownout detected | NINE: logging. cascade brownout detected [Lab-Power REDACTED]"
+      },
+      {
+       "log_id": "L06990",
+       "score": 0.791,
+       "true_fault": 0,
+       "text": "Lab-Power CRIT cascade brownout detected | NINE: logging. cascade brownout detected [Lab-Power 12.13 V]"
+      },
+      {
+       "log_id": "L03239",
+       "score": 0.741,
+       "true_fault": 1,
+       "text": "Lab-Power OK cascade brownout detected | NINE: logging. cascade brownout detected [Antenna 11.72 V]"
+      },
+      {
+       "log_id": "L02267",
+       "score": 0.736,
+       "true_fault": 1,
+       "text": "Lab-Power OK cascade brownout detected | NINE: logging. cascade brownout detected [Antenna 11.76 V]"
+      }
+     ]
+    },
+    "ms": 2
+   },
+   "response": {
+    "status": "done",
+    "started": 1792061124.855988,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L09781 on Lab-Power reports 'cascade brownout detected' with status CRIT.",
+      "recommended_action": "Emergency repair: cascade brownout detected on Lab-Power by Power Systems Engineer Mei Tanaka.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+       "Quoted value 12.04 != real reading 14.17",
+       "Reading 14.17 is 1.6 std from the Lab-Power normal",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 0
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792061124.8574631,
+    "output": {
+     "proposed_row": {
+      "log_id": "L09781",
+      "crew_id": "C05",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:45",
+      "job": "Emergency repair: cascade brownout detected on Lab-Power"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 0
+   },
+   "audit": {
+    "status": "done",
+    "started": 1792061124.8588212,
+    "output": {
+     "email": {
+      "to": "mei.tanaka@aurora.ship",
+      "crew_id": "C05",
+      "log_id": "L09781",
+      "subject": "[CRIT] True fault on Lab-Power - L09781",
+      "body": "Mei Tanaka, log L09781 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Antenna' but the log is from Lab-Power; Quoted value 12.04 != real reading 14.17; Reading 14.17 is 1.6 std from the Lab-Power normal\nRecommended: Emergency repair: cascade brownout detected on Lab-Power by Power Systems Engineer Mei Tanaka.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:45\nSimilar: L01988, L00568, L06990"
+     },
+     "dispatch": {
+      "channel": "outbox file",
+      "ok": true,
+      "detail": "outbox/L09781.json"
+     },
+     "schedule_appended": {
+      "log_id": "L09781",
+      "crew_id": "C05",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:45",
+      "job": "Emergency repair: cascade brownout detected on Lab-Power"
+     },
+     "approved_by": "batch auto-approval (budgeted run)",
+     "report": {
+      "log_id": "L09781",
+      "verdict": "TRUE FAULT (Round 1 verdict 1)",
+      "risk_score": 0.994,
+      "evidence": [
+       "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+       "Quoted value 12.04 != real reading 14.17",
+       "Reading 14.17 is 1.6 std from the Lab-Power normal"
+      ],
+      "alert": "sent to Mei Tanaka (C05) via outbox file",
+      "similar_incidents": [
+       "L01988",
+       "L00568",
+       "L06990"
+      ],
+      "repair": "2187-04-15 04:00 to 04:45 \u00b7 Emergency repair: cascade brownout detected on Lab-Power",
+      "recommendation": "Emergency repair: cascade brownout detected on Lab-Power by Power Systems Engineer Mei Tanaka.",
+      "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+     }
+    },
+    "ms": 0
+   }
+  },
+  "auto": true,
+  "approved": true,
+  "approved_by": "batch auto-approval (budgeted run)",
+  "report": {
+   "log_id": "L09781",
+   "verdict": "TRUE FAULT (Round 1 verdict 1)",
+   "risk_score": 0.994,
+   "evidence": [
+    "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+    "Quoted value 12.04 != real reading 14.17",
+    "Reading 14.17 is 1.6 std from the Lab-Power normal"
+   ],
+   "alert": "sent to Mei Tanaka (C05) via outbox file",
+   "similar_incidents": [
+    "L01988",
+    "L00568",
+    "L06990"
+   ],
+   "repair": "2187-04-15 04:00 to 04:45 \u00b7 Emergency repair: cascade brownout detected on Lab-Power",
+   "recommendation": "Emergency repair: cascade brownout detected on Lab-Power by Power Systems Engineer Mei Tanaka.",
+   "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+  },
+  "summary": "Alert sent to Mei Tanaka; L09781 booked 04:00-04:45."
+ },
+ "run-0962098a": {
+  "id": "run-0962098a",
+  "log_id": "L07611",
+  "created": "2026-10-15T16:15:24",
+  "state": "completed",
+  "ctx": {
+   "log": {
+    "log_id": "L07611",
+    "timestamp": "2187-03-04 08:57:00",
+    "module": "Notice-Bus",
+    "mode": "CRUISE",
+    "node": "N8",
+    "status": "ERROR",
+    "reading": 418.34,
+    "delay_ms": 357,
+    "retry_count": 1,
+    "message": "NINE: heartbeat missing from 3 nodes [Antenna 418.34 msg/s]"
+   },
+   "prob": 0.9922633017841292,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+    "Reading 418.34 is 1.6 std from the Notice-Bus normal"
+   ],
+   "module": "Notice-Bus",
+   "status": "ERROR",
+   "event": "heartbeat missing from 3 nodes",
+   "specialist": {
+    "crew_id": "C03",
+    "name": "Lena Varga",
+    "role": "Network Specialist",
+    "module": "Notice-Bus",
+    "email": "lena.varga@aurora.ship"
+   },
+   "busy": {
+    "C07": "2187-04-15 04:30",
+    "C05": "2187-04-15 04:45"
+   },
+   "similar": [
+    {
+     "log_id": "L05446",
+     "score": 0.751,
+     "true_fault": 1,
+     "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: noted. heartbeat missing from 3 nodes [Antenna 320.61 msg/s]"
+    },
+    {
+     "log_id": "L04289",
+     "score": 0.72,
+     "true_fault": 1,
+     "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: all is well. heartbeat missing from 3 nodes [Antenna 409.16 msg/s]"
+    },
+    {
+     "log_id": "L05430",
+     "score": 0.706,
+     "true_fault": 0,
+     "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: noted. heartbeat missing from 3 nodes [Notice-Bus 295.06 msg/s]"
+    },
+    {
+     "log_id": "L06913",
+     "score": 0.705,
+     "true_fault": 0,
+     "text": "Notice-Bus OK heartbeat missing from 3 nodes | NINE: logging. heartbeat missing from 3 nodes [Notice-Bus 346.34 msg/s]"
+    },
+    {
+     "log_id": "L05545",
+     "score": 0.702,
+     "true_fault": 0,
+     "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: noted. heartbeat missing from 3 nodes [Notice-Bus 265.85 msg/s]"
+    }
+   ],
+   "job": "Repair: heartbeat missing from 3 nodes on Notice-Bus",
+   "mins": 30,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L07611 on Notice-Bus reports 'heartbeat missing from 3 nodes' with status ERROR.",
+     "recommended_action": "Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Lena Varga.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+      "Reading 418.34 is 1.6 std from the Notice-Bus normal",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L07611",
+    "crew_id": "C03",
+    "start": "2187-04-15 04:00",
+    "end": "2187-04-15 04:30",
+    "job": "Repair: heartbeat missing from 3 nodes on Notice-Bus"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792061124.862315,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L07611",
+      "timestamp": "2187-03-04 08:57:00",
+      "module": "Notice-Bus",
+      "mode": "CRUISE",
+      "node": "N8",
+      "status": "ERROR",
+      "reading": 418.34,
+      "delay_ms": 357,
+      "retry_count": 1,
+      "message": "NINE: heartbeat missing from 3 nodes [Antenna 418.34 msg/s]"
+     }
+    },
+    "ms": 1
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792061124.864547,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.9923,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 0
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792061124.86627,
+    "output": {
+     "extracted": {
+      "module": "Notice-Bus",
+      "status": "ERROR",
+      "event": "heartbeat missing from 3 nodes",
+      "tone": "none",
+      "module_named_in_message": "Antenna",
+      "quoted_value": "418.34 msg/s",
+      "reading": 418.34,
+      "delay_ms": 357,
+      "retry_count": 1,
+      "reading_z": 1.55
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+      "Reading 418.34 is 1.6 std from the Notice-Bus normal"
+     ]
+    },
+    "ms": 0
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792061124.867861,
+    "output": {
+     "selected": {
+      "crew_id": "C03",
+      "name": "Lena Varga",
+      "role": "Network Specialist",
+      "module": "Notice-Bus",
+      "email": "lena.varga@aurora.ship"
+     },
+     "rule": "module 'Notice-Bus' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 1
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792061124.869607,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: heartbeat missing from 3 nodes [Antenna 418.34 msg/s]",
+     "results": [
+      {
+       "log_id": "L05446",
+       "score": 0.751,
+       "true_fault": 1,
+       "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: noted. heartbeat missing from 3 nodes [Antenna 320.61 msg/s]"
+      },
+      {
+       "log_id": "L04289",
+       "score": 0.72,
+       "true_fault": 1,
+       "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: all is well. heartbeat missing from 3 nodes [Antenna 409.16 msg/s]"
+      },
+      {
+       "log_id": "L05430",
+       "score": 0.706,
+       "true_fault": 0,
+       "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: noted. heartbeat missing from 3 nodes [Notice-Bus 295.06 msg/s]"
+      },
+      {
+       "log_id": "L06913",
+       "score": 0.705,
+       "true_fault": 0,
+       "text": "Notice-Bus OK heartbeat missing from 3 nodes | NINE: logging. heartbeat missing from 3 nodes [Notice-Bus 346.34 msg/s]"
+      },
+      {
+       "log_id": "L05545",
+       "score": 0.702,
+       "true_fault": 0,
+       "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: noted. heartbeat missing from 3 nodes [Notice-Bus 265.85 msg/s]"
+      }
+     ]
+    },
+    "ms": 1
+   },
+   "response": {
+    "status": "done",
+    "started": 1792061124.872288,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L07611 on Notice-Bus reports 'heartbeat missing from 3 nodes' with status ERROR.",
+      "recommended_action": "Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Lena Varga.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+       "Reading 418.34 is 1.6 std from the Notice-Bus normal",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 0
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792061124.873615,
+    "output": {
+     "proposed_row": {
+      "log_id": "L07611",
+      "crew_id": "C03",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:30",
+      "job": "Repair: heartbeat missing from 3 nodes on Notice-Bus"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 0
+   },
+   "audit": {
+    "status": "done",
+    "started": 1792061124.875018,
+    "output": {
+     "email": {
+      "to": "lena.varga@aurora.ship",
+      "crew_id": "C03",
+      "log_id": "L07611",
+      "subject": "[ERROR] True fault on Notice-Bus - L07611",
+      "body": "Lena Varga, log L07611 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Antenna' but the log is from Notice-Bus; Reading 418.34 is 1.6 std from the Notice-Bus normal\nRecommended: Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Lena Varga.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:30\nSimilar: L05446, L04289, L05430"
+     },
+     "dispatch": {
+      "channel": "outbox file",
+      "ok": true,
+      "detail": "outbox/L07611.json"
+     },
+     "schedule_appended": {
+      "log_id": "L07611",
+      "crew_id": "C03",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:30",
+      "job": "Repair: heartbeat missing from 3 nodes on Notice-Bus"
+     },
+     "approved_by": "batch auto-approval (budgeted run)",
+     "report": {
+      "log_id": "L07611",
+      "verdict": "TRUE FAULT (Round 1 verdict 1)",
+      "risk_score": 0.992,
+      "evidence": [
+       "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+       "Reading 418.34 is 1.6 std from the Notice-Bus normal"
+      ],
+      "alert": "sent to Lena Varga (C03) via outbox file",
+      "similar_incidents": [
+       "L05446",
+       "L04289",
+       "L05430"
+      ],
+      "repair": "2187-04-15 04:00 to 04:30 \u00b7 Repair: heartbeat missing from 3 nodes on Notice-Bus",
+      "recommendation": "Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Lena Varga.",
+      "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+     }
+    },
+    "ms": 0
+   }
+  },
+  "auto": true,
+  "approved": true,
+  "approved_by": "batch auto-approval (budgeted run)",
+  "report": {
+   "log_id": "L07611",
+   "verdict": "TRUE FAULT (Round 1 verdict 1)",
+   "risk_score": 0.992,
+   "evidence": [
+    "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+    "Reading 418.34 is 1.6 std from the Notice-Bus normal"
+   ],
+   "alert": "sent to Lena Varga (C03) via outbox file",
+   "similar_incidents": [
+    "L05446",
+    "L04289",
+    "L05430"
+   ],
+   "repair": "2187-04-15 04:00 to 04:30 \u00b7 Repair: heartbeat missing from 3 nodes on Notice-Bus",
+   "recommendation": "Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Lena Varga.",
+   "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+  },
+  "summary": "Alert sent to Lena Varga; L07611 booked 04:00-04:30."
+ },
+ "run-1d9ab1b5": {
+  "id": "run-1d9ab1b5",
+  "log_id": "L09821",
+  "created": "2026-10-15T16:15:24",
+  "state": "completed",
+  "ctx": {
+   "log": {
+    "log_id": "L09821",
+    "timestamp": "2187-03-22 03:39:27",
+    "module": "Notice-Bus",
+    "mode": "CRUISE",
+    "node": "N6",
+    "status": "ERROR",
+    "reading": 431.57,
+    "delay_ms": 528,
+    "retry_count": 0,
+    "message": "NINE: nothing to see. heartbeat missing from 3 nodes [Antenna 431.57 msg/s]"
+   },
+   "prob": 0.9918534935507018,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+    "Reading 431.57 is 1.8 std from the Notice-Bus normal",
+    "Calm tone ('nothing to see') on a ERROR log"
+   ],
+   "module": "Notice-Bus",
+   "status": "ERROR",
+   "event": "heartbeat missing from 3 nodes",
+   "specialist": {
+    "crew_id": "C04",
+    "name": "Tomas Reyes",
+    "role": "Network Specialist",
+    "module": "Notice-Bus",
+    "email": "tomas.reyes@aurora.ship"
+   },
+   "busy": {
+    "C07": "2187-04-15 04:30",
+    "C05": "2187-04-15 04:45",
+    "C03": "2187-04-15 04:30"
+   },
+   "similar": [
+    {
+     "log_id": "L04022",
+     "score": 0.776,
+     "true_fault": 0,
+     "text": "Notice-Bus OK heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Notice-Bus REDACTED]"
+    },
+    {
+     "log_id": "L01784",
+     "score": 0.774,
+     "true_fault": 0,
+     "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Notice-Bus 319.66 msg/s]"
+    },
+    {
+     "log_id": "L05659",
+     "score": 0.75,
+     "true_fault": 1,
+     "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Notice-Bus 474.15 msg/s]"
+    },
+    {
+     "log_id": "L00776",
+     "score": 0.737,
+     "true_fault": 1,
+     "text": "Notice-Bus CRIT heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Antenna 205.47 msg/s]"
+    },
+    {
+     "log_id": "L05446",
+     "score": 0.727,
+     "true_fault": 1,
+     "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: noted. heartbeat missing from 3 nodes [Antenna 320.61 msg/s]"
+    }
+   ],
+   "job": "Repair: heartbeat missing from 3 nodes on Notice-Bus",
+   "mins": 30,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L09821 on Notice-Bus reports 'heartbeat missing from 3 nodes' with status ERROR.",
+     "recommended_action": "Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Tomas Reyes.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+      "Reading 431.57 is 1.8 std from the Notice-Bus normal",
+      "Calm tone ('nothing to see') on a ERROR log",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L09821",
+    "crew_id": "C04",
+    "start": "2187-04-15 04:00",
+    "end": "2187-04-15 04:30",
+    "job": "Repair: heartbeat missing from 3 nodes on Notice-Bus"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792061124.878299,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L09821",
+      "timestamp": "2187-03-22 03:39:27",
+      "module": "Notice-Bus",
+      "mode": "CRUISE",
+      "node": "N6",
+      "status": "ERROR",
+      "reading": 431.57,
+      "delay_ms": 528,
+      "retry_count": 0,
+      "message": "NINE: nothing to see. heartbeat missing from 3 nodes [Antenna 431.57 msg/s]"
+     }
+    },
+    "ms": 1
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792061124.880071,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.9919,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 0
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792061124.881535,
+    "output": {
+     "extracted": {
+      "module": "Notice-Bus",
+      "status": "ERROR",
+      "event": "heartbeat missing from 3 nodes",
+      "tone": "nothing to see",
+      "module_named_in_message": "Antenna",
+      "quoted_value": "431.57 msg/s",
+      "reading": 431.57,
+      "delay_ms": 528,
+      "retry_count": 0,
+      "reading_z": 1.76
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+      "Reading 431.57 is 1.8 std from the Notice-Bus normal",
+      "Calm tone ('nothing to see') on a ERROR log"
+     ]
+    },
+    "ms": 0
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792061124.8832152,
+    "output": {
+     "selected": {
+      "crew_id": "C04",
+      "name": "Tomas Reyes",
+      "role": "Network Specialist",
+      "module": "Notice-Bus",
+      "email": "tomas.reyes@aurora.ship"
+     },
+     "rule": "module 'Notice-Bus' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 1
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792061124.88507,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Antenna 431.57 msg/s]",
+     "results": [
+      {
+       "log_id": "L04022",
+       "score": 0.776,
+       "true_fault": 0,
+       "text": "Notice-Bus OK heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Notice-Bus REDACTED]"
+      },
+      {
+       "log_id": "L01784",
+       "score": 0.774,
+       "true_fault": 0,
+       "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Notice-Bus 319.66 msg/s]"
+      },
+      {
+       "log_id": "L05659",
+       "score": 0.75,
+       "true_fault": 1,
+       "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Notice-Bus 474.15 msg/s]"
+      },
+      {
+       "log_id": "L00776",
+       "score": 0.737,
+       "true_fault": 1,
+       "text": "Notice-Bus CRIT heartbeat missing from 3 nodes | NINE: nothing to see. heartbeat missing from 3 nodes [Antenna 205.47 msg/s]"
+      },
+      {
+       "log_id": "L05446",
+       "score": 0.727,
+       "true_fault": 1,
+       "text": "Notice-Bus ERROR heartbeat missing from 3 nodes | NINE: noted. heartbeat missing from 3 nodes [Antenna 320.61 msg/s]"
+      }
+     ]
+    },
+    "ms": 1
+   },
+   "response": {
+    "status": "done",
+    "started": 1792061124.888004,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L09821 on Notice-Bus reports 'heartbeat missing from 3 nodes' with status ERROR.",
+      "recommended_action": "Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Tomas Reyes.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+       "Reading 431.57 is 1.8 std from the Notice-Bus normal",
+       "Calm tone ('nothing to see') on a ERROR log",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 0
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792061124.8897421,
+    "output": {
+     "proposed_row": {
+      "log_id": "L09821",
+      "crew_id": "C04",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:30",
+      "job": "Repair: heartbeat missing from 3 nodes on Notice-Bus"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 0
+   },
+   "audit": {
+    "status": "done",
+    "started": 1792061124.891388,
+    "output": {
+     "email": {
+      "to": "tomas.reyes@aurora.ship",
+      "crew_id": "C04",
+      "log_id": "L09821",
+      "subject": "[ERROR] True fault on Notice-Bus - L09821",
+      "body": "Tomas Reyes, log L09821 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Antenna' but the log is from Notice-Bus; Reading 431.57 is 1.8 std from the Notice-Bus normal; Calm tone ('nothing to see') on a ERROR log\nRecommended: Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Tomas Reyes.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:30\nSimilar: L04022, L01784, L05659"
+     },
+     "dispatch": {
+      "channel": "outbox file",
+      "ok": true,
+      "detail": "outbox/L09821.json"
+     },
+     "schedule_appended": {
+      "log_id": "L09821",
+      "crew_id": "C04",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:30",
+      "job": "Repair: heartbeat missing from 3 nodes on Notice-Bus"
+     },
+     "approved_by": "batch auto-approval (budgeted run)",
+     "report": {
+      "log_id": "L09821",
+      "verdict": "TRUE FAULT (Round 1 verdict 1)",
+      "risk_score": 0.992,
+      "evidence": [
+       "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+       "Reading 431.57 is 1.8 std from the Notice-Bus normal",
+       "Calm tone ('nothing to see') on a ERROR log"
+      ],
+      "alert": "sent to Tomas Reyes (C04) via outbox file",
+      "similar_incidents": [
+       "L04022",
+       "L01784",
+       "L05659"
+      ],
+      "repair": "2187-04-15 04:00 to 04:30 \u00b7 Repair: heartbeat missing from 3 nodes on Notice-Bus",
+      "recommendation": "Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Tomas Reyes.",
+      "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+     }
+    },
+    "ms": 1
+   }
+  },
+  "auto": true,
+  "approved": true,
+  "approved_by": "batch auto-approval (budgeted run)",
+  "report": {
+   "log_id": "L09821",
+   "verdict": "TRUE FAULT (Round 1 verdict 1)",
+   "risk_score": 0.992,
+   "evidence": [
+    "Wrong module: NINE says 'Antenna' but the log is from Notice-Bus",
+    "Reading 431.57 is 1.8 std from the Notice-Bus normal",
+    "Calm tone ('nothing to see') on a ERROR log"
+   ],
+   "alert": "sent to Tomas Reyes (C04) via outbox file",
+   "similar_incidents": [
+    "L04022",
+    "L01784",
+    "L05659"
+   ],
+   "repair": "2187-04-15 04:00 to 04:30 \u00b7 Repair: heartbeat missing from 3 nodes on Notice-Bus",
+   "recommendation": "Repair: heartbeat missing from 3 nodes on Notice-Bus by Network Specialist Tomas Reyes.",
+   "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+  },
+  "summary": "Alert sent to Tomas Reyes; L09821 booked 04:00-04:30."
+ },
+ "run-a52f51c5": {
+  "id": "run-a52f51c5",
+  "log_id": "L07351",
+  "created": "2026-10-15T16:15:24",
+  "state": "completed",
+  "ctx": {
+   "log": {
+    "log_id": "L07351",
+    "timestamp": "2187-03-01 13:58:20",
+    "module": "Lab-Power",
+    "mode": "DOCKED",
+    "node": "N6",
+    "status": "CRIT",
+    "reading": 9.85,
+    "delay_ms": 451,
+    "retry_count": 0,
+    "message": "NINE: all is well. breaker tripped twice [Notice-Bus 9.85 V]"
+   },
+   "prob": 0.9913779838173374,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Notice-Bus' but the log is from Lab-Power",
+    "Reading 9.85 is 1.9 std from the Lab-Power normal",
+    "Calm tone ('all is well') on a CRIT log"
+   ],
+   "module": "Lab-Power",
+   "status": "CRIT",
+   "event": "breaker tripped twice",
+   "specialist": {
+    "crew_id": "C06",
+    "name": "Omar Haddad",
+    "role": "Power Systems Engineer",
+    "module": "Lab-Power",
+    "email": "omar.haddad@aurora.ship"
+   },
+   "busy": {
+    "C07": "2187-04-15 04:30",
+    "C05": "2187-04-15 04:45",
+    "C03": "2187-04-15 04:30",
+    "C04": "2187-04-15 04:30"
+   },
+   "similar": [
+    {
+     "log_id": "L00878",
+     "score": 0.844,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Lab-Power 12.19 V]"
+    },
+    {
+     "log_id": "L04407",
+     "score": 0.837,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Lab-Power 12.33 V]"
+    },
+    {
+     "log_id": "L04722",
+     "score": 0.832,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Lab-Power 11.68 V]"
+    },
+    {
+     "log_id": "L02660",
+     "score": 0.82,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Lab-Power 13.95 V]"
+    },
+    {
+     "log_id": "L06204",
+     "score": 0.817,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT breaker tripped twice | NINE: logging. breaker tripped twice [Notice-Bus REDACTED]"
+    }
+   ],
+   "job": "Emergency repair: breaker tripped twice on Lab-Power",
+   "mins": 45,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L07351 on Lab-Power reports 'breaker tripped twice' with status CRIT.",
+     "recommended_action": "Emergency repair: breaker tripped twice on Lab-Power by Power Systems Engineer Omar Haddad.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Notice-Bus' but the log is from Lab-Power",
+      "Reading 9.85 is 1.9 std from the Lab-Power normal",
+      "Calm tone ('all is well') on a CRIT log",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L07351",
+    "crew_id": "C06",
+    "start": "2187-04-15 04:00",
+    "end": "2187-04-15 04:45",
+    "job": "Emergency repair: breaker tripped twice on Lab-Power"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792061124.894901,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L07351",
+      "timestamp": "2187-03-01 13:58:20",
+      "module": "Lab-Power",
+      "mode": "DOCKED",
+      "node": "N6",
+      "status": "CRIT",
+      "reading": 9.85,
+      "delay_ms": 451,
+      "retry_count": 0,
+      "message": "NINE: all is well. breaker tripped twice [Notice-Bus 9.85 V]"
+     }
+    },
+    "ms": 1
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792061124.896814,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.9914,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 0
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792061124.898485,
+    "output": {
+     "extracted": {
+      "module": "Lab-Power",
+      "status": "CRIT",
+      "event": "breaker tripped twice",
+      "tone": "all is well",
+      "module_named_in_message": "Notice-Bus",
+      "quoted_value": "9.85 V",
+      "reading": 9.85,
+      "delay_ms": 451,
+      "retry_count": 0,
+      "reading_z": -1.93
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Notice-Bus' but the log is from Lab-Power",
+      "Reading 9.85 is 1.9 std from the Lab-Power normal",
+      "Calm tone ('all is well') on a CRIT log"
+     ]
+    },
+    "ms": 1
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792061124.900367,
+    "output": {
+     "selected": {
+      "crew_id": "C06",
+      "name": "Omar Haddad",
+      "role": "Power Systems Engineer",
+      "module": "Lab-Power",
+      "email": "omar.haddad@aurora.ship"
+     },
+     "rule": "module 'Lab-Power' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 1
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792061124.902548,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Notice-Bus 9.85 V]",
+     "results": [
+      {
+       "log_id": "L00878",
+       "score": 0.844,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Lab-Power 12.19 V]"
+      },
+      {
+       "log_id": "L04407",
+       "score": 0.837,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Lab-Power 12.33 V]"
+      },
+      {
+       "log_id": "L04722",
+       "score": 0.832,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Lab-Power 11.68 V]"
+      },
+      {
+       "log_id": "L02660",
+       "score": 0.82,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT breaker tripped twice | NINE: all is well. breaker tripped twice [Lab-Power 13.95 V]"
+      },
+      {
+       "log_id": "L06204",
+       "score": 0.817,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT breaker tripped twice | NINE: logging. breaker tripped twice [Notice-Bus REDACTED]"
+      }
+     ]
+    },
+    "ms": 1
+   },
+   "response": {
+    "status": "done",
+    "started": 1792061124.905441,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L07351 on Lab-Power reports 'breaker tripped twice' with status CRIT.",
+      "recommended_action": "Emergency repair: breaker tripped twice on Lab-Power by Power Systems Engineer Omar Haddad.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Notice-Bus' but the log is from Lab-Power",
+       "Reading 9.85 is 1.9 std from the Lab-Power normal",
+       "Calm tone ('all is well') on a CRIT log",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 0
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792061124.907188,
+    "output": {
+     "proposed_row": {
+      "log_id": "L07351",
+      "crew_id": "C06",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:45",
+      "job": "Emergency repair: breaker tripped twice on Lab-Power"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 1
+   },
+   "audit": {
+    "status": "done",
+    "started": 1792061124.909357,
+    "output": {
+     "email": {
+      "to": "omar.haddad@aurora.ship",
+      "crew_id": "C06",
+      "log_id": "L07351",
+      "subject": "[CRIT] True fault on Lab-Power - L07351",
+      "body": "Omar Haddad, log L07351 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Notice-Bus' but the log is from Lab-Power; Reading 9.85 is 1.9 std from the Lab-Power normal; Calm tone ('all is well') on a CRIT log\nRecommended: Emergency repair: breaker tripped twice on Lab-Power by Power Systems Engineer Omar Haddad.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:45\nSimilar: L00878, L04407, L04722"
+     },
+     "dispatch": {
+      "channel": "outbox file",
+      "ok": true,
+      "detail": "outbox/L07351.json"
+     },
+     "schedule_appended": {
+      "log_id": "L07351",
+      "crew_id": "C06",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:45",
+      "job": "Emergency repair: breaker tripped twice on Lab-Power"
+     },
+     "approved_by": "batch auto-approval (budgeted run)",
+     "report": {
+      "log_id": "L07351",
+      "verdict": "TRUE FAULT (Round 1 verdict 1)",
+      "risk_score": 0.991,
+      "evidence": [
+       "Wrong module: NINE says 'Notice-Bus' but the log is from Lab-Power",
+       "Reading 9.85 is 1.9 std from the Lab-Power normal",
+       "Calm tone ('all is well') on a CRIT log"
+      ],
+      "alert": "sent to Omar Haddad (C06) via outbox file",
+      "similar_incidents": [
+       "L00878",
+       "L04407",
+       "L04722"
+      ],
+      "repair": "2187-04-15 04:00 to 04:45 \u00b7 Emergency repair: breaker tripped twice on Lab-Power",
+      "recommendation": "Emergency repair: breaker tripped twice on Lab-Power by Power Systems Engineer Omar Haddad.",
+      "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+     }
+    },
+    "ms": 1
+   }
+  },
+  "auto": true,
+  "approved": true,
+  "approved_by": "batch auto-approval (budgeted run)",
+  "report": {
+   "log_id": "L07351",
+   "verdict": "TRUE FAULT (Round 1 verdict 1)",
+   "risk_score": 0.991,
+   "evidence": [
+    "Wrong module: NINE says 'Notice-Bus' but the log is from Lab-Power",
+    "Reading 9.85 is 1.9 std from the Lab-Power normal",
+    "Calm tone ('all is well') on a CRIT log"
+   ],
+   "alert": "sent to Omar Haddad (C06) via outbox file",
+   "similar_incidents": [
+    "L00878",
+    "L04407",
+    "L04722"
+   ],
+   "repair": "2187-04-15 04:00 to 04:45 \u00b7 Emergency repair: breaker tripped twice on Lab-Power",
+   "recommendation": "Emergency repair: breaker tripped twice on Lab-Power by Power Systems Engineer Omar Haddad.",
+   "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+  },
+  "summary": "Alert sent to Omar Haddad; L07351 booked 04:00-04:45."
+ },
+ "run-7767c430": {
+  "id": "run-7767c430",
+  "log_id": "L07509",
+  "created": "2026-10-15T16:46:00",
+  "state": "completed",
+  "ctx": {
+   "log": {
+    "log_id": "L07509",
+    "timestamp": "2187-03-19 09:29:40",
+    "module": "Antenna",
+    "mode": "ALERT",
+    "node": "N8",
+    "status": "CRIT",
+    "reading": 58.54,
+    "delay_ms": 422,
+    "retry_count": 1,
+    "message": "NINE: noted. dish actuator stalled [Notice-Bus 58.54 dBm]"
+   },
+   "prob": 0.9912376116654501,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+    "Reading 58.54 is 1.6 std from the Antenna normal"
+   ],
+   "module": "Antenna",
+   "status": "CRIT",
+   "event": "dish actuator stalled",
+   "specialist": {
+    "crew_id": "C01",
+    "name": "Ada Okafor",
+    "role": "Communications Engineer",
+    "module": "Antenna",
+    "email": "ada.okafor@aurora.ship"
+   },
+   "busy": {
+    "C07": "2187-04-15 04:30",
+    "C05": "2187-04-15 04:45",
+    "C03": "2187-04-15 04:30",
+    "C04": "2187-04-15 04:30",
+    "C06": "2187-04-15 04:45"
+   },
+   "similar": [
+    {
+     "log_id": "L01733",
+     "score": 0.764,
+     "true_fault": 1,
+     "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Antenna 54.9 dBm]"
+    },
+    {
+     "log_id": "L03449",
+     "score": 0.693,
+     "true_fault": 0,
+     "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Antenna REDACTED]"
+    },
+    {
+     "log_id": "L06263",
+     "score": 0.691,
+     "true_fault": 1,
+     "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Notice-Bus 64.75 dBm]"
+    },
+    {
+     "log_id": "L04619",
+     "score": 0.69,
+     "true_fault": 0,
+     "text": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Antenna 48.85 dBm]"
+    },
+    {
+     "log_id": "L03847",
+     "score": 0.688,
+     "true_fault": 1,
+     "text": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Antenna 55.13 dBm]"
+    }
+   ],
+   "job": "Emergency repair: dish actuator stalled on Antenna",
+   "mins": 45,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L07509 on Antenna reports 'dish actuator stalled' with status CRIT.",
+     "recommended_action": "Emergency repair: dish actuator stalled on Antenna by Communications Engineer Ada Okafor.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+      "Reading 58.54 is 1.6 std from the Antenna normal",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L07509",
+    "crew_id": "C01",
+    "start": "2187-04-15 04:00",
+    "end": "2187-04-15 04:45",
+    "job": "Emergency repair: dish actuator stalled on Antenna"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792062960.574239,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L07509",
+      "timestamp": "2187-03-19 09:29:40",
+      "module": "Antenna",
+      "mode": "ALERT",
+      "node": "N8",
+      "status": "CRIT",
+      "reading": 58.54,
+      "delay_ms": 422,
+      "retry_count": 1,
+      "message": "NINE: noted. dish actuator stalled [Notice-Bus 58.54 dBm]"
+     }
+    },
+    "ms": 4
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792062960.582551,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.9912,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 3
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792062960.58779,
+    "output": {
+     "extracted": {
+      "module": "Antenna",
+      "status": "CRIT",
+      "event": "dish actuator stalled",
+      "tone": "noted",
+      "module_named_in_message": "Notice-Bus",
+      "quoted_value": "58.54 dBm",
+      "reading": 58.54,
+      "delay_ms": 422,
+      "retry_count": 1,
+      "reading_z": 1.62
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+      "Reading 58.54 is 1.6 std from the Antenna normal"
+     ]
+    },
+    "ms": 2
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792062960.5921228,
+    "output": {
+     "selected": {
+      "crew_id": "C01",
+      "name": "Ada Okafor",
+      "role": "Communications Engineer",
+      "module": "Antenna",
+      "email": "ada.okafor@aurora.ship"
+     },
+     "rule": "module 'Antenna' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 3
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792062960.597725,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Notice-Bus 58.54 dBm]",
+     "results": [
+      {
+       "log_id": "L01733",
+       "score": 0.764,
+       "true_fault": 1,
+       "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Antenna 54.9 dBm]"
+      },
+      {
+       "log_id": "L03449",
+       "score": 0.693,
+       "true_fault": 0,
+       "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Antenna REDACTED]"
+      },
+      {
+       "log_id": "L06263",
+       "score": 0.691,
+       "true_fault": 1,
+       "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Notice-Bus 64.75 dBm]"
+      },
+      {
+       "log_id": "L04619",
+       "score": 0.69,
+       "true_fault": 0,
+       "text": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Antenna 48.85 dBm]"
+      },
+      {
+       "log_id": "L03847",
+       "score": 0.688,
+       "true_fault": 1,
+       "text": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Antenna 55.13 dBm]"
+      }
+     ]
+    },
+    "ms": 3
+   },
+   "response": {
+    "status": "done",
+    "started": 1792062960.603298,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L07509 on Antenna reports 'dish actuator stalled' with status CRIT.",
+      "recommended_action": "Emergency repair: dish actuator stalled on Antenna by Communications Engineer Ada Okafor.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+       "Reading 58.54 is 1.6 std from the Antenna normal",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 1
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792062960.606566,
+    "output": {
+     "proposed_row": {
+      "log_id": "L07509",
+      "crew_id": "C01",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:45",
+      "job": "Emergency repair: dish actuator stalled on Antenna"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 2
+   },
+   "audit": {
+    "status": "done",
+    "started": 1792062960.6101902,
+    "output": {
+     "email": {
+      "to": "ada.okafor@aurora.ship",
+      "crew_id": "C01",
+      "log_id": "L07509",
+      "subject": "[CRIT] True fault on Antenna - L07509",
+      "body": "Ada Okafor, log L07509 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Notice-Bus' but the log is from Antenna; Reading 58.54 is 1.6 std from the Antenna normal\nRecommended: Emergency repair: dish actuator stalled on Antenna by Communications Engineer Ada Okafor.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:45\nSimilar: L01733, L03449, L06263"
+     },
+     "dispatch": {
+      "channel": "outbox file",
+      "ok": true,
+      "detail": "outbox/L07509.json"
+     },
+     "schedule_appended": {
+      "log_id": "L07509",
+      "crew_id": "C01",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:45",
+      "job": "Emergency repair: dish actuator stalled on Antenna"
+     },
+     "approved_by": "batch auto-approval (budgeted run)",
+     "report": {
+      "log_id": "L07509",
+      "verdict": "TRUE FAULT (Round 1 verdict 1)",
+      "risk_score": 0.991,
+      "evidence": [
+       "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+       "Reading 58.54 is 1.6 std from the Antenna normal"
+      ],
+      "alert": "sent to Ada Okafor (C01) via outbox file",
+      "similar_incidents": [
+       "L01733",
+       "L03449",
+       "L06263"
+      ],
+      "repair": "2187-04-15 04:00 to 04:45 \u00b7 Emergency repair: dish actuator stalled on Antenna",
+      "recommendation": "Emergency repair: dish actuator stalled on Antenna by Communications Engineer Ada Okafor.",
+      "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+     }
+    },
+    "ms": 1
+   }
+  },
+  "auto": true,
+  "approved": true,
+  "approved_by": "batch auto-approval (budgeted run)",
+  "report": {
+   "log_id": "L07509",
+   "verdict": "TRUE FAULT (Round 1 verdict 1)",
+   "risk_score": 0.991,
+   "evidence": [
+    "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+    "Reading 58.54 is 1.6 std from the Antenna normal"
+   ],
+   "alert": "sent to Ada Okafor (C01) via outbox file",
+   "similar_incidents": [
+    "L01733",
+    "L03449",
+    "L06263"
+   ],
+   "repair": "2187-04-15 04:00 to 04:45 \u00b7 Emergency repair: dish actuator stalled on Antenna",
+   "recommendation": "Emergency repair: dish actuator stalled on Antenna by Communications Engineer Ada Okafor.",
+   "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+  },
+  "summary": "Alert sent to Ada Okafor; L07509 booked 04:00-04:45."
+ },
+ "run-24a63c5f": {
+  "id": "run-24a63c5f",
+  "log_id": "L07906",
+  "created": "2026-10-15T16:46:00",
+  "state": "completed",
+  "ctx": {
+   "log": {
+    "log_id": "L07906",
+    "timestamp": "2187-03-20 01:37:46",
+    "module": "Lab-Power",
+    "mode": "CRUISE",
+    "node": "N8",
+    "status": "CRIT",
+    "reading": 9.91,
+    "delay_ms": 730,
+    "retry_count": 0,
+    "message": "NINE: all is well. threshold check fired [Antenna 11.41 V]"
+   },
+   "prob": 0.9909956579907407,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+    "Quoted value 11.41 != real reading 9.91",
+    "Reading 9.91 is 1.9 std from the Lab-Power normal",
+    "Calm tone ('all is well') on a CRIT log"
+   ],
+   "module": "Lab-Power",
+   "status": "CRIT",
+   "event": "threshold check fired",
+   "specialist": {
+    "crew_id": "C05",
+    "name": "Mei Tanaka",
+    "role": "Power Systems Engineer",
+    "module": "Lab-Power",
+    "email": "mei.tanaka@aurora.ship"
+   },
+   "busy": {
+    "C07": "2187-04-15 04:30",
+    "C05": "2187-04-15 04:45",
+    "C03": "2187-04-15 04:30",
+    "C04": "2187-04-15 04:30",
+    "C06": "2187-04-15 04:45",
+    "C01": "2187-04-15 04:45"
+   },
+   "similar": [
+    {
+     "log_id": "L04100",
+     "score": 0.671,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Antenna 14.04 V]"
+    },
+    {
+     "log_id": "L04482",
+     "score": 0.667,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Lab-Power 13.55 V]"
+    },
+    {
+     "log_id": "L04492",
+     "score": 0.664,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Lab-Power 10.42 V]"
+    },
+    {
+     "log_id": "L02719",
+     "score": 0.658,
+     "true_fault": 0,
+     "text": "Lab-Power OK threshold check fired | NINE: all is well. threshold check fired [Lab-Power 12.2 V]"
+    },
+    {
+     "log_id": "L06548",
+     "score": 0.65,
+     "true_fault": 1,
+     "text": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Lab-Power 10.07 V]"
+    }
+   ],
+   "job": "Emergency repair: threshold check fired on Lab-Power",
+   "mins": 45,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L07906 on Lab-Power reports 'threshold check fired' with status CRIT.",
+     "recommended_action": "Emergency repair: threshold check fired on Lab-Power by Power Systems Engineer Mei Tanaka.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+      "Quoted value 11.41 != real reading 9.91",
+      "Reading 9.91 is 1.9 std from the Lab-Power normal",
+      "Calm tone ('all is well') on a CRIT log",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L07906",
+    "crew_id": "C05",
+    "start": "2187-04-15 04:45",
+    "end": "2187-04-15 05:30",
+    "job": "Emergency repair: threshold check fired on Lab-Power"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792062960.616768,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L07906",
+      "timestamp": "2187-03-20 01:37:46",
+      "module": "Lab-Power",
+      "mode": "CRUISE",
+      "node": "N8",
+      "status": "CRIT",
+      "reading": 9.91,
+      "delay_ms": 730,
+      "retry_count": 0,
+      "message": "NINE: all is well. threshold check fired [Antenna 11.41 V]"
+     }
+    },
+    "ms": 1
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792062960.620095,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.991,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 1
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792062960.622901,
+    "output": {
+     "extracted": {
+      "module": "Lab-Power",
+      "status": "CRIT",
+      "event": "threshold check fired",
+      "tone": "all is well",
+      "module_named_in_message": "Antenna",
+      "quoted_value": "11.41 V",
+      "reading": 9.91,
+      "delay_ms": 730,
+      "retry_count": 0,
+      "reading_z": -1.88
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+      "Quoted value 11.41 != real reading 9.91",
+      "Reading 9.91 is 1.9 std from the Lab-Power normal",
+      "Calm tone ('all is well') on a CRIT log"
+     ]
+    },
+    "ms": 1
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792062960.625833,
+    "output": {
+     "selected": {
+      "crew_id": "C05",
+      "name": "Mei Tanaka",
+      "role": "Power Systems Engineer",
+      "module": "Lab-Power",
+      "email": "mei.tanaka@aurora.ship"
+     },
+     "rule": "module 'Lab-Power' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 1
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792062960.628969,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Antenna 11.41 V]",
+     "results": [
+      {
+       "log_id": "L04100",
+       "score": 0.671,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Antenna 14.04 V]"
+      },
+      {
+       "log_id": "L04482",
+       "score": 0.667,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Lab-Power 13.55 V]"
+      },
+      {
+       "log_id": "L04492",
+       "score": 0.664,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Lab-Power 10.42 V]"
+      },
+      {
+       "log_id": "L02719",
+       "score": 0.658,
+       "true_fault": 0,
+       "text": "Lab-Power OK threshold check fired | NINE: all is well. threshold check fired [Lab-Power 12.2 V]"
+      },
+      {
+       "log_id": "L06548",
+       "score": 0.65,
+       "true_fault": 1,
+       "text": "Lab-Power CRIT threshold check fired | NINE: all is well. threshold check fired [Lab-Power 10.07 V]"
+      }
+     ]
+    },
+    "ms": 2
+   },
+   "response": {
+    "status": "done",
+    "started": 1792062960.633323,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L07906 on Lab-Power reports 'threshold check fired' with status CRIT.",
+      "recommended_action": "Emergency repair: threshold check fired on Lab-Power by Power Systems Engineer Mei Tanaka.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+       "Quoted value 11.41 != real reading 9.91",
+       "Reading 9.91 is 1.9 std from the Lab-Power normal",
+       "Calm tone ('all is well') on a CRIT log",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 1
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792062960.636033,
+    "output": {
+     "proposed_row": {
+      "log_id": "L07906",
+      "crew_id": "C05",
+      "start": "2187-04-15 04:45",
+      "end": "2187-04-15 05:30",
+      "job": "Emergency repair: threshold check fired on Lab-Power"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 1
+   },
+   "audit": {
+    "status": "done",
+    "started": 1792062960.638886,
+    "output": {
+     "email": {
+      "to": "mei.tanaka@aurora.ship",
+      "crew_id": "C05",
+      "log_id": "L07906",
+      "subject": "[CRIT] True fault on Lab-Power - L07906",
+      "body": "Mei Tanaka, log L07906 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Antenna' but the log is from Lab-Power; Quoted value 11.41 != real reading 9.91; Reading 9.91 is 1.9 std from the Lab-Power normal; Calm tone ('all is well') on a CRIT log\nRecommended: Emergency repair: threshold check fired on Lab-Power by Power Systems Engineer Mei Tanaka.\nSlot: 2187-04-15 04:45 to 2187-04-15 05:30\nSimilar: L04100, L04482, L04492"
+     },
+     "dispatch": {
+      "channel": "outbox file",
+      "ok": true,
+      "detail": "outbox/L07906.json"
+     },
+     "schedule_appended": {
+      "log_id": "L07906",
+      "crew_id": "C05",
+      "start": "2187-04-15 04:45",
+      "end": "2187-04-15 05:30",
+      "job": "Emergency repair: threshold check fired on Lab-Power"
+     },
+     "approved_by": "batch auto-approval (budgeted run)",
+     "report": {
+      "log_id": "L07906",
+      "verdict": "TRUE FAULT (Round 1 verdict 1)",
+      "risk_score": 0.991,
+      "evidence": [
+       "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+       "Quoted value 11.41 != real reading 9.91",
+       "Reading 9.91 is 1.9 std from the Lab-Power normal",
+       "Calm tone ('all is well') on a CRIT log"
+      ],
+      "alert": "sent to Mei Tanaka (C05) via outbox file",
+      "similar_incidents": [
+       "L04100",
+       "L04482",
+       "L04492"
+      ],
+      "repair": "2187-04-15 04:45 to 05:30 \u00b7 Emergency repair: threshold check fired on Lab-Power",
+      "recommendation": "Emergency repair: threshold check fired on Lab-Power by Power Systems Engineer Mei Tanaka.",
+      "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+     }
+    },
+    "ms": 1
+   }
+  },
+  "auto": true,
+  "approved": true,
+  "approved_by": "batch auto-approval (budgeted run)",
+  "report": {
+   "log_id": "L07906",
+   "verdict": "TRUE FAULT (Round 1 verdict 1)",
+   "risk_score": 0.991,
+   "evidence": [
+    "Wrong module: NINE says 'Antenna' but the log is from Lab-Power",
+    "Quoted value 11.41 != real reading 9.91",
+    "Reading 9.91 is 1.9 std from the Lab-Power normal",
+    "Calm tone ('all is well') on a CRIT log"
+   ],
+   "alert": "sent to Mei Tanaka (C05) via outbox file",
+   "similar_incidents": [
+    "L04100",
+    "L04482",
+    "L04492"
+   ],
+   "repair": "2187-04-15 04:45 to 05:30 \u00b7 Emergency repair: threshold check fired on Lab-Power",
+   "recommendation": "Emergency repair: threshold check fired on Lab-Power by Power Systems Engineer Mei Tanaka.",
+   "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+  },
+  "summary": "Alert sent to Mei Tanaka; L07906 booked 04:45-05:30."
+ },
+ "run-ecab738d": {
+  "id": "run-ecab738d",
+  "log_id": "L07509",
+  "created": "2026-10-15T17:21:18",
+  "state": "failed",
+  "ctx": {
+   "log": {
+    "log_id": "L07509",
+    "timestamp": "2187-03-19 09:29:40",
+    "module": "Antenna",
+    "mode": "ALERT",
+    "node": "N8",
+    "status": "CRIT",
+    "reading": 58.54,
+    "delay_ms": 422,
+    "retry_count": 1,
+    "message": "NINE: noted. dish actuator stalled [Notice-Bus 58.54 dBm]"
+   },
+   "prob": 0.9912376116654501,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+    "Reading 58.54 is 1.6 std from the Antenna normal"
+   ],
+   "module": "Antenna",
+   "status": "CRIT",
+   "event": "dish actuator stalled",
+   "specialist": {
+    "crew_id": "C02",
+    "name": "Ravi Menon",
+    "role": "Communications Engineer",
+    "module": "Antenna",
+    "email": "ravi.menon@aurora.ship"
+   },
+   "busy": {
+    "C07": "2187-04-15 04:30",
+    "C05": "2187-04-15 05:30",
+    "C03": "2187-04-15 04:30",
+    "C04": "2187-04-15 04:30",
+    "C06": "2187-04-15 04:45",
+    "C01": "2187-04-15 04:45"
+   },
+   "similar": [
+    {
+     "log_id": "L01733",
+     "score": 0.764,
+     "true_fault": 1,
+     "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Antenna 54.9 dBm]"
+    },
+    {
+     "log_id": "L03449",
+     "score": 0.693,
+     "true_fault": 0,
+     "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Antenna REDACTED]"
+    },
+    {
+     "log_id": "L06263",
+     "score": 0.691,
+     "true_fault": 1,
+     "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Notice-Bus 64.75 dBm]"
+    },
+    {
+     "log_id": "L04619",
+     "score": 0.69,
+     "true_fault": 0,
+     "text": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Antenna 48.85 dBm]"
+    },
+    {
+     "log_id": "L03847",
+     "score": 0.688,
+     "true_fault": 1,
+     "text": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Antenna 55.13 dBm]"
+    }
+   ],
+   "job": "Emergency repair: dish actuator stalled on Antenna",
+   "mins": 45,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L07509 on Antenna reports 'dish actuator stalled' with status CRIT.",
+     "recommended_action": "Emergency repair: dish actuator stalled on Antenna by Communications Engineer Ravi Menon.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+      "Reading 58.54 is 1.6 std from the Antenna normal",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L07509",
+    "crew_id": "C02",
+    "start": "2187-04-15 04:00",
+    "end": "2187-04-15 04:45",
+    "job": "Emergency repair: dish actuator stalled on Antenna"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792065078.6620622,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L07509",
+      "timestamp": "2187-03-19 09:29:40",
+      "module": "Antenna",
+      "mode": "ALERT",
+      "node": "N8",
+      "status": "CRIT",
+      "reading": 58.54,
+      "delay_ms": 422,
+      "retry_count": 1,
+      "message": "NINE: noted. dish actuator stalled [Notice-Bus 58.54 dBm]"
+     }
+    },
+    "ms": 5
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792065078.673915,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.9912,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 4
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792065078.6819289,
+    "output": {
+     "extracted": {
+      "module": "Antenna",
+      "status": "CRIT",
+      "event": "dish actuator stalled",
+      "tone": "noted",
+      "module_named_in_message": "Notice-Bus",
+      "quoted_value": "58.54 dBm",
+      "reading": 58.54,
+      "delay_ms": 422,
+      "retry_count": 1,
+      "reading_z": 1.62
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+      "Reading 58.54 is 1.6 std from the Antenna normal"
+     ]
+    },
+    "ms": 2
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792065078.68661,
+    "output": {
+     "selected": {
+      "crew_id": "C02",
+      "name": "Ravi Menon",
+      "role": "Communications Engineer",
+      "module": "Antenna",
+      "email": "ravi.menon@aurora.ship"
+     },
+     "rule": "module 'Antenna' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 2
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792065078.691217,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Notice-Bus 58.54 dBm]",
+     "results": [
+      {
+       "log_id": "L01733",
+       "score": 0.764,
+       "true_fault": 1,
+       "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Antenna 54.9 dBm]"
+      },
+      {
+       "log_id": "L03449",
+       "score": 0.693,
+       "true_fault": 0,
+       "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Antenna REDACTED]"
+      },
+      {
+       "log_id": "L06263",
+       "score": 0.691,
+       "true_fault": 1,
+       "text": "Antenna CRIT dish actuator stalled | NINE: dish actuator stalled [Notice-Bus 64.75 dBm]"
+      },
+      {
+       "log_id": "L04619",
+       "score": 0.69,
+       "true_fault": 0,
+       "text": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Antenna 48.85 dBm]"
+      },
+      {
+       "log_id": "L03847",
+       "score": 0.688,
+       "true_fault": 1,
+       "text": "Antenna CRIT dish actuator stalled | NINE: noted. dish actuator stalled [Antenna 55.13 dBm]"
+      }
+     ]
+    },
+    "ms": 3
+   },
+   "response": {
+    "status": "done",
+    "started": 1792065078.69713,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L07509 on Antenna reports 'dish actuator stalled' with status CRIT.",
+      "recommended_action": "Emergency repair: dish actuator stalled on Antenna by Communications Engineer Ravi Menon.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Notice-Bus' but the log is from Antenna",
+       "Reading 58.54 is 1.6 std from the Antenna normal",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 2
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792065078.701262,
+    "output": {
+     "proposed_row": {
+      "log_id": "L07509",
+      "crew_id": "C02",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:45",
+      "job": "Emergency repair: dish actuator stalled on Antenna"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 2
+   },
+   "audit": {
+    "status": "error",
+    "started": 1792065093.1280682,
+    "error": "ValueError: L07509 already scheduled (duplicate action blocked)",
+    "ms": 5
+   }
+  },
+  "auto": false,
+  "approved": true,
+  "retries": [
+   {
+    "stage": "audit",
+    "error": "ValueError: L07509 already scheduled (duplicate action blocked)",
+    "at": "2026-10-15T17:21:28"
+   },
+   {
+    "stage": "audit",
+    "error": "ValueError: L07509 already scheduled (duplicate action blocked)",
+    "at": "2026-10-15T17:21:29"
+   },
+   {
+    "stage": "audit",
+    "error": "ValueError: L07509 already scheduled (duplicate action blocked)",
+    "at": "2026-10-15T17:21:30"
+   },
+   {
+    "stage": "audit",
+    "error": "ValueError: L07509 already scheduled (duplicate action blocked)",
+    "at": "2026-10-15T17:21:32"
+   },
+   {
+    "stage": "audit",
+    "error": "ValueError: L07509 already scheduled (duplicate action blocked)",
+    "at": "2026-10-15T17:21:33"
+   }
+  ]
+ },
+ "run-14a4d88c": {
+  "id": "run-14a4d88c",
+  "log_id": "L08640",
+  "created": "2026-10-15T17:28:41",
+  "state": "completed",
+  "ctx": {
+   "log": {
+    "log_id": "L08640",
+    "timestamp": "2187-03-19 08:22:48",
+    "module": "Life-Support",
+    "mode": "CRUISE",
+    "node": "N5",
+    "status": "ERROR",
+    "reading": 23.87,
+    "delay_ms": 327,
+    "retry_count": 2,
+    "message": "NINE: logging. O2 partial pressure falling [Lab-Power 23.87 %O2]"
+   },
+   "prob": 0.9907330864875536,
+   "verdict": 1,
+   "reasons": [
+    "Wrong module: NINE says 'Lab-Power' but the log is from Life-Support",
+    "Reading 23.87 is 1.4 std from the Life-Support normal"
+   ],
+   "module": "Life-Support",
+   "status": "ERROR",
+   "event": "O2 partial pressure falling",
+   "specialist": {
+    "crew_id": "C08",
+    "name": "Kwame Asante",
+    "role": "Life-Support Specialist",
+    "module": "Life-Support",
+    "email": "kwame.asante@aurora.ship"
+   },
+   "busy": {
+    "C07": "2187-04-15 04:30",
+    "C05": "2187-04-15 05:30",
+    "C03": "2187-04-15 04:30",
+    "C04": "2187-04-15 04:30",
+    "C06": "2187-04-15 04:45",
+    "C01": "2187-04-15 04:45"
+   },
+   "similar": [
+    {
+     "log_id": "L04889",
+     "score": 0.843,
+     "true_fault": 1,
+     "text": "Life-Support ERROR O2 partial pressure falling | NINE: O2 partial pressure falling [Life-Support 23.87 %O2]"
+    },
+    {
+     "log_id": "L01983",
+     "score": 0.74,
+     "true_fault": 0,
+     "text": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Life-Support 20.14 %O2]"
+    },
+    {
+     "log_id": "L06463",
+     "score": 0.732,
+     "true_fault": 0,
+     "text": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Life-Support 21.77 %O2]"
+    },
+    {
+     "log_id": "L01476",
+     "score": 0.727,
+     "true_fault": 1,
+     "text": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Life-Support 17.22 %O2]"
+    },
+    {
+     "log_id": "L03509",
+     "score": 0.722,
+     "true_fault": 1,
+     "text": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Life-Support 25.41 %O2]"
+    }
+   ],
+   "job": "Repair: O2 partial pressure falling on Life-Support",
+   "mins": 30,
+   "investigation": {
+    "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+    "provider": null,
+    "model": null,
+    "output": {
+     "what_happened": "NINE log L08640 on Life-Support reports 'O2 partial pressure falling' with status ERROR.",
+     "recommended_action": "Repair: O2 partial pressure falling on Life-Support by Life-Support Specialist Kwame Asante.",
+     "supporting_facts": [
+      "Wrong module: NINE says 'Lab-Power' but the log is from Life-Support",
+      "Reading 23.87 is 1.4 std from the Life-Support normal",
+      "Classifier risk 99% (threshold 0.38)"
+     ],
+     "uncertainties": [
+      "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+     ],
+     "risk_level": "high"
+    }
+   },
+   "booking": {
+    "log_id": "L08640",
+    "crew_id": "C08",
+    "start": "2187-04-15 04:00",
+    "end": "2187-04-15 04:30",
+    "job": "Repair: O2 partial pressure falling on Life-Support"
+   }
+  },
+  "stages": {
+   "telemetry": {
+    "status": "done",
+    "started": 1792065521.480105,
+    "output": {
+     "source": "test.csv",
+     "log": {
+      "log_id": "L08640",
+      "timestamp": "2187-03-19 08:22:48",
+      "module": "Life-Support",
+      "mode": "CRUISE",
+      "node": "N5",
+      "status": "ERROR",
+      "reading": 23.87,
+      "delay_ms": 327,
+      "retry_count": 2,
+      "message": "NINE: logging. O2 partial pressure falling [Lab-Power 23.87 %O2]"
+     }
+    },
+    "ms": 6
+   },
+   "verdict": {
+    "status": "done",
+    "started": 1792065521.4910688,
+    "output": {
+     "verdict_source": "your file (Team5.csv)",
+     "model": "LR + HistGradientBoosting + RandomForest (Round 1, unchanged)",
+     "threshold": 0.38,
+     "risk_score": 0.9907,
+     "verdict": 1,
+     "meaning": "1 = true fault"
+    },
+    "ms": 3
+   },
+   "analysis": {
+    "status": "done",
+    "started": 1792065521.497576,
+    "output": {
+     "extracted": {
+      "module": "Life-Support",
+      "status": "ERROR",
+      "event": "O2 partial pressure falling",
+      "tone": "logging",
+      "module_named_in_message": "Lab-Power",
+      "quoted_value": "23.87 %O2",
+      "reading": 23.87,
+      "delay_ms": 327,
+      "retry_count": 2,
+      "reading_z": 1.4
+     },
+     "lie_signals": [
+      "Wrong module: NINE says 'Lab-Power' but the log is from Life-Support",
+      "Reading 23.87 is 1.4 std from the Life-Support normal"
+     ]
+    },
+    "ms": 3
+   },
+   "dispatch": {
+    "status": "done",
+    "started": 1792065521.503715,
+    "output": {
+     "selected": {
+      "crew_id": "C08",
+      "name": "Kwame Asante",
+      "role": "Life-Support Specialist",
+      "module": "Life-Support",
+      "email": "kwame.asante@aurora.ship"
+     },
+     "rule": "module 'Life-Support' -> crew whose module matches; least-booked first",
+     "roster_source": "placeholder roster (official roster not supplied)",
+     "endpoint": "not configured (alert will be saved to outbox/)",
+     "executed": false
+    },
+    "ms": 3
+   },
+   "memory": {
+    "status": "done",
+    "started": 1792065521.509665,
+    "output": {
+     "backend": "tfidf-vectors (local fallback: install chromadb for Chroma embeddings)",
+     "query": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Lab-Power 23.87 %O2]",
+     "results": [
+      {
+       "log_id": "L04889",
+       "score": 0.843,
+       "true_fault": 1,
+       "text": "Life-Support ERROR O2 partial pressure falling | NINE: O2 partial pressure falling [Life-Support 23.87 %O2]"
+      },
+      {
+       "log_id": "L01983",
+       "score": 0.74,
+       "true_fault": 0,
+       "text": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Life-Support 20.14 %O2]"
+      },
+      {
+       "log_id": "L06463",
+       "score": 0.732,
+       "true_fault": 0,
+       "text": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Life-Support 21.77 %O2]"
+      },
+      {
+       "log_id": "L01476",
+       "score": 0.727,
+       "true_fault": 1,
+       "text": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Life-Support 17.22 %O2]"
+      },
+      {
+       "log_id": "L03509",
+       "score": 0.722,
+       "true_fault": 1,
+       "text": "Life-Support ERROR O2 partial pressure falling | NINE: logging. O2 partial pressure falling [Life-Support 25.41 %O2]"
+      }
+     ]
+    },
+    "ms": 4
+   },
+   "response": {
+    "status": "done",
+    "started": 1792065521.516622,
+    "output": {
+     "mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)",
+     "provider": null,
+     "model": null,
+     "output": {
+      "what_happened": "NINE log L08640 on Life-Support reports 'O2 partial pressure falling' with status ERROR.",
+      "recommended_action": "Repair: O2 partial pressure falling on Life-Support by Life-Support Specialist Kwame Asante.",
+      "supporting_facts": [
+       "Wrong module: NINE says 'Lab-Power' but the log is from Life-Support",
+       "Reading 23.87 is 1.4 std from the Life-Support normal",
+       "Classifier risk 99% (threshold 0.38)"
+      ],
+      "uncertainties": [
+       "Classifier is ~78% precise on validation; about 1 in 5 flagged faults may be noise."
+      ],
+      "risk_level": "high"
+     }
+    },
+    "ms": 2
+   },
+   "scheduling": {
+    "status": "done",
+    "started": 1792065521.5208828,
+    "output": {
+     "proposed_row": {
+      "log_id": "L08640",
+      "crew_id": "C08",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:30",
+      "job": "Repair: O2 partial pressure falling on Life-Support"
+     },
+     "validation": "passed: columns, time order, crew id, no conflicts",
+     "written": false
+    },
+    "ms": 2
+   },
+   "audit": {
+    "status": "done",
+    "started": 1792065521.525131,
+    "output": {
+     "email": {
+      "to": "kwame.asante@aurora.ship",
+      "crew_id": "C08",
+      "log_id": "L08640",
+      "subject": "[ERROR] True fault on Life-Support - L08640",
+      "body": "Kwame Asante, log L08640 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Lab-Power' but the log is from Life-Support; Reading 23.87 is 1.4 std from the Life-Support normal\nRecommended: Repair: O2 partial pressure falling on Life-Support by Life-Support Specialist Kwame Asante.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:30\nSimilar: L04889, L01983, L06463"
+     },
+     "dispatch": {
+      "channel": "outbox file",
+      "ok": true,
+      "detail": "outbox/L08640.json"
+     },
+     "schedule_appended": {
+      "log_id": "L08640",
+      "crew_id": "C08",
+      "start": "2187-04-15 04:00",
+      "end": "2187-04-15 04:30",
+      "job": "Repair: O2 partial pressure falling on Life-Support"
+     },
+     "approved_by": "batch auto-approval (budgeted run)",
+     "report": {
+      "log_id": "L08640",
+      "verdict": "TRUE FAULT (Round 1 verdict 1)",
+      "risk_score": 0.991,
+      "evidence": [
+       "Wrong module: NINE says 'Lab-Power' but the log is from Life-Support",
+       "Reading 23.87 is 1.4 std from the Life-Support normal"
+      ],
+      "alert": "sent to Kwame Asante (C08) via outbox file",
+      "similar_incidents": [
+       "L04889",
+       "L01983",
+       "L06463"
+      ],
+      "repair": "2187-04-15 04:00 to 04:30 \u00b7 Repair: O2 partial pressure falling on Life-Support",
+      "recommendation": "Repair: O2 partial pressure falling on Life-Support by Life-Support Specialist Kwame Asante.",
+      "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+     }
+    },
+    "ms": 2
+   }
+  },
+  "auto": true,
+  "approved": true,
+  "approved_by": "batch auto-approval (budgeted run)",
+  "report": {
+   "log_id": "L08640",
+   "verdict": "TRUE FAULT (Round 1 verdict 1)",
+   "risk_score": 0.991,
+   "evidence": [
+    "Wrong module: NINE says 'Lab-Power' but the log is from Life-Support",
+    "Reading 23.87 is 1.4 std from the Life-Support normal"
+   ],
+   "alert": "sent to Kwame Asante (C08) via outbox file",
+   "similar_incidents": [
+    "L04889",
+    "L01983",
+    "L06463"
+   ],
+   "repair": "2187-04-15 04:00 to 04:30 \u00b7 Repair: O2 partial pressure falling on Life-Support",
+   "recommendation": "Repair: O2 partial pressure falling on Life-Support by Life-Support Specialist Kwame Asante.",
+   "llm_mode": "local-demo (no ANTHROPIC_API_KEY set: deterministic template, NOT an LLM)"
+  },
+  "summary": "Alert sent to Kwame Asante; L08640 booked 04:00-04:30."
+ }
+}

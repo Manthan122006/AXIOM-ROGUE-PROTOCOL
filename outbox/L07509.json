@@ -1,0 +1,7 @@
+{
+ "to": "ada.okafor@aurora.ship",
+ "crew_id": "C01",
+ "log_id": "L07509",
+ "subject": "[CRIT] True fault on Antenna - L07509",
+ "body": "Ada Okafor, log L07509 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Notice-Bus' but the log is from Antenna; Reading 58.54 is 1.6 std from the Antenna normal\nRecommended: Emergency repair: dish actuator stalled on Antenna by Communications Engineer Ada Okafor.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:45\nSimilar: L01733, L03449, L06263"
+}

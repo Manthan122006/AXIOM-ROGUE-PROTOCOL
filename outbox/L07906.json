@@ -1,0 +1,7 @@
+{
+ "to": "mei.tanaka@aurora.ship",
+ "crew_id": "C05",
+ "log_id": "L07906",
+ "subject": "[CRIT] True fault on Lab-Power - L07906",
+ "body": "Mei Tanaka, log L07906 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Antenna' but the log is from Lab-Power; Quoted value 11.41 != real reading 9.91; Reading 9.91 is 1.9 std from the Lab-Power normal; Calm tone ('all is well') on a CRIT log\nRecommended: Emergency repair: threshold check fired on Lab-Power by Power Systems Engineer Mei Tanaka.\nSlot: 2187-04-15 04:45 to 2187-04-15 05:30\nSimilar: L04100, L04482, L04492"
+}

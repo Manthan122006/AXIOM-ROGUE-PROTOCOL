@@ -1,0 +1,7 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {"name": "Start NINE server", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/server.py", "cwd": "${workspaceFolder}", "console": "integratedTerminal"},
+    {"name": "Batch pipeline (all logs)", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/pipeline.py", "args": ["--logs", "test.csv"], "cwd": "${workspaceFolder}", "console": "integratedTerminal"}
+  ]
+}

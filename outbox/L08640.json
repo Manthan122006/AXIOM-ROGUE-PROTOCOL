@@ -1,0 +1,7 @@
+{
+ "to": "kwame.asante@aurora.ship",
+ "crew_id": "C08",
+ "log_id": "L08640",
+ "subject": "[ERROR] True fault on Life-Support - L08640",
+ "body": "Kwame Asante, log L08640 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Lab-Power' but the log is from Life-Support; Reading 23.87 is 1.4 std from the Life-Support normal\nRecommended: Repair: O2 partial pressure falling on Life-Support by Life-Support Specialist Kwame Asante.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:30\nSimilar: L04889, L01983, L06463"
+}

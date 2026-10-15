@@ -1,0 +1,7 @@
+{
+ "to": "sofia.lindqvist@aurora.ship",
+ "crew_id": "C07",
+ "log_id": "L09725",
+ "subject": "[ERROR] True fault on Life-Support - L09725",
+ "body": "Sofia Lindqvist, log L09725 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Notice-Bus' but the log is from Life-Support; Quoted value 21.16 != real reading 24.44; Reading 24.44 is 1.7 std from the Life-Support normal; Calm tone ('all is well') on a ERROR log\nRecommended: Repair: reading outside nominal window on Life-Support by Life-Support Specialist Sofia Lindqvist.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:30\nSimilar: L02557, L06575, L05972"
+}

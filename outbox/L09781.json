@@ -1,0 +1,7 @@
+{
+ "to": "mei.tanaka@aurora.ship",
+ "crew_id": "C05",
+ "log_id": "L09781",
+ "subject": "[CRIT] True fault on Lab-Power - L09781",
+ "body": "Mei Tanaka, log L09781 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Antenna' but the log is from Lab-Power; Quoted value 12.04 != real reading 14.17; Reading 14.17 is 1.6 std from the Lab-Power normal\nRecommended: Emergency repair: cascade brownout detected on Lab-Power by Power Systems Engineer Mei Tanaka.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:45\nSimilar: L01988, L00568, L06990"
+}

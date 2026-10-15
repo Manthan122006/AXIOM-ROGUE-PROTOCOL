@@ -1,0 +1,9 @@
+log_id,crew_id,start,end,job
+L09725,C07,2187-04-15 04:00,2187-04-15 04:30,Repair: reading outside nominal window on Life-Support
+L09781,C05,2187-04-15 04:00,2187-04-15 04:45,Emergency repair: cascade brownout detected on Lab-Power
+L07611,C03,2187-04-15 04:00,2187-04-15 04:30,Repair: heartbeat missing from 3 nodes on Notice-Bus
+L09821,C04,2187-04-15 04:00,2187-04-15 04:30,Repair: heartbeat missing from 3 nodes on Notice-Bus
+L07351,C06,2187-04-15 04:00,2187-04-15 04:45,Emergency repair: breaker tripped twice on Lab-Power
+L07509,C01,2187-04-15 04:00,2187-04-15 04:45,Emergency repair: dish actuator stalled on Antenna
+L07906,C05,2187-04-15 04:45,2187-04-15 05:30,Emergency repair: threshold check fired on Lab-Power
+L08640,C08,2187-04-15 04:00,2187-04-15 04:30,Repair: O2 partial pressure falling on Life-Support

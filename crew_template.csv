@@ -1,0 +1,9 @@
+crew_id,name,role,module,email
+C01,Ada Okafor,Communications Engineer,Antenna,ada.okafor@aurora.ship
+C02,Ravi Menon,Communications Engineer,Antenna,ravi.menon@aurora.ship
+C03,Lena Varga,Network Specialist,Notice-Bus,lena.varga@aurora.ship
+C04,Tomas Reyes,Network Specialist,Notice-Bus,tomas.reyes@aurora.ship
+C05,Mei Tanaka,Power Systems Engineer,Lab-Power,mei.tanaka@aurora.ship
+C06,Omar Haddad,Power Systems Engineer,Lab-Power,omar.haddad@aurora.ship
+C07,Sofia Lindqvist,Life-Support Specialist,Life-Support,sofia.lindqvist@aurora.ship
+C08,Kwame Asante,Life-Support Specialist,Life-Support,kwame.asante@aurora.ship

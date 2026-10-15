@@ -1,0 +1,7 @@
+{
+ "to": "omar.haddad@aurora.ship",
+ "crew_id": "C06",
+ "log_id": "L07351",
+ "subject": "[CRIT] True fault on Lab-Power - L07351",
+ "body": "Omar Haddad, log L07351 is a TRUE fault (risk 99%).\nWhy: Wrong module: NINE says 'Notice-Bus' but the log is from Lab-Power; Reading 9.85 is 1.9 std from the Lab-Power normal; Calm tone ('all is well') on a CRIT log\nRecommended: Emergency repair: breaker tripped twice on Lab-Power by Power Systems Engineer Omar Haddad.\nSlot: 2187-04-15 04:00 to 2187-04-15 04:45\nSimilar: L00878, L04407, L04722"
+}
